@@ -5,6 +5,6 @@ import react from "@vitejs/plugin-react";
 // En producción el resultado se copia dentro del jar (target/classes/public).
 export default defineConfig({
   plugins: [react()],
-  server: { proxy: { "/api": "http://localhost:8080", "/ficha": "http://localhost:8080" } },
+  server: { proxy: { "/api": "http://localhost:8080", "/ficha": "http://localhost:8080", "/norma": "http://localhost:8080" } },
   build: { outDir: "../target/classes/public", emptyOutDir: true },
 });

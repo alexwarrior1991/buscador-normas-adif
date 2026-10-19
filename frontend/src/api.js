@@ -8,6 +8,12 @@ export const LIMITE = 200;
 /** Página del catálogo con la ficha de la norma, como PDF de una sola página. */
 export const urlFicha = (pagina) => `/ficha/${pagina}`;
 
+/**
+ * PDF de la norma en la web oficial de ADIF. El backend lo busca por código y lo descarga
+ * (o lo sirve de datos/normas/ si ya se abrió antes); si hay varios documentos, muestra la lista.
+ */
+export const urlNorma = (codigo) => `/norma?codigo=${encodeURIComponent(codigo)}`;
+
 export const BUSCADOR_OFICIAL = "https://normativatecnica.adif.es/ntw/";
 
 async function json(respuesta) {

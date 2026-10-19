@@ -165,8 +165,17 @@ button.enlace {
 .objeto.abierto { white-space: pre-line; }
 .objeto button.enlace { margin-left: 6px; font-size: 0.82rem; }
 
-.acciones { font-size: 0.88rem; white-space: nowrap; }
+.acciones {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
 .acciones a { color: var(--acento); font-weight: 600; }
+.acciones a.secundaria { font-weight: 400; }
 footer a { color: var(--acento); }
 
 mark {
@@ -189,4 +198,5 @@ footer {
 @media (max-width: 640px) {
   .fila { grid-template-columns: 1fr; gap: 6px; }
   .codigo { justify-self: start; }
+  .acciones { flex-direction: row; gap: 16px; }
 }

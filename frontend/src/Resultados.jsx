@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { urlFicha } from "./api";
+import { urlFicha, urlNorma } from "./api";
 import { extracto, resaltar } from "./resaltar";
 
 const LARGO_EXTRACTO = 240;
@@ -45,7 +45,10 @@ function Fila({ norma, consulta }) {
         )}
       </div>
       <div className="acciones">
-        <a href={urlFicha(norma.pagina)} target="_blank" rel="noreferrer" title={`Página ${norma.pagina} del catálogo`}>
+        <a href={urlNorma(norma.codigo)} target="_blank" rel="noreferrer" title="PDF de la norma en la web de ADIF">
+          Abrir norma
+        </a>
+        <a className="secundaria" href={urlFicha(norma.pagina)} target="_blank" rel="noreferrer" title={`Página ${norma.pagina} del catálogo`}>
           Ver ficha
         </a>
       </div>

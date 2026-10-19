@@ -37,6 +37,7 @@ Opciones: `--pdf ruta.pdf` (usar un PDF ya descargado), `--url ...`, `--puerto 8
   normas que deroga (`NRS 03.432.310` muestra qué normas la derogan). No distingue acentos ni
   mayúsculas, trata igual singular y plural y tolera una errata. Lo que está en el título puntúa más.
 - Filtros por especialidad y por tipo de documento (ET, NAG, NAV, NAP...).
+- **Abrir norma** abre el PDF de la norma (versión vigente) desde la web oficial de ADIF.
 - **Ver ficha** abre la página de esa norma en el catálogo, como un PDF de una sola página.
 - `/` vuelve al buscador y `Esc` lo vacía. Clic en un código para copiarlo.
 - La búsqueda queda en la URL (`?q=...`), así que se puede guardar en favoritos o compartir.
@@ -54,8 +55,8 @@ El catálogo (20ª edición, junio 2026: 400 páginas, 388 fichas) tiene **una f
 separadores de especialidad) y corrige algunos artefactos de la fuente del PDF: `1~` → `1ª`,
 `Ml` → `M1`, espacios dentro de los códigos...
 
-El catálogo no trae el estado (solo incluye normas en vigor) ni enlaces al PDF de cada norma.
-Para descargar una norma concreta está el [buscador oficial](https://normativatecnica.adif.es/ntw/).
+El catálogo no trae el estado (solo incluye normas en vigor) ni enlaces al PDF de cada norma;
+para eso está "Abrir norma" (siguiente apartado).
 
 Si una edición futura cambia la maquetación, `volcar` muestra lo que se extrae de cada página.
 `CatalogoRealTest` comprueba que todas las fichas tengan sus campos; se ejecuta solo si el catálogo
@@ -63,6 +64,26 @@ está en `datos/`.
 
 El catálogo indica que no puede ser distribuido por terceros. Por eso el PDF no se incluye en el
 repositorio (`datos/` está en `.gitignore`): cada instalación lo descarga de adif.es.
+
+## Abrir la norma
+
+El catálogo solo tiene la ficha resumen; los documentos están en la
+[web de normativa técnica de ADIF](https://normativatecnica.adif.es/ntw/). Al pulsar
+**Abrir norma**, el backend (`NormativaAdif.java`) hace lo mismo que esa web cuando se busca y se
+pulsa "Ver documento", llamando a su API interna (sin Selenium ni navegador):
+
+1. `GET  /ntw/views/busqueda/body-busqueda.jsp`: cookie de sesión y token CSRF.
+2. `POST /ntw/action/BusquedaController/getDocumentos`: versiones de esa norma por código; se
+   queda con la **vigente** (por ejemplo, `NAV 3-3-2.1` → `NAV 3-3-2.1_ED4`).
+3. `GET  /ntw/action/DocumentacionController/getDocumentosAnexos`: el PDF de esa versión.
+4. `GET  /ntw/action/DocumentacionController/descargarDocumentoAnexo`: lo descarga.
+
+- El PDF se guarda en `datos/normas/` y la próxima vez se abre al instante y sin conexión.
+- Si un código tiene varios documentos vigentes (como `PAV`, la colección de planos tipo de vía),
+  se muestra la lista.
+- Solo se consulta lo que se abre: no hay descargas masivas.
+- Necesita internet. Si ADIF cambia su web, este botón podría dejar de funcionar, pero el
+  buscador seguiría funcionando porque solo depende del catálogo.
 
 ## Desarrollo
 
@@ -72,7 +93,7 @@ mvn package -Dskip.npm -Dskip.installnodenpm   # solo Java (reutiliza la interfa
 
 # Interfaz con recarga en caliente:
 java -jar target/normas-adif.jar                             # backend en :8080
-cd frontend && npm install && npm run dev                    # interfaz en :5173 (redirige /api a :8080)
+cd frontend && npm install && npm run dev                    # interfaz en :5173 (redirige /api, /ficha y /norma a :8080)
 ```
 
 PDF de ejemplo (inventado, imita la maquetación real; es el que usan los tests):
@@ -91,6 +112,7 @@ src/main/java/buscanormas/
   CatalogoPdf.java  PDF del catálogo → lista de normas (una ficha por página)
   Indice.java       índice Lucene en memoria y consultas
   Norma.java        una ficha del catálogo
+  NormativaAdif.java cliente de la web oficial para "Abrir norma"
 frontend/src/
   App.jsx           buscador y filtros
   Resultados.jsx    lista de normas

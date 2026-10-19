@@ -21,8 +21,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 import io.javalin.Javalin;
+import io.javalin.http.BadRequestResponse;
+import io.javalin.http.Context;
 import io.javalin.http.HttpStatus;
 import io.javalin.http.NotFoundResponse;
 import io.javalin.http.staticfiles.Location;
@@ -38,6 +42,8 @@ import org.apache.pdfbox.pdmodel.PDDocument;
  *   java -jar normas-adif.jar actualizar [--pdf ruta] [--url url]
  *   java -jar normas-adif.jar volcar     [ruta.pdf]
  * </pre>
+ *
+ * Los PDF de las normas que se abren con "Abrir norma" se guardan en {@code datos/normas/}.
  */
 public final class App {
 
@@ -50,7 +56,12 @@ public final class App {
 
     private final Path pdf;
     private final String url;
+    /** Identificador de documento de la web de ADIF (Documentum): 16 caracteres hexadecimales. */
+    private static final Pattern ID_ADIF = Pattern.compile("[0-9a-f]{16}");
+    private static final Path CARPETA_NORMAS = Path.of("datos", "normas");
+
     private final AtomicReference<Indice> indice = new AtomicReference<>(new Indice(List.of()));
+    private final NormativaAdif adif = new NormativaAdif();
     private volatile Info info;
 
     App(Path pdf, String url) {
@@ -120,12 +131,15 @@ public final class App {
                     .header("Content-Disposition", "inline; filename=\"ficha-" + n + ".pdf\"")
                     .result(ficha(n));
         });
+        web.get("/norma", this::abrirNorma);
+        web.get("/norma/doc/{id}", this::servirNorma);
         web.post("/api/actualizar", ctx -> {
             try {
                 synchronized (this) {
                     descargar();
                     cargar();
                 }
+                adif.olvidar();
                 ctx.json(info);
             } catch (IOException | RuntimeException e) {
                 ctx.status(HttpStatus.BAD_GATEWAY).json(Map.of("error", String.valueOf(e.getMessage())));
@@ -134,6 +148,101 @@ public final class App {
         web.start(puerto);
         System.out.println("Buscador de normas en http://localhost:" + puerto
                 + "  (" + info.normas() + " normas)");
+    }
+
+    /**
+     * "Abrir norma": busca el código en la web de ADIF. Con una versión vigente redirige a su PDF;
+     * con varias (colecciones como "PAV") o ninguna, muestra una página con la lista o el aviso.
+     */
+    private void abrirNorma(Context ctx) {
+        String codigo = ctx.queryParam("codigo");
+        if (codigo == null || codigo.isBlank()) throw new BadRequestResponse("Falta el código");
+        try {
+            List<NormativaAdif.Documento> documentos = adif.vigentes(codigo);
+            if (documentos.size() == 1) {
+                ctx.redirect("/norma/doc/" + documentos.get(0).id());
+            } else {
+                ctx.html(paginaDocumentos(codigo, documentos));
+            }
+        } catch (IOException e) {
+            ctx.status(HttpStatus.BAD_GATEWAY).html(pagina("No se ha podido consultar la web de ADIF",
+                    "<p>" + escapar(String.valueOf(e.getMessage())) + "</p><p>Comprueba la conexión a internet.</p>"));
+        }
+    }
+
+    /** El PDF de una versión: desde datos/normas/ si ya se abrió antes; si no, se descarga de ADIF. */
+    private void servirNorma(Context ctx) throws IOException {
+        String id = ctx.pathParam("id");
+        if (!ID_ADIF.matcher(id).matches()) throw new BadRequestResponse("Identificador no válido");
+        Path norma;
+        try {
+            norma = normaEnDisco(id);
+        } catch (IOException e) {
+            ctx.status(HttpStatus.BAD_GATEWAY).html(pagina("No se ha podido descargar la norma",
+                    "<p>" + escapar(String.valueOf(e.getMessage())) + "</p>"));
+            return;
+        }
+        if (norma == null) {
+            ctx.status(HttpStatus.NOT_FOUND).html(pagina("Sin PDF", "<p>Esta norma no tiene PDF en la web de ADIF.</p>"));
+            return;
+        }
+        ctx.contentType("application/pdf")
+                .header("Content-Disposition", "inline; filename=\"" + norma.getFileName() + "\"")
+                .result(Files.newInputStream(norma));
+    }
+
+    private Path normaEnDisco(String id) throws IOException {
+        Path carpeta = CARPETA_NORMAS.resolve(id);
+        if (Files.isDirectory(carpeta)) {
+            try (Stream<Path> ficheros = Files.list(carpeta)) {
+                Path guardado = ficheros.filter(f -> f.toString().endsWith(".pdf")).findFirst().orElse(null);
+                if (guardado != null) return guardado;
+            }
+        }
+        NormativaAdif.Anexo anexo = adif.pdfDe(id);
+        if (anexo == null) return null;
+        Path destino = carpeta.resolve(nombreSeguro(anexo.nombre()));
+        adif.descargar(anexo.id(), destino);
+        return destino;
+    }
+
+    /** El nombre viene de la web de ADIF: solo caracteres inocuos, para usarlo como fichero y en cabeceras. */
+    static String nombreSeguro(String nombre) {
+        String limpio = nombre.replaceAll("[^A-Za-z0-9._ -]", "_").replaceFirst("^[.\\s]+", "");
+        if (limpio.isEmpty()) limpio = "norma";
+        return limpio.toLowerCase().endsWith(".pdf") ? limpio : limpio + ".pdf";
+    }
+
+    private static String paginaDocumentos(String codigo, List<NormativaAdif.Documento> documentos) {
+        if (documentos.isEmpty()) {
+            return pagina("No encontrada", "<p>No se ha encontrado <strong>" + escapar(codigo)
+                    + "</strong> entre las normas vigentes de la web de ADIF.</p><p><a href=\""
+                    + NormativaAdif.WEB + "/\">Buscador oficial de ADIF</a></p>");
+        }
+        StringBuilder lista = new StringBuilder("<p>" + documentos.size() + " documentos vigentes para <strong>"
+                + escapar(codigo) + "</strong>:</p><ul>");
+        for (NormativaAdif.Documento d : documentos) {
+            lista.append("<li><a href=\"/norma/doc/").append(d.id()).append("\">").append(escapar(d.codigo()))
+                    .append("</a> — ").append(escapar(d.titulo()))
+                    .append(" <small>").append(escapar(d.edicion())).append(" · ").append(escapar(d.fecha()))
+                    .append("</small></li>");
+        }
+        return pagina(codigo, lista.append("</ul>").toString());
+    }
+
+    private static String pagina(String titulo, String cuerpo) {
+        return "<!doctype html><html lang=\"es\"><head><meta charset=\"utf-8\">"
+                + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
+                + "<title>" + escapar(titulo) + "</title><style>"
+                + ":root{color-scheme:light dark;font-family:system-ui,sans-serif}"
+                + "body{max-width:900px;margin:24px auto;padding:0 16px;line-height:1.5}"
+                + "li{margin:4px 0}small{opacity:.7}a{color:#0b6e4f}"
+                + "@media(prefers-color-scheme:dark){a{color:#4cc38a}}"
+                + "</style></head><body><h1>" + escapar(titulo) + "</h1>" + cuerpo + "</body></html>";
+    }
+
+    private static String escapar(String s) {
+        return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;");
     }
 
     /** Una sola página del catálogo como PDF aparte: abre al instante, no los 57 MB del catálogo. */
