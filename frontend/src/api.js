@@ -42,3 +42,7 @@ export const obtenerFacetas = () => fetch("/api/facetas").then(json);
 export const obtenerInfo = () => fetch("/api/info").then(json);
 
 export const actualizarCatalogo = () => fetch("/api/actualizar", { method: "POST" }).then(json);
+
+/** Sube el PDF del catálogo descargado con el navegador (para redes donde Java no puede). → info */
+export const cargarCatalogo = (fichero) =>
+  fetch("/api/catalogo", { method: "POST", headers: { "Content-Type": "application/pdf" }, body: fichero }).then(json);

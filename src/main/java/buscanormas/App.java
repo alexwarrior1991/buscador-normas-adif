@@ -94,7 +94,7 @@ public final class App {
                     app.descargar();
                     System.out.println("Descargado en " + pdf.toAbsolutePath());
                 } catch (IOException e) {
-                    System.err.println("No se pudo descargar el catálogo: " + e.getMessage());
+                    System.err.println("No se pudo descargar el catálogo: " + motivo(e));
                     System.err.println(app.descargaManual());
                     System.exit(1);
                 }
@@ -113,8 +113,8 @@ public final class App {
             cargar();
         } catch (IOException | RuntimeException e) {
             // Se arranca igualmente: la interfaz muestra el error y permite reintentar.
-            info = new Info(pdf.toAbsolutePath().toString(), url, 0, "", e.getMessage());
-            System.err.println("No se pudo cargar el catálogo: " + e.getMessage());
+            info = new Info(pdf.toAbsolutePath().toString(), url, 0, "", motivo(e));
+            System.err.println("No se pudo cargar el catálogo: " + motivo(e));
             System.err.println(descargaManual());
         }
 
@@ -139,6 +139,18 @@ public final class App {
         });
         web.get("/norma", this::abrirNorma);
         web.get("/norma/doc/{id}", this::servirNorma);
+        // El navegador envía el PDF del catálogo que el usuario ha descargado (cuando Java no puede).
+        web.post("/api/catalogo", ctx -> {
+            try {
+                synchronized (this) {
+                    cargarSubido(ctx.bodyInputStream());
+                }
+                adif.olvidar();
+                ctx.json(info);
+            } catch (IOException | RuntimeException e) {
+                ctx.status(HttpStatus.BAD_REQUEST).json(Map.of("error", motivo(e)));
+            }
+        });
         web.post("/api/actualizar", ctx -> {
             try {
                 synchronized (this) {
@@ -148,7 +160,7 @@ public final class App {
                 adif.olvidar();
                 ctx.json(info);
             } catch (IOException | RuntimeException e) {
-                ctx.status(HttpStatus.BAD_GATEWAY).json(Map.of("error", String.valueOf(e.getMessage())));
+                ctx.status(HttpStatus.BAD_GATEWAY).json(Map.of("error", motivo(e)));
             }
         });
         web.start(puerto);
@@ -172,7 +184,7 @@ public final class App {
             }
         } catch (IOException e) {
             ctx.status(HttpStatus.BAD_GATEWAY).html(pagina("No se ha podido consultar la web de ADIF",
-                    "<p>" + escapar(String.valueOf(e.getMessage())) + "</p><p>Comprueba la conexión a internet.</p>"));
+                    "<p>" + escapar(motivo(e)) + "</p><p>Comprueba la conexión a internet.</p>"));
         }
     }
 
@@ -185,7 +197,7 @@ public final class App {
             norma = normaEnDisco(id);
         } catch (IOException e) {
             ctx.status(HttpStatus.BAD_GATEWAY).html(pagina("No se ha podido descargar la norma",
-                    "<p>" + escapar(String.valueOf(e.getMessage())) + "</p>"));
+                    "<p>" + escapar(motivo(e)) + "</p>"));
             return;
         }
         if (norma == null) {
@@ -263,7 +275,33 @@ public final class App {
     }
 
     void cargar() throws IOException {
-        List<Norma> normas = CatalogoPdf.leer(pdf);
+        publicar(CatalogoPdf.leer(pdf));
+    }
+
+    /**
+     * Catálogo subido desde la interfaz: solo sustituye al actual si es un PDF con fichas
+     * reconocibles, para que un fichero equivocado no deje el buscador vacío.
+     */
+    void cargarSubido(InputStream subido) throws IOException {
+        Path absoluto = pdf.toAbsolutePath();
+        Files.createDirectories(absoluto.getParent());
+        Path temporal = Files.createTempFile(absoluto.getParent(), "catalogo", ".part");
+        try {
+            Files.copy(subido, temporal, StandardCopyOption.REPLACE_EXISTING);
+            if (!esPdf(temporal)) throw new IOException("El fichero no es un PDF.");
+            List<Norma> normas = CatalogoPdf.leer(temporal);
+            if (normas.isEmpty()) {
+                throw new IOException("No parece el Catálogo de Normativa Técnica: no se ha reconocido ninguna ficha.");
+            }
+            Files.move(temporal, absoluto, StandardCopyOption.REPLACE_EXISTING);
+            publicar(normas);
+            System.out.println("Catálogo cargado desde el navegador: " + normas.size() + " normas");
+        } finally {
+            Files.deleteIfExists(temporal);
+        }
+    }
+
+    private void publicar(List<Norma> normas) {
         indice.set(new Indice(normas));
         info = new Info(pdf.toAbsolutePath().toString(), url, normas.size(),
                 LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")), "");
@@ -287,18 +325,27 @@ public final class App {
                 throw new IOException("ADIF ha rechazado la descarga (HTTP " + r.statusCode() + ").");
             }
             if (r.statusCode() != 200) throw new IOException("HTTP " + r.statusCode() + " al descargar " + url);
-            try (InputStream in = Files.newInputStream(temporal)) {
-                byte[] cabecera = in.readNBytes(5);
-                if (!new String(cabecera).startsWith("%PDF")) {
-                    throw new IOException("La URL no ha devuelto un PDF.");
-                }
-            }
+            if (!esPdf(temporal)) throw new IOException("La URL no ha devuelto un PDF.");
             Files.move(temporal, absoluto, StandardCopyOption.REPLACE_EXISTING);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             throw new IOException("Descarga interrumpida", e);
         } finally {
             Files.deleteIfExists(temporal);
+        }
+    }
+
+    /** Algunos errores de red (conexión rechazada, sin DNS...) no traen mensaje. */
+    static String motivo(Exception e) {
+        if (e.getMessage() != null && !e.getMessage().isBlank()) return e.getMessage();
+        return e instanceof java.net.ConnectException || e instanceof java.net.UnknownHostException
+                ? "No se ha podido conectar con el servidor."
+                : "Error inesperado (" + e.getClass().getSimpleName() + ").";
+    }
+
+    private static boolean esPdf(Path fichero) throws IOException {
+        try (InputStream in = Files.newInputStream(fichero)) {
+            return new String(in.readNBytes(5), StandardCharsets.US_ASCII).startsWith("%PDF");
         }
     }
 

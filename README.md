@@ -39,10 +39,13 @@ navegador) y cabeceras de navegador. Si aun así la red o ADIF rechazan la desca
 
 1. Descarga el PDF con el navegador desde
    <https://www.adif.es/documents/20124/3371563/CatalogoNormativaTecnica.pdf/>.
-2. Guárdalo como `datos\CatalogoNormativaTecnica.pdf` dentro de la carpeta desde la que lanzas
-   `java -jar` (el mensaje de error y la interfaz muestran la ruta exacta), o arranca con
-   `--pdf ruta\al\catalogo.pdf`.
-3. Vuelve a arrancar. Si el PDF ya existe, no se intenta descargar.
+2. En la página del buscador, pulsa **Cargar PDF…** y elige el fichero descargado. Se lee en unos
+   segundos y queda guardado para los siguientes arranques. Lo mismo sirve para cargar una edición
+   nueva del catálogo.
+
+También puedes guardarlo a mano como `datos\CatalogoNormativaTecnica.pdf` dentro de la carpeta desde
+la que lanzas `java -jar` (la interfaz muestra la ruta exacta), o arrancar con `--pdf ruta\al\catalogo.pdf`.
+Si el PDF ya existe, no se intenta descargar.
 
 Para forzar un proxy concreto:
 `java -Dhttps.proxyHost=proxy.miempresa.es -Dhttps.proxyPort=8080 -jar normas-adif.jar`.
@@ -56,6 +59,7 @@ Para forzar un proxy concreto:
 - Filtros por especialidad y por tipo de documento (ET, NAG, NAV, NAP...).
 - **Abrir norma** abre el PDF de la norma (versión vigente) desde la web oficial de ADIF.
 - **Ver ficha** abre la página de esa norma en el catálogo, como un PDF de una sola página.
+- **Cargar PDF…** carga un catálogo descargado con el navegador (si Java no puede descargarlo).
 - `/` vuelve al buscador y `Esc` lo vacía. Clic en un código para copiarlo.
 - La búsqueda queda en la URL (`?q=...`), así que se puede guardar en favoritos o compartir.
 

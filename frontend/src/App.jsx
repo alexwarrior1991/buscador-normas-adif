@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   actualizarCatalogo,
   BUSCADOR_OFICIAL,
+  cargarCatalogo,
   buscar,
   LIMITE,
   obtenerFacetas,
@@ -27,7 +28,9 @@ export function App() {
   const [error, setError] = useState("");
   const [actualizando, setActualizando] = useState(false);
   const [version, setVersion] = useState(0); // fuerza recargar tras actualizar el catálogo
+  const [subiendo, setSubiendo] = useState(false);
   const entrada = useRef(null);
+  const selectorPdf = useRef(null);
 
   const cambiar = (cambios) => setFiltros((f) => ({ ...f, ...cambios }));
 
@@ -75,11 +78,32 @@ export function App() {
       setInfo(await actualizarCatalogo());
       setVersion((v) => v + 1);
     } catch (e) {
-      setError(`No se pudo actualizar el catálogo: ${e.message}`);
+      setError(
+        `No se pudo actualizar el catálogo: ${e.message} Puedes descargarlo con el navegador y usar «Cargar PDF…».`,
+      );
     } finally {
       setActualizando(false);
     }
   };
+
+  // Para redes donde Java no puede descargar el catálogo pero el navegador sí.
+  const subirPdf = async (e) => {
+    const fichero = e.target.files?.[0];
+    e.target.value = "";
+    if (!fichero) return;
+    setSubiendo(true);
+    try {
+      setInfo(await cargarCatalogo(fichero));
+      setError("");
+      setVersion((v) => v + 1);
+    } catch (err) {
+      setError(`No se pudo cargar el PDF: ${err.message}`);
+    } finally {
+      setSubiendo(false);
+    }
+  };
+
+  const textoCargar = subiendo ? "Leyendo el catálogo…" : "Cargar PDF…";
 
   const hayFiltros = filtros.q || filtros.especialidad || filtros.tipo;
 
@@ -134,10 +158,15 @@ export function App() {
               </a>
             </li>
             <li>
-              Guárdalo como <code>{info.pdf}</code>
+              Cárgalo aquí:{" "}
+              <button onClick={() => selectorPdf.current?.click()} disabled={subiendo}>
+                {subiendo ? textoCargar : "Seleccionar el PDF descargado…"}
+              </button>
             </li>
-            <li>Vuelve a arrancar la aplicación.</li>
           </ol>
+          <p className="nota">
+            También puedes guardarlo como <code>{info.pdf}</code> y volver a arrancar la aplicación.
+          </p>
         </div>
       )}
       {error && <p className="aviso">{error}</p>}
@@ -165,9 +194,15 @@ export function App() {
             </a>
           </span>
         )}
-        <button onClick={actualizar} disabled={actualizando}>
-          {actualizando ? "Descargando…" : "Actualizar catálogo"}
-        </button>
+        <div className="botones">
+          <button onClick={() => selectorPdf.current?.click()} disabled={subiendo} title="PDF del catálogo descargado con el navegador">
+            {textoCargar}
+          </button>
+          <button onClick={actualizar} disabled={actualizando}>
+            {actualizando ? "Descargando…" : "Actualizar catálogo"}
+          </button>
+        </div>
+        <input ref={selectorPdf} type="file" accept="application/pdf,.pdf" hidden onChange={subirPdf} />
       </footer>
     </div>
   );

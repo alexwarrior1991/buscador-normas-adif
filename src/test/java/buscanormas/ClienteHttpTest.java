@@ -55,4 +55,12 @@ class ClienteHttpTest {
         ClienteHttp.usarProxyDelSistema();
         assertNull(System.getProperty("java.net.useSystemProxies"));
     }
+
+    @Test
+    void erroresDeRedSinMensajeTienenTextoLegible() {
+        assertEquals("No se ha podido conectar con el servidor.", App.motivo(new java.net.ConnectException()));
+        assertEquals("No se ha podido conectar con el servidor.", App.motivo(new java.net.UnknownHostException()));
+        assertEquals("ADIF ha rechazado la descarga (HTTP 403).",
+                App.motivo(new java.io.IOException("ADIF ha rechazado la descarga (HTTP 403).")));
+    }
 }

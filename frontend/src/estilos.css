@@ -111,6 +111,8 @@ button.enlace {
 .aviso p, .aviso ol { margin: 4px 0; }
 .aviso code { overflow-wrap: anywhere; }
 .aviso a { color: var(--acento); }
+.aviso .nota { font-size: 0.85rem; color: var(--suave); }
+footer .botones { display: flex; gap: 8px; }
 
 .resultados {
   list-style: none;
