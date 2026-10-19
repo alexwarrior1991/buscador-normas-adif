@@ -17,8 +17,10 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
@@ -39,6 +41,7 @@ import org.apache.pdfbox.pdmodel.PDDocument;
  *   java -jar normas-adif.jar [servir]  [--pdf ruta] [--url url] [--puerto 8080]
  *   java -jar normas-adif.jar actualizar [--pdf ruta] [--url url]
  *   java -jar normas-adif.jar volcar     [ruta.pdf]
+ *   java -jar normas-adif.jar mapear     [--pdf ruta] [--salida mapa/mapa-normas.json]
  * </pre>
  *
  * Los PDF de las normas que se abren con "Abrir norma" se guardan en {@code datos/normas/}.
@@ -49,10 +52,10 @@ public final class App {
             "https://www.adif.es/documents/20124/3371563/CatalogoNormativaTecnica.pdf/";
 
     /**
-     * Si Java puede usar la web de ADIF desde esta red. Si no, "Abrir norma" lo hace el navegador:
-     * copia el código y abre el buscador oficial.
+     * Si Java puede usar la web de ADIF desde esta red. Si no, "Abrir norma" usa el mapa de normas
+     * ({@link MapaNormas}) y el navegador descarga el PDF directamente de ADIF.
      */
-    public record AccesoAdif(boolean disponible, String motivo, String buscador) {
+    public record AccesoAdif(boolean disponible, String motivo, String buscador, String mapa, int normasMapa) {
     }
 
     /** Estado visible en la interfaz: de dónde salen los datos y cuándo se cargaron. */
@@ -67,7 +70,11 @@ public final class App {
 
     private final AtomicReference<Indice> indice = new AtomicReference<>(new Indice(List.of()));
     private final NormativaAdif adif = new NormativaAdif();
-    private volatile AccesoAdif acceso;
+    private final MapaNormas mapa = new MapaNormas();
+    static final Path FICHERO_MAPA = Path.of("datos", "mapa-normas.json");
+    private volatile Map<String, Norma> porCodigo = Map.of();
+    private volatile Boolean accesoOk;
+    private volatile String accesoMotivo = "";
     private volatile long accesoComprobado;
     private volatile Info info;
 
@@ -83,12 +90,14 @@ public final class App {
         Path pdf = Path.of("datos", "CatalogoNormativaTecnica.pdf");
         String url = URL_CATALOGO;
         int puerto = 8080;
+        Path salida = Path.of("mapa", "mapa-normas.json");
         List<String> sueltos = new ArrayList<>();
         for (int i = 0; i < args.length; i++) {
             switch (args[i]) {
                 case "--pdf" -> pdf = Path.of(args[++i]);
                 case "--url" -> url = args[++i];
                 case "--puerto" -> puerto = Integer.parseInt(args[++i]);
+                case "--salida" -> salida = Path.of(args[++i]);
                 default -> sueltos.add(args[i]);
             }
         }
@@ -109,8 +118,16 @@ public final class App {
                 }
             }
             case "volcar" -> volcar(pdf);
+            case "mapear" -> {
+                try {
+                    app.mapear(salida);
+                } catch (IOException e) {
+                    System.err.println("No se pudo generar el mapa de normas: " + motivo(e));
+                    System.exit(1);
+                }
+            }
             default -> {
-                System.err.println("Comando desconocido: " + comando + " (usa servir, actualizar o volcar)");
+                System.err.println("Comando desconocido: " + comando + " (usa servir, actualizar, volcar o mapear)");
                 System.exit(2);
             }
         }
@@ -126,6 +143,8 @@ public final class App {
             System.err.println("No se pudo cargar el catálogo: " + motivo(e));
             System.err.println(descargaManual());
         }
+        mapa.cargarLocal(FICHERO_MAPA);
+        Thread.ofVirtual().start(() -> mapa.actualizarDesde(MapaNormas.URL_GITHUB, FICHERO_MAPA));
 
         Javalin web = Javalin.create(config -> {
             config.showJavalinBanner = false;
@@ -179,36 +198,83 @@ public final class App {
     }
 
     /**
-     * "Abrir norma": busca el código en la web de ADIF. Con una versión vigente redirige a su PDF;
-     * con varias (colecciones como "PAV") o ninguna, muestra una página con la lista o el aviso.
+     * "Abrir norma": si Java llega a la web de ADIF, busca el código en ella al momento. Con una
+     * versión vigente redirige a su PDF; con varias (colecciones como "PAV") o ninguna, muestra una
+     * página con la lista o el aviso. Si no llega, usa el mapa de normas.
      */
     private void abrirNorma(Context ctx) {
         String codigo = ctx.queryParam("codigo");
         if (codigo == null || codigo.isBlank()) throw new BadRequestResponse("Falta el código");
-        try {
-            List<NormativaAdif.Documento> documentos = adif.vigentes(codigo);
-            if (documentos.size() == 1) {
-                ctx.redirect("/norma/doc/" + documentos.get(0).id());
-            } else {
-                ctx.html(paginaDocumentos(codigo, documentos));
+        if (accesoAdif().disponible()) {
+            try {
+                List<NormativaAdif.Documento> documentos = adif.vigentes(codigo);
+                if (documentos.size() == 1) {
+                    ctx.redirect("/norma/doc/" + documentos.get(0).id());
+                } else {
+                    ctx.html(paginaDocumentos(codigo, documentos));
+                }
+                return;
+            } catch (IOException e) {
+                System.err.println("Web de ADIF no disponible (" + motivo(e) + "); se usa el mapa de normas");
             }
-        } catch (IOException e) {
-            ctx.status(HttpStatus.BAD_GATEWAY).html(paginaSinAcceso(codigo, motivo(e)));
         }
+        abrirConMapa(ctx, codigo);
+    }
+
+    /**
+     * Sin acceso desde Java: el enlace de descarga directa de ADIF sí funciona en el navegador, así
+     * que se redirige a él con el identificador que da el mapa.
+     */
+    private void abrirConMapa(Context ctx, String codigo) {
+        List<MapaNormas.Entrada> entradas = mapa.buscar(codigo).stream().filter(e -> !e.anexo().isEmpty()).toList();
+        if (entradas.isEmpty()) {
+            ctx.html(paginaNoEnMapa(codigo));
+            return;
+        }
+        if (entradas.size() > 1) {
+            ctx.html(paginaEntradas(codigo, entradas));
+            return;
+        }
+        MapaNormas.Entrada e = entradas.get(0);
+        Norma n = porCodigo.get(codigo);
+        if (n != null && !mismaFecha(n.fecha(), e.fecha())) {
+            ctx.html(paginaFechaDistinta(n, e));
+            return;
+        }
+        ctx.redirect(NormativaAdif.urlDescarga(e.anexo()));
     }
 
     /** Se comprueba como mucho cada 5 minutos: la red no cambia a cada búsqueda. */
     AccesoAdif accesoAdif() {
-        if (acceso == null || System.currentTimeMillis() - accesoComprobado > 5 * 60_000) {
+        if (accesoOk == null || System.currentTimeMillis() - accesoComprobado > 5 * 60_000) {
             try {
                 adif.comprobarAcceso();
-                acceso = new AccesoAdif(true, "", NormativaAdif.BUSCADOR);
+                accesoOk = true;
+                accesoMotivo = "";
             } catch (IOException e) {
-                acceso = new AccesoAdif(false, motivo(e), NormativaAdif.BUSCADOR);
+                accesoOk = false;
+                accesoMotivo = motivo(e);
             }
             accesoComprobado = System.currentTimeMillis();
         }
-        return acceso;
+        return new AccesoAdif(accesoOk, accesoMotivo, NormativaAdif.BUSCADOR, mapa.generado(), mapa.normas());
+    }
+
+    private static final List<String> MESES = List.of("enero", "febrero", "marzo", "abril", "mayo", "junio",
+            "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre");
+    private static final Pattern FECHA_CATALOGO = Pattern.compile("([a-z]+)\\s+de\\s+(\\d{4})");
+    private static final Pattern FECHA_ADIF = Pattern.compile("\\d{1,2}/(\\d{1,2})/(\\d{4})");
+
+    /**
+     * ¿La versión del mapa es la de la ficha del catálogo? Se compara mes y año ("Enero de 2024"
+     * frente a "24/01/2024"). Si alguna fecha no se entiende, no se avisa.
+     */
+    static boolean mismaFecha(String catalogo, String adif) {
+        Matcher c = FECHA_CATALOGO.matcher(CatalogoPdf.sinAcentos(catalogo).toLowerCase(Locale.ROOT));
+        Matcher a = FECHA_ADIF.matcher(adif);
+        if (!c.find() || !a.find()) return true;
+        int mes = MESES.indexOf(c.group(1)) + 1;
+        return mes == 0 || (mes == Integer.parseInt(a.group(1)) && c.group(2).equals(a.group(2)));
     }
 
     /** El PDF de una versión: desde datos/normas/ si ya se abrió antes; si no, se descarga de ADIF. */
@@ -225,7 +291,9 @@ public final class App {
         try {
             anexo = adif.pdfDe(id);
         } catch (IOException e) {
-            ctx.status(HttpStatus.BAD_GATEWAY).html(paginaSinAcceso(null, motivo(e)));
+            ctx.status(HttpStatus.BAD_GATEWAY).html(pagina("No se ha podido consultar la web de ADIF",
+                    "<p>" + escapar(motivo(e)) + "</p><p><a href=\"" + NormativaAdif.BUSCADOR
+                    + "\">Buscador oficial de ADIF</a></p>"));
             return;
         }
         if (anexo == null) {
@@ -256,25 +324,40 @@ public final class App {
                 .result(Files.newInputStream(pdf));
     }
 
-    /**
-     * Java no llega a la web de ADIF desde esta red, pero el navegador sí: se ofrece copiar el
-     * código y abrir el buscador oficial para pegarlo allí.
-     */
-    private static String paginaSinAcceso(String codigo, String motivo) {
-        String cuerpo = "<p>Esta aplicación no puede consultar la web de ADIF desde tu red (" + escapar(motivo)
-                + "), pero tu navegador sí.</p>";
-        if (codigo == null) {
-            return pagina("Abrir en la web de ADIF", cuerpo + "<p><a href=\"" + NormativaAdif.BUSCADOR
-                    + "\">Abrir el buscador de ADIF</a></p>");
+    /** Norma que no está en el mapa (nueva, o el mapa no pudo consultarla): instrucciones para buscarla a mano. */
+    private String paginaNoEnMapa(String codigo) {
+        return pagina("Buscar en la web de ADIF", "<p>Esta aplicación no puede consultar la web de ADIF desde tu red"
+                + " y <strong>" + escapar(codigo) + "</strong> no está en el mapa de normas"
+                + (mapa.generado().isEmpty() ? "" : " (actualizado el " + escapar(fechaCorta(mapa.generado())) + ")")
+                + ".</p><p>Búscala en la web oficial:</p><ol>"
+                + "<li><a href=\"" + NormativaAdif.BUSCADOR + "\">Abre el buscador de ADIF</a>.</li>"
+                + "<li>Despliega la sección «Búsqueda».</li>"
+                + "<li>Escribe <span class=\"codigo\">" + escapar(codigoParaBuscar(codigo))
+                + "</span> en «Código» y pulsa Buscar.</li></ol>");
+    }
+
+    private static String paginaEntradas(String codigo, List<MapaNormas.Entrada> entradas) {
+        StringBuilder lista = new StringBuilder("<p>" + entradas.size() + " documentos vigentes para <strong>"
+                + escapar(codigo) + "</strong> (se descargan de la web de ADIF):</p><ul>");
+        for (MapaNormas.Entrada e : entradas) {
+            lista.append("<li><a href=\"").append(NormativaAdif.urlDescarga(e.anexo())).append("\">")
+                    .append(escapar(e.codigo())).append("</a> — ").append(escapar(e.titulo()))
+                    .append(" <small>").append(escapar(e.edicion())).append(" · ").append(escapar(e.fecha()))
+                    .append("</small></li>");
         }
-        String base = codigoParaBuscar(codigo);
-        return pagina("Abrir en la web de ADIF", cuerpo
-                + "<p class=\"codigo\">" + escapar(base) + "</p>"
-                + "<p><button id=\"ir\">Copiar el código y abrir el buscador de ADIF</button></p>"
-                + "<p>Allí, pega el código en el campo «Código» y pulsa Buscar.</p>"
-                + "<script>document.getElementById('ir').onclick = function () {"
-                + " if (navigator.clipboard) navigator.clipboard.writeText(" + cadenaJs(base) + ");"
-                + " location.href = " + cadenaJs(NormativaAdif.BUSCADOR) + "; };</script>");
+        return pagina(codigo, lista.append("</ul>").toString());
+    }
+
+    /** El mapa apunta a una versión con otra fecha que la ficha: puede haber una edición más nueva. */
+    private static String paginaFechaDistinta(Norma n, MapaNormas.Entrada e) {
+        return pagina(n.codigo(), "<p>El catálogo indica <strong>" + escapar(n.edicion()) + "</strong> de <strong>"
+                + escapar(n.fecha()) + "</strong>, pero el mapa de normas apunta a <strong>" + escapar(e.codigo())
+                + "</strong> del <strong>" + escapar(e.fecha()) + "</strong>. Puede que ADIF haya publicado una"
+                + " edición que el mapa aún no recoge.</p><ul>"
+                + "<li><a href=\"" + NormativaAdif.urlDescarga(e.anexo()) + "\">Descargar la del mapa ("
+                + escapar(e.fecha()) + ")</a></li>"
+                + "<li><a href=\"" + NormativaAdif.BUSCADOR + "\">Buscarla en la web de ADIF</a> (sección «Búsqueda»,"
+                + " campo «Código»: <span class=\"codigo\">" + escapar(codigoParaBuscar(n.codigo())) + "</span>)</li></ul>");
     }
 
     /** "IT 17 (NAS 117)" → "IT 17": el buscador de ADIF no conoce el código alternativo. */
@@ -282,8 +365,37 @@ public final class App {
         return codigo.replaceAll("\\s*\\(.*\\)", "").strip();
     }
 
-    private static String cadenaJs(String s) {
-        return "\"" + s.replace("\\", "\\\\").replace("\"", "\\\"").replace("<", "\\u003c") + "\"";
+    /** "2026-10-19T09:15:00Z" → "19/10/2026". */
+    static String fechaCorta(String instante) {
+        return instante.length() >= 10
+                ? instante.substring(8, 10) + "/" + instante.substring(5, 7) + "/" + instante.substring(0, 4)
+                : instante;
+    }
+
+    /**
+     * Genera el mapa de normas consultando la web de ADIF por cada código del catálogo (comando
+     * {@code mapear}; lo ejecuta GitHub cada semana). Si fallan demasiadas, no se guarda nada.
+     */
+    void mapear(Path salida) throws IOException {
+        List<Norma> catalogo = CatalogoPdf.leer(pdf);
+        adif.comprobarAcceso();
+        MapaNormas.Datos datos = MapaNormas.generar(catalogo, codigo -> {
+            List<MapaNormas.Entrada> entradas = new ArrayList<>();
+            for (NormativaAdif.Documento d : adif.vigentes(codigo)) {
+                NormativaAdif.Anexo a = adif.pdfDe(d.id());
+                entradas.add(new MapaNormas.Entrada(d.id(), d.codigo(), d.titulo(), d.edicion(), d.fecha(),
+                        a == null ? "" : a.id(), a == null ? "" : a.nombre()));
+                MapaNormas.dormir(100);
+            }
+            return entradas;
+        }, 300, System.out);
+        long distintos = catalogo.stream().map(Norma::codigo).distinct().count();
+        if (datos.normas().size() < distintos * 0.9) {
+            throw new IOException("Solo se han podido consultar " + datos.normas().size() + " de " + distintos
+                    + " normas; no se guarda el mapa.");
+        }
+        MapaNormas.escribir(datos, salida);
+        System.out.println("Mapa de " + datos.normas().size() + " normas guardado en " + salida.toAbsolutePath());
     }
 
     /** El nombre viene de la web de ADIF: solo caracteres inocuos, para usarlo como fichero y en cabeceras. */
@@ -367,6 +479,9 @@ public final class App {
 
     private void publicar(List<Norma> normas) {
         indice.set(new Indice(normas));
+        Map<String, Norma> mapaCodigos = new java.util.HashMap<>();
+        normas.forEach(n -> mapaCodigos.putIfAbsent(n.codigo(), n));
+        porCodigo = mapaCodigos;
         info = new Info(pdf.toAbsolutePath().toString(), url, normas.size(),
                 LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")), "");
         if (normas.isEmpty()) {

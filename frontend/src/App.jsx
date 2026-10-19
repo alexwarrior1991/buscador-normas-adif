@@ -3,6 +3,7 @@ import {
   actualizarCatalogo,
   BUSCADOR_OFICIAL,
   cargarCatalogo,
+  fechaCorta,
   obtenerAccesoAdif,
   buscar,
   LIMITE,
@@ -191,6 +192,14 @@ export function App() {
       )}
 
       {resultado && <Resultados normas={resultado.resultados} consulta={filtros.q} accesoAdif={accesoAdif} />}
+
+      {accesoAdif?.disponible === false && (
+        <p className="nota-red">
+          Tu red no deja a esta aplicación consultar la web de ADIF: «Abrir norma» descarga el PDF con tu navegador
+          usando el mapa de normas
+          {accesoAdif.mapa ? ` del ${fechaCorta(accesoAdif.mapa)} (${accesoAdif.normasMapa} normas)` : " (no disponible)"}.
+        </p>
+      )}
 
       <footer>
         {info && !info.error && (

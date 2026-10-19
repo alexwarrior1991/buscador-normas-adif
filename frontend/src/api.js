@@ -39,13 +39,14 @@ export function buscar(filtros, signal) {
 export const obtenerFacetas = () => fetch("/api/facetas").then(json);
 
 /**
- * → { disponible, motivo, buscador }. Si disponible es false, Java no llega a la web de ADIF
- * desde esta red y "Abrir norma" lo hace el navegador (copiar código + abrir el buscador oficial).
+ * → { disponible, motivo, buscador, mapa, normasMapa }. Si disponible es false, Java no llega a la
+ * web de ADIF desde esta red y "Abrir norma" usa el mapa de normas (generado el día `mapa`).
  */
 export const obtenerAccesoAdif = () => fetch("/api/adif").then(json);
 
-/** "IT 17 (NAS 117)" → "IT 17": el buscador de ADIF no conoce el código alternativo. */
-export const codigoParaBuscar = (codigo) => codigo.replace(/\s*\(.*\)/, "").trim();
+/** "2026-10-19T09:15:00Z" → "19/10/2026". */
+export const fechaCorta = (instante) =>
+  instante && instante.length >= 10 ? `${instante.slice(8, 10)}/${instante.slice(5, 7)}/${instante.slice(0, 4)}` : "";
 
 /** → { pdf, url, normas, cargado, error } */
 export const obtenerInfo = () => fetch("/api/info").then(json);

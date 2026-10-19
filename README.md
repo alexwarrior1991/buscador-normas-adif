@@ -28,6 +28,7 @@ Si la descarga falla, se conserva el PDF anterior.
 | `java -jar normas-adif.jar [servir]` | Arranca el buscador |
 | `java -jar normas-adif.jar actualizar` | Descarga de nuevo el PDF |
 | `java -jar normas-adif.jar volcar catalogo.pdf > volcado.txt` | Muestra lo que se extrae del PDF (para ajustar el lector) |
+| `java -jar normas-adif.jar mapear` | Regenera `mapa/mapa-normas.json` (necesita acceso a la web de ADIF) |
 
 Opciones: `--pdf ruta.pdf` (usar un PDF ya descargado), `--url ...`, `--puerto 8080`.
 
@@ -105,11 +106,24 @@ pulsa "Ver documento", llamando a su API interna (sin Selenium ni navegador):
 - Solo se consulta lo que se abre: no hay descargas masivas.
 - Necesita internet. Si ADIF cambia su web, este botón podría dejar de funcionar, pero el
   buscador seguiría funcionando porque solo depende del catálogo.
-- **Si tu red no deja a Java usar esa web** (HTTP 403, aunque el navegador sí pueda), la aplicación
-  lo detecta al abrirse y "Abrir norma" pasa a copiar el código al portapapeles y abrir el
-  [buscador oficial](https://normativatecnica.adif.es/ntw/views/busqueda/body-busqueda.jsp) en el
-  navegador: pégalo en «Código» y pulsa Buscar. Si lo que falla es solo la descarga, te lleva
-  directamente al PDF en la web de ADIF.
+- **Si tu red no deja a la aplicación usar esa web** (en algunas redes ADIF solo deja pasar a
+  navegadores: HTTP 403 incluso con `curl` o PowerShell), "Abrir norma" usa el **mapa de normas**
+  y tu navegador descarga el PDF directamente de ADIF (ese enlace sí lo acepta). Ver más abajo.
+
+## Mapa de normas
+
+`mapa/mapa-normas.json` relaciona cada código del catálogo con su versión vigente en la web de ADIF
+y el identificador de su PDF. Sirve para "Abrir norma" en redes donde la aplicación no puede
+consultar esa web.
+
+- Lo genera `java -jar normas-adif.jar mapear` (consulta la web de ADIF norma a norma, con pausas;
+  tarda unos 40 minutos). Si fallan más del 10 % de las consultas, no guarda nada.
+- **GitHub lo regenera cada lunes** (`.github/workflows/mapa-normas.yml`) y solo hace commit si
+  ha cambiado alguna norma. También se puede lanzar a mano desde la pestaña *Actions* del repositorio.
+- Va incluido en el jar. Además, al arrancar, la aplicación baja de GitHub la última versión y la
+  guarda en `datos/mapa-normas.json`; así está al día aunque no hagas `git pull`.
+- Si ADIF publica una edición nueva y el mapa aún no la recoge, la fecha de la ficha del catálogo
+  no coincide con la del mapa y "Abrir norma" lo avisa antes de descargar.
 
 ## Desarrollo
 
@@ -141,6 +155,7 @@ src/main/java/buscanormas/
   Indice.java       índice Lucene en memoria y consultas
   Norma.java        una ficha del catálogo
   NormativaAdif.java cliente de la web oficial para "Abrir norma"
+  MapaNormas.java   mapa código → PDF vigente, para redes sin acceso a la web de ADIF
   ClienteHttp.java  proxy del sistema y cabeceras comunes de las peticiones a adif.es
 frontend/src/
   App.jsx           buscador y filtros

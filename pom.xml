@@ -61,6 +61,16 @@
 
   <build>
     <finalName>normas-adif</finalName>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <!-- Mapa de normas (código → PDF vigente en ADIF), regenerado cada semana por GitHub Actions. -->
+      <resource>
+        <directory>mapa</directory>
+        <includes><include>mapa-normas.json</include></includes>
+      </resource>
+    </resources>
     <plugins>
       <!-- Falla pronto y con un mensaje claro si se compila con un JDK anterior a 25. -->
       <plugin>

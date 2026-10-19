@@ -1,0 +1,49 @@
+# Regenera cada semana el mapa "código de norma → PDF vigente en la web de ADIF".
+# La aplicación lo baja de GitHub al arrancar y lo usa en redes donde Java no puede
+# consultar la web de ADIF (allí solo dejan pasar navegadores).
+name: Mapa de normas
+
+on:
+  schedule:
+    - cron: "17 5 * * 1" # lunes a las 05:17 UTC
+  workflow_dispatch: # también a mano, desde la pestaña Actions
+
+permissions:
+  contents: write
+
+concurrency: mapa-normas
+
+jobs:
+  mapa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "25"
+          cache: maven
+
+      - name: Compilar (sin interfaz ni tests)
+        run: mvn -B -q package -DskipTests -Dskip.npm -Dskip.installnodenpm
+
+      - name: Descargar el catálogo
+        run: java -jar target/normas-adif.jar actualizar
+
+      - name: Generar el mapa
+        run: java -jar target/normas-adif.jar mapear --salida mapa/mapa-normas.json
+
+      - name: Guardar el mapa si ha cambiado
+        run: |
+          # La fecha de generación cambia siempre; solo se guarda si cambian las normas.
+          if git diff --quiet -I'"generado"' -- mapa/mapa-normas.json; then
+            echo "El mapa no ha cambiado."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mapa/mapa-normas.json
+          git commit -m "Mapa de normas actualizado"
+          git push

@@ -1,39 +1,22 @@
 import { useState } from "react";
-import { codigoParaBuscar, urlFicha, urlNorma } from "./api";
+import { fechaCorta, urlFicha, urlNorma } from "./api";
 import { extracto, resaltar } from "./resaltar";
 
 const LARGO_EXTRACTO = 240;
 
 /**
- * "Abrir norma": normalmente lo resuelve el backend. Si Java no llega a la web de ADIF desde esta
- * red, se copia el código y se abre el buscador oficial en el navegador para pegarlo allí.
+ * "Abrir norma": el backend decide. Si llega a la web de ADIF, la consulta al momento; si no (algunas
+ * redes solo dejan pasar navegadores), usa el mapa de normas y tu navegador descarga el PDF de ADIF.
  */
 function AbrirNorma({ codigo, accesoAdif }) {
-  const [aviso, setAviso] = useState("");
-
-  if (accesoAdif?.disponible !== false) {
-    return (
-      <a href={urlNorma(codigo)} target="_blank" rel="noreferrer" title="PDF de la norma en la web de ADIF">
-        Abrir norma
-      </a>
-    );
-  }
-
-  const abrir = () => {
-    const base = codigoParaBuscar(codigo);
-    navigator.clipboard?.writeText(base);
-    window.open(accesoAdif.buscador, "_blank", "noopener");
-    setAviso(`«${base}» copiado: pégalo en «Código»`);
-    setTimeout(() => setAviso(""), 6000);
-  };
-
+  const titulo =
+    accesoAdif?.disponible === false
+      ? `Se descarga de la web de ADIF con tu navegador (mapa de normas del ${fechaCorta(accesoAdif.mapa)})`
+      : "PDF de la norma en la web de ADIF";
   return (
-    <>
-      <button className="enlace fuerte" onClick={abrir} title="Copia el código y abre el buscador de ADIF">
-        Abrir norma
-      </button>
-      {aviso && <span className="copiado">{aviso}</span>}
-    </>
+    <a href={urlNorma(codigo)} target="_blank" rel="noreferrer" title={titulo}>
+      Abrir norma
+    </a>
   );
 }
 
