@@ -122,10 +122,23 @@ export function App() {
       </header>
 
       {info?.error && (
-        <p className="aviso">
-          No hay catálogo cargado: {info.error}. Comprueba la conexión o arranca con{" "}
-          <code>--pdf ruta/al/catalogo.pdf</code>.
-        </p>
+        <div className="aviso">
+          <p>
+            <strong>No hay catálogo cargado.</strong> {info.error}
+          </p>
+          <ol>
+            <li>
+              Descarga el PDF con el navegador:{" "}
+              <a href={info.url} target="_blank" rel="noreferrer">
+                Catálogo de Normativa Técnica
+              </a>
+            </li>
+            <li>
+              Guárdalo como <code>{info.pdf}</code>
+            </li>
+            <li>Vuelve a arrancar la aplicación.</li>
+          </ol>
+        </div>
       )}
       {error && <p className="aviso">{error}</p>}
 

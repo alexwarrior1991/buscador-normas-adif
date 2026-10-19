@@ -3,7 +3,6 @@ package buscanormas;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.CookieManager;
-import java.net.URI;
 import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -12,7 +11,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -51,11 +49,7 @@ public final class NormativaAdif {
     private static final Pattern ALTERNATIVO = Pattern.compile("\\s*\\(.*\\)");
     private static final ObjectMapper JSON = new ObjectMapper();
 
-    private final HttpClient http = HttpClient.newBuilder()
-            .cookieHandler(new CookieManager())
-            .followRedirects(HttpClient.Redirect.NORMAL)
-            .connectTimeout(Duration.ofSeconds(20))
-            .build();
+    private final HttpClient http = ClienteHttp.cliente().cookieHandler(new CookieManager()).build();
     private final Map<String, List<Documento>> cache = new ConcurrentHashMap<>();
     private volatile String token;
 
@@ -114,7 +108,7 @@ public final class NormativaAdif {
         Files.createDirectories(destino.toAbsolutePath().getParent());
         Path temporal = Files.createTempFile(destino.toAbsolutePath().getParent(), "norma", ".part");
         try {
-            HttpResponse<Path> r = enviar(peticion(WEB + "/action/DocumentacionController/descargarDocumentoAnexo?idDoc="
+            HttpResponse<Path> r = enviar(ClienteHttp.peticion(WEB + "/action/DocumentacionController/descargarDocumentoAnexo?idDoc="
                     + URLEncoder.encode(idAnexo, StandardCharsets.UTF_8)).build(),
                     HttpResponse.BodyHandlers.ofFile(temporal));
             if (r.statusCode() != 200) throw new IOException("HTTP " + r.statusCode() + " al descargar la norma");
@@ -133,7 +127,7 @@ public final class NormativaAdif {
     private List<Documento> buscar(String codigo) throws IOException {
         String cuerpo = JSON.writeValueAsString(List.of(Map.of("name", "cdgo_prncpl", "value", codigo)));
         for (int intento = 0; ; intento++) {
-            HttpResponse<String> r = enviar(peticion(WEB + "/action/BusquedaController/getDocumentos")
+            HttpResponse<String> r = enviar(ClienteHttp.peticion(WEB + "/action/BusquedaController/getDocumentos")
                     .header("Content-Type", "application/json")
                     .header("X-CSRF-TOKEN", token())
                     .POST(HttpRequest.BodyPublishers.ofString(cuerpo))
@@ -175,15 +169,9 @@ public final class NormativaAdif {
     }
 
     private String get(String url) throws IOException {
-        HttpResponse<String> r = enviar(peticion(url).build(), HttpResponse.BodyHandlers.ofString());
+        HttpResponse<String> r = enviar(ClienteHttp.peticion(url).build(), HttpResponse.BodyHandlers.ofString());
         if (r.statusCode() != 200) throw new IOException("HTTP " + r.statusCode() + " en " + url);
         return r.body();
-    }
-
-    private static HttpRequest.Builder peticion(String url) {
-        return HttpRequest.newBuilder(URI.create(url))
-                .header("User-Agent", "Mozilla/5.0 (buscador-normas-adif)")
-                .timeout(Duration.ofMinutes(2));
     }
 
     private <T> HttpResponse<T> enviar(HttpRequest peticion, HttpResponse.BodyHandler<T> cuerpo) throws IOException {

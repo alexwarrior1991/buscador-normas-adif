@@ -6,7 +6,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintStream;
-import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -14,7 +13,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
-import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -67,10 +65,11 @@ public final class App {
     App(Path pdf, String url) {
         this.pdf = pdf;
         this.url = url;
-        this.info = new Info(pdf.toString(), url, 0, "", "");
+        this.info = new Info(pdf.toAbsolutePath().toString(), url, 0, "", "");
     }
 
     public static void main(String[] args) throws Exception {
+        ClienteHttp.usarProxyDelSistema();
         String comando = "servir";
         Path pdf = Path.of("datos", "CatalogoNormativaTecnica.pdf");
         String url = URL_CATALOGO;
@@ -91,8 +90,14 @@ public final class App {
         switch (comando) {
             case "servir" -> app.servir(puerto);
             case "actualizar" -> {
-                app.descargar();
-                System.out.println("Descargado en " + pdf.toAbsolutePath());
+                try {
+                    app.descargar();
+                    System.out.println("Descargado en " + pdf.toAbsolutePath());
+                } catch (IOException e) {
+                    System.err.println("No se pudo descargar el catálogo: " + e.getMessage());
+                    System.err.println(app.descargaManual());
+                    System.exit(1);
+                }
             }
             case "volcar" -> volcar(pdf);
             default -> {
@@ -108,8 +113,9 @@ public final class App {
             cargar();
         } catch (IOException | RuntimeException e) {
             // Se arranca igualmente: la interfaz muestra el error y permite reintentar.
-            info = new Info(pdf.toString(), url, 0, "", e.getMessage());
+            info = new Info(pdf.toAbsolutePath().toString(), url, 0, "", e.getMessage());
             System.err.println("No se pudo cargar el catálogo: " + e.getMessage());
+            System.err.println(descargaManual());
         }
 
         Javalin web = Javalin.create(config -> {
@@ -259,7 +265,7 @@ public final class App {
     void cargar() throws IOException {
         List<Norma> normas = CatalogoPdf.leer(pdf);
         indice.set(new Indice(normas));
-        info = new Info(pdf.toString(), url, normas.size(),
+        info = new Info(pdf.toAbsolutePath().toString(), url, normas.size(),
                 LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")), "");
         if (normas.isEmpty()) {
             System.err.println("Aviso: no se ha reconocido ninguna norma en el PDF. "
@@ -270,24 +276,21 @@ public final class App {
     /** Descarga a un temporal y solo sustituye el PDF anterior si lo recibido es realmente un PDF. */
     void descargar() throws IOException {
         System.out.println("Descargando " + url + " ...");
-        HttpClient cliente = HttpClient.newBuilder()
-                .followRedirects(HttpClient.Redirect.NORMAL)
-                .connectTimeout(Duration.ofSeconds(20))
-                .build();
-        HttpRequest peticion = HttpRequest.newBuilder(URI.create(url))
-                .header("User-Agent", "Mozilla/5.0 (buscador-normas-adif)")
-                .timeout(Duration.ofMinutes(2))
-                .build();
+        HttpClient cliente = ClienteHttp.cliente().build();
+        HttpRequest peticion = ClienteHttp.peticion(url).build();
         Path absoluto = pdf.toAbsolutePath();
         Files.createDirectories(absoluto.getParent());
         Path temporal = Files.createTempFile(absoluto.getParent(), "catalogo", ".part");
         try {
             HttpResponse<Path> r = cliente.send(peticion, HttpResponse.BodyHandlers.ofFile(temporal));
+            if (r.statusCode() == 401 || r.statusCode() == 403) {
+                throw new IOException("ADIF ha rechazado la descarga (HTTP " + r.statusCode() + ").");
+            }
             if (r.statusCode() != 200) throw new IOException("HTTP " + r.statusCode() + " al descargar " + url);
             try (InputStream in = Files.newInputStream(temporal)) {
                 byte[] cabecera = in.readNBytes(5);
                 if (!new String(cabecera).startsWith("%PDF")) {
-                    throw new IOException("La URL no ha devuelto un PDF: " + url);
+                    throw new IOException("La URL no ha devuelto un PDF.");
                 }
             }
             Files.move(temporal, absoluto, StandardCopyOption.REPLACE_EXISTING);
@@ -297,6 +300,15 @@ public final class App {
         } finally {
             Files.deleteIfExists(temporal);
         }
+    }
+
+    /**
+     * Si la red o ADIF no dejan descargar desde Java, el navegador sí suele poder. La interfaz
+     * muestra estos mismos pasos a partir de {@link Info#url()} y {@link Info#pdf()}.
+     */
+    String descargaManual() {
+        return "Descarga el PDF con el navegador desde " + url + " y guárdalo como "
+                + pdf.toAbsolutePath() + "; después vuelve a arrancar.";
     }
 
     /** Muestra lo que se extrae del PDF para poder ajustar {@link CatalogoPdf} al formato real. */

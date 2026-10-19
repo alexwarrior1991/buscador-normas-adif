@@ -31,6 +31,22 @@ Si la descarga falla, se conserva el PDF anterior.
 
 Opciones: `--pdf ruta.pdf` (usar un PDF ya descargado), `--url ...`, `--puerto 8080`.
 
+### Si la descarga del catálogo da HTTP 403
+
+En algunas redes (sobre todo de empresa) el navegador descarga el catálogo pero Java recibe un
+`HTTP 403`. La aplicación ya usa el proxy configurado en el sistema (en Windows, el mismo que el
+navegador) y cabeceras de navegador. Si aun así la red o ADIF rechazan la descarga:
+
+1. Descarga el PDF con el navegador desde
+   <https://www.adif.es/documents/20124/3371563/CatalogoNormativaTecnica.pdf/>.
+2. Guárdalo como `datos\CatalogoNormativaTecnica.pdf` dentro de la carpeta desde la que lanzas
+   `java -jar` (el mensaje de error y la interfaz muestran la ruta exacta), o arranca con
+   `--pdf ruta\al\catalogo.pdf`.
+3. Vuelve a arrancar. Si el PDF ya existe, no se intenta descargar.
+
+Para forzar un proxy concreto:
+`java -Dhttps.proxyHost=proxy.miempresa.es -Dhttps.proxyPort=8080 -jar normas-adif.jar`.
+
 ### En la interfaz
 
 - Se busca mientras se escribe, por **código** (`nap 0-1` encuentra `NAP 0-1-0.0`; `nas 117`
@@ -116,6 +132,7 @@ src/main/java/buscanormas/
   Indice.java       índice Lucene en memoria y consultas
   Norma.java        una ficha del catálogo
   NormativaAdif.java cliente de la web oficial para "Abrir norma"
+  ClienteHttp.java  proxy del sistema y cabeceras comunes de las peticiones a adif.es
 frontend/src/
   App.jsx           buscador y filtros
   Resultados.jsx    lista de normas

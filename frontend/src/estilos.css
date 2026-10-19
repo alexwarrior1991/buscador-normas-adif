@@ -105,7 +105,12 @@ button.enlace {
   border: 1px solid var(--error);
   border-radius: 8px;
   padding: 10px 12px;
+  margin: 12px 0;
 }
+
+.aviso p, .aviso ol { margin: 4px 0; }
+.aviso code { overflow-wrap: anywhere; }
+.aviso a { color: var(--acento); }
 
 .resultados {
   list-style: none;
