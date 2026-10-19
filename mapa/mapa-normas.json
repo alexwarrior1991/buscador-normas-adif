@@ -1,0 +1,4129 @@
+{
+  "generado" : "2026-10-19T13:03:13Z",
+  "normas" : {
+    "ET 03.305.001.4" : [ {
+      "id" : "0b0003ea801f061e",
+      "codigo" : "ET 03.305.001.4_ED1M1M2",
+      "titulo" : "Canaletas prefabricadas de hormigón para cables. (ED1M1M2).",
+      "edicion" : "ED1M1M2",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f1853",
+      "nombre" : "ET03.305.001.4_ED1M1M2.pdf"
+    } ],
+    "ET 03.305.010.5" : [ {
+      "id" : "0b0003ea801f061f",
+      "codigo" : "ET 03.305.010.5",
+      "titulo" : "Pantallas Acústicas. (1ª Edición).",
+      "edicion" : "1ª",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f1665",
+      "nombre" : "ET 03.305.010.5_Pantallas Acusticas.pdf"
+    } ],
+    "NAP 0-1-0.0" : [ {
+      "id" : "0b0003ea801f0d12",
+      "codigo" : "NAP 0-1-0.0",
+      "titulo" : "Nomenclatura de estructuras, túneles y obras de drenaje para proyectos de plataforma.",
+      "edicion" : "1ª",
+      "fecha" : "13/01/2016",
+      "anexo" : "090003ea801f14aa",
+      "nombre" : "NAP 0-1-0.0 Nomenclatura Estructuras y Túneles.pdf"
+    } ],
+    "NAP 1-2-0.1" : [ {
+      "id" : "0b0003ea801f0d36",
+      "codigo" : "NAP 1-2-0.1_ED6M1",
+      "titulo" : "Índice y contenido tipo de los proyectos de plataforma ferroviaria. (ED6M1).",
+      "edicion" : "ED6M1",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f1851",
+      "nombre" : "NAP1201_ED6M1.pdf"
+    } ],
+    "NAP 1-2-0.3" : [ {
+      "id" : "0b0003ea801f0d3c",
+      "codigo" : "NAP 1-2-0.3_2M1",
+      "titulo" : "Climatología, hidrología y drenaje. (2ª Edición +M1).",
+      "edicion" : "2ª+M1",
+      "fecha" : "16/07/2021",
+      "anexo" : "090003ea801f16ad",
+      "nombre" : "NAP 1-2-0.3_2ªedición+M1.pdf"
+    } ],
+    "NAP 1-2-0.4" : [ {
+      "id" : "0b0003ea80380dc7",
+      "codigo" : "NAP 1-2-0.4_ED1",
+      "titulo" : "Diseño, construcción y mantenimiento de pozos de bombeo. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80380dcb",
+      "nombre" : "NAP1204_ED1.pdf"
+    } ],
+    "NAP 1-2-1.0" : [ {
+      "id" : "0b0003ea80210427",
+      "codigo" : "NAP 1-2-1.0_ED2",
+      "titulo" : "Metodología para el diseño del trazado ferroviario. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210626",
+      "nombre" : "NAP1210_ED2.pdf"
+    } ],
+    "NAP 1-2-2.0" : [ {
+      "id" : "0b0003ea801f0d5b",
+      "codigo" : "NAP 1-2-2.0_2",
+      "titulo" : "Cartografía y topografía mediante vuelo fotogramétrico para proyectos de plataforma. (2ª Edición)",
+      "edicion" : "2ª",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f1660",
+      "nombre" : "NAP 1220 Cartografía_2ed.pdf"
+    } ],
+    "NAP 1-2-4.0" : [ {
+      "id" : "0b0003ea801f0d5e",
+      "codigo" : "NAP 1-2-4.0_ED1M1",
+      "titulo" : "Geología, Geotecnia y Estudio de materiales. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "27/06/2023",
+      "anexo" : "090003ea801f1822",
+      "nombre" : "NAP1240_ED1M1.pdf"
+    } ],
+    "NAP 2-0-0.0" : [ {
+      "id" : "0b0003ea801f0d62",
+      "codigo" : "NAP 2-0-0.0",
+      "titulo" : "Índices tipo del anejo de estructuras.",
+      "edicion" : "1ª",
+      "fecha" : "30/06/2017",
+      "anexo" : "090003ea801f14fa",
+      "nombre" : "NAP 2-0-0.0_Índice tipo Anejo estructuras.pdf"
+    } ],
+    "NAP 2-0-0.1" : [ {
+      "id" : "0b0003ea8039f5ff",
+      "codigo" : "NAP 2-0-0.1",
+      "titulo" : "Puentes y viaductos ferroviarios.",
+      "edicion" : "ED3",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039f661",
+      "nombre" : "NAP2001_ED3.pdf"
+    } ],
+    "NAP 2-0-0.4" : [ {
+      "id" : "0b0003ea8039f58b",
+      "codigo" : "NAP 2-0-0.4",
+      "titulo" : "Pasos superiores.",
+      "edicion" : "ED3M1M2",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039f660",
+      "nombre" : "NAP2004_ED3M1M2.pdf"
+    } ],
+    "NAP 2-0-0.5" : [ {
+      "id" : "0b0003ea801f0d84",
+      "codigo" : "NAP 2-0-0.5_ED1M1",
+      "titulo" : "Pasos inferiores. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f185a",
+      "nombre" : "NAP2005_ED1M1.pdf"
+    } ],
+    "NAP 2-0-1.4" : [ {
+      "id" : "0b0003ea8034d896",
+      "codigo" : "NAP 2-0-1.4_ED1M1",
+      "titulo" : "Metodología para la evaluación del riesgo de colapso de estructuras por impactos de vehículos ferroviarios descarrilados. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d89b",
+      "nombre" : "NAP2014_ED1M1.pdf"
+    } ],
+    "NAP 2-1-1.2" : [ {
+      "id" : "0b0003ea801f0d89",
+      "codigo" : "NAP 2-1-1.2_3",
+      "titulo" : "Estructuras metálicas. Protección mediante sistemas de pintura.(3ª edición)",
+      "edicion" : "3ª",
+      "fecha" : "16/07/2021",
+      "anexo" : "090003ea801f16dd",
+      "nombre" : "NAP 2-1-1.2_Proteccion mediante sistemas de pintura.pdf"
+    } ],
+    "NAP 2-3-0.0" : [ {
+      "id" : "0b0003ea8034da28",
+      "codigo" : "NAP 2-3-0.0_ED2M1M2",
+      "titulo" : "Obras complementarias de la plataforma. 2ª Edición+M1+M2.",
+      "edicion" : "ED2M1M2",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034da9a",
+      "nombre" : "NAP2300_ED2M1M2.pdf"
+    } ],
+    "NAP 2-3-1.0" : [ {
+      "id" : "0b0003ea8034d9fb",
+      "codigo" : "NAP 2-3-1.0_ED3",
+      "titulo" : "Túneles. 3ª Edición.",
+      "edicion" : "ED3",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d8a1",
+      "nombre" : "NAP2310_ED3.pdf"
+    } ],
+    "NAP 2-4-0.0" : [ {
+      "id" : "0b0003ea80381312",
+      "codigo" : "NAP 2-4-0.0_ED1E1M1",
+      "titulo" : "Inspección Básica de Puentes de Ferrocarril. 1ª Edición+Erratum 1+M1.",
+      "edicion" : "ED1E1M1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381362",
+      "nombre" : "NAP2400_ED1E1M1.pdf"
+    } ],
+    "NAP 2-4-0.1" : [ {
+      "id" : "0b0003ea801f0db1",
+      "codigo" : "NAP 2-4-0.1",
+      "titulo" : "Inspección básica de túneles de ferrocarril.",
+      "edicion" : "1ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f161d",
+      "nombre" : "NAP 2-4-0.1 Inspección Básica de Túneles.pdf"
+    } ],
+    "NAP 2-4-0.2" : [ {
+      "id" : "0b0003ea801f0db2",
+      "codigo" : "NAP 2-4-0.2",
+      "titulo" : "Inspección básica de obras de tierra de ferrocarril. (1ª Edición).",
+      "edicion" : "1ª",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f1662",
+      "nombre" : "NAP 2402_IB Obras de tierra.pdf"
+    } ],
+    "NAP 2-4-1.0" : [ {
+      "id" : "0b0003ea8038135b",
+      "codigo" : "NAP 2-4-1.0_ED4",
+      "titulo" : "Inspección principal de puentes de ferrocarril. 4ª Edición.",
+      "edicion" : "ED4",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80383e74",
+      "nombre" : "NAP2410_ED4_PARTE1.pdf"
+    } ],
+    "NAP 2-4-1.1" : [ {
+      "id" : "0b0003ea801f0dc0",
+      "codigo" : "NAP 2-4-1.1",
+      "titulo" : "Inspección Principal de túneles de ferrocarril. 1ª edición",
+      "edicion" : "1ª",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f168e",
+      "nombre" : "NAP 2-4-1.1_IP Túneles.pdf"
+    } ],
+    "NAP 2-4-1.2" : [ {
+      "id" : "0b0003ea801f0dc1",
+      "codigo" : "NAP 2-4-1.2",
+      "titulo" : "Inspección Principal de obras de tierra de ferrocarril. (1ª Edición).",
+      "edicion" : "1ª",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f168f",
+      "nombre" : "NAP 2-4-1.2_IP ObrasTierra.pdf"
+    } ],
+    "NAP 2-4-1.4" : [ {
+      "id" : "0b0003ea803813b0",
+      "codigo" : "NAP 2-4-1.4_ED2",
+      "titulo" : "Inspección Principal de pasos superiores sobre el ferrocarril. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381363",
+      "nombre" : "NAP2414_ED2.pdf"
+    } ],
+    "NAP 2-4-2.0" : [ {
+      "id" : "0b0003ea801f0dc4",
+      "codigo" : "NAP 2-4-2.0",
+      "titulo" : "Pruebas de carga ferroviarias en puentes de ferrocarril. 1ª Edición.",
+      "edicion" : "1ª",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801ff741",
+      "nombre" : "NAP2420_ED1.pdf"
+    } ],
+    "NAP 2-4-2.1" : [ {
+      "id" : "0b0003ea8034d8f8",
+      "codigo" : "NAP 2-4-2.1_ED1M1",
+      "titulo" : "Inspección especial para la caracterización dinámica de puentes ferroviarios. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d89e",
+      "nombre" : "NAP2421_ED1M1.pdf"
+    } ],
+    "NAP 2-4-2.2" : [ {
+      "id" : "0b0003ea801f0dc6",
+      "codigo" : "NAP 2-4-2.2_ED1",
+      "titulo" : "Estudio técnico de viabilidad estructural para transportes excepcionales. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18cf",
+      "nombre" : "NAP2422_ED1.pdf"
+    } ],
+    "NAP 2-4-2.3" : [ {
+      "id" : "0b0003ea80210439",
+      "codigo" : "NAP 2-4-2.3_ED1",
+      "titulo" : "Estudio de compatibilidad estática y dinámica tren - Obras de paso ferroviarias. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210625",
+      "nombre" : "NAP2423_ED1.pdf"
+    } ],
+    "NAP 3-0-0.0" : [ {
+      "id" : "0b0003ea801f0dd7",
+      "codigo" : "NAP 3-0-0.0_2M1",
+      "titulo" : "Instalaciones ferroviarias de la plataforma. 2ª Edición+M1",
+      "edicion" : "2ª+M1",
+      "fecha" : "26/11/2019",
+      "anexo" : "090003ea801f1616",
+      "nombre" : "NAP 3-0-0.0 Instalaciones ferroviarias+M1.pdf"
+    } ],
+    "NAP 6-2-5.1" : [ {
+      "id" : "0b0003ea801f0dd9",
+      "codigo" : "NAP 6-2-5.1_ED1M1",
+      "titulo" : "Apeos de vía. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f1852",
+      "nombre" : "NAP6251_ED1M1.pdf"
+    } ],
+    "N.F.I. AN DENES 001" : [ {
+      "id" : "0b0003ea801f10d0",
+      "codigo" : "N.F.I. ANDENES 001",
+      "titulo" : "ANDENES",
+      "edicion" : "1",
+      "fecha" : "01/11/1999",
+      "anexo" : "090003ea801f14a1",
+      "nombre" : "1999-2 NFI ANDENES 001.pdf"
+    } ],
+    "ET 03.360.004.0" : [ {
+      "id" : "0b0003ea801f07af",
+      "codigo" : "ET 03.360.004.0_ED1M1",
+      "titulo" : "Balasto. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f1860",
+      "nombre" : "ET03.360.004.0_ED1M1.pdf"
+    } ],
+    "ET 03.360.106.3" : [ {
+      "id" : "0b0003ea801f07c0",
+      "codigo" : "ET 03.360.106.3_ED2",
+      "titulo" : "Cupones mixtos. (ED2).",
+      "edicion" : "ED2",
+      "fecha" : "27/06/2023",
+      "anexo" : "090003ea801f181f",
+      "nombre" : "ET03.360.106.3_ED2.pdf"
+    } ],
+    "ET 03.360.109.7" : [ {
+      "id" : "0b0003ea801f07c3",
+      "codigo" : "ET 03.360.109.7",
+      "titulo" : "Juntas aislantes encoladas fabricadas en taller",
+      "edicion" : "1ª",
+      "fecha" : "01/02/1995",
+      "anexo" : "090003ea801f1363",
+      "nombre" : "ET 03.360.109.7.pdf"
+    } ],
+    "ET 03.360.114.7" : [ {
+      "id" : "0b0003ea8034da8e",
+      "codigo" : "ET 03.360.114.7_ED1M1",
+      "titulo" : "Tornillería de vía. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d8a4",
+      "nombre" : "ET03.360.114.7_ED1M1.pdf"
+    } ],
+    "ET 03.360.119.6" : [ {
+      "id" : "0b0003ea801f07d5",
+      "codigo" : "ET 03.360.119.6_ED2",
+      "titulo" : "Juntas aislantes encoladas fabricadas \"in situ\". 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18d0",
+      "nombre" : "ET03.360.119.6_ED2.pdf"
+    } ],
+    "ET 03.360.155.0" : [ {
+      "id" : "0b0003ea8021085b",
+      "codigo" : "ET 03.360.155.0_ED3",
+      "titulo" : "Soldadura aluminotérmica de carriles. 3ª Edición.",
+      "edicion" : "ED3",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210831",
+      "nombre" : "ET03.360.155.0_ED3.pdf"
+    } ],
+    "ET 03.360.156.8" : [ {
+      "id" : "0b0003ea801f07e3",
+      "codigo" : "ET 03.360.156.8_1M1",
+      "titulo" : "Soldadura eléctrica de carril con equipo móvil. (1ª ed.+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f1668",
+      "nombre" : "ET 03.360.156.8+M1 Soldadura eléctrica equipo móvil.pdf"
+    } ],
+    "ET 03.360.160.0" : [ {
+      "id" : "0b0003ea801f07e4",
+      "codigo" : "ET 03.360.160.0",
+      "titulo" : "Carril de acero inoxidable para soldadura de corazones de acero moldeado al manganeso",
+      "edicion" : "1ª",
+      "fecha" : "01/11/2004",
+      "anexo" : "090003ea801f1291",
+      "nombre" : "ET 03.360.160.0.pdf"
+    } ],
+    "ET 03.360.161.8" : [ {
+      "id" : "0b0003ea801f07e8",
+      "codigo" : "ET 03.360.161.8_ED3",
+      "titulo" : "Carril. (ED3).",
+      "edicion" : "ED3",
+      "fecha" : "27/06/2023",
+      "anexo" : "090003ea801f1839",
+      "nombre" : "ET03.360.161.8_ED3.pdf"
+    } ],
+    "ET 03.328.102.3" : [ {
+      "id" : "0b0003ea801f0681",
+      "codigo" : "ET 03.328.102.3",
+      "titulo" : "Grasas para la lubricación de carril y aparatos de vía. (1ª Edición)",
+      "edicion" : "1ª",
+      "fecha" : "16/07/2021",
+      "anexo" : "090003ea801f16b1",
+      "nombre" : "ET 03.328.102.3 Grasas.pdf"
+    } ],
+    "ET 03.360.540.3" : [ {
+      "id" : "0b0003ea801f07fa",
+      "codigo" : "ET 03.360.540.3_ED3",
+      "titulo" : "Traviesas de madera. 3ª Edición.",
+      "edicion" : "ED3",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18d2",
+      "nombre" : "ET03.360.540.3_ED3.pdf"
+    } ],
+    "ET 03.360.566.8" : [ {
+      "id" : "0b0003ea801f080d",
+      "codigo" : "ET 03.360.566.8_1M1",
+      "titulo" : "Clips. (1ª ed.+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f166a",
+      "nombre" : "ET 03.360.566.8+M1 Clips.pdf"
+    } ],
+    "ET 03.360.571.8" : [ {
+      "id" : "0b0003ea801f0821",
+      "codigo" : "ET 03.360.571.8_ED7M1",
+      "titulo" : "Traviesas monobloque de hormigón pretensado. 7ª Edición+M1.",
+      "edicion" : "ED7M1",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f185f",
+      "nombre" : "ET 03.360.571.8_ED7M1.pdf"
+    } ],
+    "ET 03.360.572.6" : [ {
+      "id" : "0b0003ea801f0824",
+      "codigo" : "ET 03.360.572.6_ED1M1M2",
+      "titulo" : "Placas de asiento y placas intermedias elásticas. 1ª Edición+M1+M2",
+      "edicion" : "ED1M1M2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18d9",
+      "nombre" : "ET03.360.572.6_ED1M1M2.pdf"
+    } ],
+    "ET 03.360.574.2" : [ {
+      "id" : "0b0003ea801f0826",
+      "codigo" : "ET 03.360.574.2",
+      "titulo" : "Suelas bajo traviesa para alta velocidad",
+      "edicion" : "1ª",
+      "fecha" : "01/05/2010",
+      "anexo" : "090003ea801f1381",
+      "nombre" : "ET 03.360.574.2.pdf"
+    } ],
+    "ET 03.360.578.3" : [ {
+      "id" : "0b0003ea801f0833",
+      "codigo" : "ET 03.360.578.3",
+      "titulo" : "Placas acodadas ligeras de sujeción",
+      "edicion" : "1ª",
+      "fecha" : "01/05/1998",
+      "anexo" : "090003ea801f1366",
+      "nombre" : "ET 03.360.578.3.pdf"
+    } ],
+    "ET 03.360.900.9" : [ {
+      "id" : "0b0003ea801f0839",
+      "codigo" : "ET 03.360.900.9_1M1",
+      "titulo" : "Señales fijas no luminosas.(1ª ed.+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f166c",
+      "nombre" : "ET 03.360.900.9+M1 Señales fijas no luminosas.pdf"
+    } ],
+    "ET 03.361.106.2" : [ {
+      "id" : "0b0003ea801f0849",
+      "codigo" : "ET 03.361.106.2_1M1",
+      "titulo" : "Contracarriles. (1ª ed.+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f166d",
+      "nombre" : "ET 03.361.106.2+M1 Contracarriles.pdf"
+    } ],
+    "ET 03.361.120.3" : [ {
+      "id" : "0b0003ea801f084b",
+      "codigo" : "ET 03.361.120.3",
+      "titulo" : "Desvíos sencillos completos. Tipos B, C, V, P",
+      "edicion" : "1ª",
+      "fecha" : "01/12/1998",
+      "anexo" : "090003ea801f1294",
+      "nombre" : "ET 03.361.120.3.pdf"
+    } ],
+    "ET 03.361.130.2" : [ {
+      "id" : "0b0003ea801f084c",
+      "codigo" : "ET 03.361.130.2",
+      "titulo" : "Semicambios para desvíos tipos B, C, V, P",
+      "edicion" : "1ª",
+      "fecha" : "01/04/1998",
+      "anexo" : "090003ea801f1295",
+      "nombre" : "ET 03.361.130.2.pdf"
+    } ],
+    "ET 03.361.141.9" : [ {
+      "id" : "0b0003ea801f0850",
+      "codigo" : "ET 03.361.141.9_ED2",
+      "titulo" : "Corazones de punta fija de acero moldeado al manganeso. (ED2).",
+      "edicion" : "ED2",
+      "fecha" : "30/01/2023",
+      "anexo" : "090003ea801f17df",
+      "nombre" : "ET03.361.141.9_ED2.pdf"
+    } ],
+    "ET 03.361.700.2" : [ {
+      "id" : "0b0003ea801f085b",
+      "codigo" : "ET 03.361.700.2",
+      "titulo" : "Sistemas de protección de accionamientos en traviesas cajón de aparatos de vía",
+      "edicion" : "1ª",
+      "fecha" : "01/04/2010",
+      "anexo" : "090003ea801f1382",
+      "nombre" : "ET 03.361.700.2.pdf"
+    } ],
+    "NAV 0-2-2.1" : [ {
+      "id" : "0b0003ea801f0e9f",
+      "codigo" : "NAV 0-2-2.1",
+      "titulo" : "Geometría de la vía.-Trazado de la vía en puntos singulares",
+      "edicion" : "1ª",
+      "fecha" : "01/01/2003",
+      "anexo" : "090003ea801f12e1",
+      "nombre" : "NAV 0221.pdf"
+    } ],
+    "NAV 3-0-3.1" : [ {
+      "id" : "0b0003ea801f0edc",
+      "codigo" : "NAV 3-0-3.1",
+      "titulo" : "Carriles.- Reparación de la superficie de rodadura por recargue al arco eléctrico",
+      "edicion" : "2ª",
+      "fecha" : "05/07/1994",
+      "anexo" : "090003ea801f12f4",
+      "nombre" : "NAV 3031.pdf"
+    } ],
+    "NAV 3-0-5.1" : [ {
+      "id" : "0b0003ea80210450",
+      "codigo" : "NAV 3-0-5.1_ED2M1",
+      "titulo" : "Auscultación mediante ultrasonidos. 2ª Edición+M1.",
+      "edicion" : "ED2M1",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210830",
+      "nombre" : "NAV3051_ED2M1.pdf"
+    } ],
+    "NAV 3-0-5.2" : [ {
+      "id" : "0b0003ea801f0eed",
+      "codigo" : "NAV 3-0-5.2_ED1M1",
+      "titulo" : "Parámetros de geometría de vía. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "27/06/2023",
+      "anexo" : "090003ea801f183f",
+      "nombre" : "NAV 3052_ED1M1.pdf"
+    } ],
+    "NAV 3-0-7.0" : [ {
+      "id" : "0b0003ea801f0ef0",
+      "codigo" : "NAV 3-0-7.0_ED1",
+      "titulo" : "Requisitos para la ejecución de taladros en carril. (ED1).",
+      "edicion" : "ED1",
+      "fecha" : "30/01/2023",
+      "anexo" : "090003ea801f17dc",
+      "nombre" : "NAV3070_ED1.pdf"
+    } ],
+    "NAV 3-0-8.0" : [ {
+      "id" : "0b0003ea80380deb",
+      "codigo" : "NAV 3-0-8.0_ED1",
+      "titulo" : "Habilitación de soldadores y montadores de juntas. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80380dcc",
+      "nombre" : "NAV3080_ED1.pdf"
+    } ],
+    "NAV 3-2-2.1" : [ {
+      "id" : "0b0003ea801f0f13",
+      "codigo" : "NAV 3-2-2.1",
+      "titulo" : "Sujeciones de carriles.- Sujeción elástica SKL-12",
+      "edicion" : "1ª",
+      "fecha" : "01/08/1992",
+      "anexo" : "090003ea801f1304",
+      "nombre" : "NAV 3221.pdf"
+    } ],
+    "NAV 3-2-5.0" : [ {
+      "id" : "0b0003ea801f0f16",
+      "codigo" : "NAV 3-2-5.0",
+      "titulo" : "Sujeciones de carriles. Sujeciones deslizantes sobre traviesa de madera",
+      "edicion" : "1ª",
+      "fecha" : "01/08/1993",
+      "anexo" : "090003ea801f1307",
+      "nombre" : "NAV 3250.pdf"
+    } ],
+    "NAV 3-3-2.1" : [ {
+      "id" : "0b0003ea802105f6",
+      "codigo" : "NAV 3-3-2.1_ED4",
+      "titulo" : "Soldadura aluminotérmica de carriles. Ejecución y recepción de soldaduras. 4ª Edición.",
+      "edicion" : "ED4",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210623",
+      "nombre" : "NAV3321_ED4.pdf"
+    } ],
+    "NAV 3-3-2.6" : [ {
+      "id" : "0b0003ea801f0f2d",
+      "codigo" : "NAV 3-3-2.6",
+      "titulo" : "Soldadura eléctrica y neutralización de tensiones en carril. 1ª Edición.",
+      "edicion" : "1ª",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f1692",
+      "nombre" : "NAV 3-3-2.6_SoldaduraElectrica.pdf"
+    } ],
+    "NAV 3-3-5.0" : [ {
+      "id" : "0b0003ea801f0f30",
+      "codigo" : "NAV 3-3-5.0",
+      "titulo" : "Aparatos de dilatación.- Tipos y criterios generales de aplicación",
+      "edicion" : "1ª",
+      "fecha" : "01/08/1993",
+      "anexo" : "090003ea801f130c",
+      "nombre" : "NAV 3350.pdf"
+    } ],
+    "NAV 3-3-5.3" : [ {
+      "id" : "0b0003ea801f0f3c",
+      "codigo" : "NAV 3-3-5.3",
+      "titulo" : "Aparatos de dilatación tipo A en puentes metálicos sin balasto con carril UIC 54",
+      "edicion" : "1ª",
+      "fecha" : "01/08/1993",
+      "anexo" : "090003ea801f130e",
+      "nombre" : "NAV 3353.pdf"
+    } ],
+    "NAV 3-4-3.0" : [ {
+      "id" : "0b0003ea8034d841",
+      "codigo" : "NAV 3-4-3.0_ED2",
+      "titulo" : "Montaje de vía en balasto para obra nueva. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d773",
+      "nombre" : "NAV3430_ED2.pdf"
+    } ],
+    "NAV 3-5-0.1" : [ {
+      "id" : "0b0003ea801f0f53",
+      "codigo" : "NAV 3-5-0.1",
+      "titulo" : "Superestructura de la vía en puentes.- Encarriladora con carril UIC 54 en puentes metálicos sin balasto",
+      "edicion" : "2ª",
+      "fecha" : "01/04/1997",
+      "anexo" : "090003ea801f1316",
+      "nombre" : "NAV 3501.pdf"
+    } ],
+    "NAV 3-5-1.0" : [ {
+      "id" : "0b0003ea801f0f54",
+      "codigo" : "NAV 3-5-1.0",
+      "titulo" : "Superestructura de la vía en puentes.- La vía en puentes metálicos sin balasto de longitud menor o igual a 100 metros. Carril UIC 54 sin A.D.",
+      "edicion" : "2ª",
+      "fecha" : "01/04/1997",
+      "anexo" : "090003ea801f1317",
+      "nombre" : "NAV 3510.pdf"
+    } ],
+    "NAV 3-5-1.1" : [ {
+      "id" : "0b0003ea801f0f55",
+      "codigo" : "NAV 3-5-1.1",
+      "titulo" : "Superestructura de la vía en puentes.- La vía en puentes metálicos sin balasto de longitud mayor de 100 metros",
+      "edicion" : "2ª",
+      "fecha" : "01/04/1997",
+      "anexo" : "090003ea801f1318",
+      "nombre" : "NAV 3511.pdf"
+    } ],
+    "NAV 3-6-0.0" : [ {
+      "id" : "0b0003ea801f0f56",
+      "codigo" : "NAV 3-6-0.0",
+      "titulo" : "Desvíos.- Descripción general",
+      "edicion" : "1ª",
+      "fecha" : "01/06/1991",
+      "anexo" : "090003ea801f1319",
+      "nombre" : "NAV 3600.pdf"
+    } ],
+    "NAV 3-6-0.1" : [ {
+      "id" : "0b0003ea801f0f57",
+      "codigo" : "NAV 3-6-0.1",
+      "titulo" : "Desvíos.- Características de los tipos y modelos",
+      "edicion" : "1ª",
+      "fecha" : "15/07/1992",
+      "anexo" : "090003ea801f131a",
+      "nombre" : "NAV 3601.pdf"
+    } ],
+    "NAV 3-6-0.9" : [ {
+      "id" : "0b0003ea801f0f64",
+      "codigo" : "NAV 3-6-0.9_ED1M1",
+      "titulo" : "Designación de aparatos de vía. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18e1",
+      "nombre" : "NAV3609_ED1M1.pdf"
+    } ],
+    "NAV 3-6-4.8" : [ {
+      "id" : "0b0003ea801f0f67",
+      "codigo" : "NAV 3-6-4.8_ED2",
+      "titulo" : "Marcaje y envío a obra de desvíos. (ED2).",
+      "edicion" : "ED2",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f185e",
+      "nombre" : "NAV3648_ED2.pdf"
+    } ],
+    "NAV 3-6-6.2" : [ {
+      "id" : "0b0003ea801f0f69",
+      "codigo" : "NAV 3-6-6.2_2",
+      "titulo" : "Engrase de aparatos de vía. (2ª Edición)",
+      "edicion" : "2ª",
+      "fecha" : "16/07/2021",
+      "anexo" : "090003ea801f16b3",
+      "nombre" : "NAV 3662_Engrase aparatos vía.pdf"
+    } ],
+    "NAV 3-6-7.1" : [ {
+      "id" : "0b0003ea801f0f6a",
+      "codigo" : "NAV 3-6-7.1",
+      "titulo" : "Desvíos.- Reparación de corazones por recargue al arco eléctrico",
+      "edicion" : "2ª",
+      "fecha" : "20/12/1994",
+      "anexo" : "090003ea801f131e",
+      "nombre" : "NAV 3671.pdf"
+    } ],
+    "NAV 3-7-0.0" : [ {
+      "id" : "0b0003ea801f0f6b",
+      "codigo" : "NAV 3-7-0.0",
+      "titulo" : "Travesías. Descripción general.",
+      "edicion" : "2ª",
+      "fecha" : "01/10/1992",
+      "anexo" : "090003ea801f14b5",
+      "nombre" : "NAV 3-7-0.0 Travesías.pdf"
+    } ],
+    "NAV 3-8-1.0" : [ {
+      "id" : "0b0003ea801f0f6c",
+      "codigo" : "NAV 3-8-1.0",
+      "titulo" : "Aparatos de vía combinados.- Escapes",
+      "edicion" : "1ª",
+      "fecha" : "01/02/1993",
+      "anexo" : "090003ea801f131f",
+      "nombre" : "NAV 3810.pdf"
+    } ],
+    "NAV 3-8-2.0" : [ {
+      "id" : "0b0003ea801f0f77",
+      "codigo" : "NAV 3-8-2.0",
+      "titulo" : "Aparatos de vía combinados.- Haces de vías",
+      "edicion" : "1ª",
+      "fecha" : "01/05/1992",
+      "anexo" : "090003ea801f1320",
+      "nombre" : "NAV 3820.pdf"
+    } ],
+    "NAV 5-2-0.1" : [ {
+      "id" : "0b0003ea801f0f8d",
+      "codigo" : "NAV 5-2-0.1_1M1",
+      "titulo" : "Norma para la operación de trenes y trabajos en fase de construcción. (1ª ed.+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "30/06/2017",
+      "anexo" : "090003ea801f165a",
+      "nombre" : "NAV 5-2-0.1+M1_Operacion de trenes.pdf"
+    } ],
+    "NAV 7-1-0.7" : [ {
+      "id" : "0b0003ea801f0fa6",
+      "codigo" : "NAV 7-1-0.7",
+      "titulo" : "Diseño y montaje de vía sin balasto para obra nueva. 1ª Edición.",
+      "edicion" : "1ª",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f1693",
+      "nombre" : "NAV 7-1-0.7_Vía sin balasto_1Ed.pdf"
+    } ],
+    "NAV 7-1-3.3" : [ {
+      "id" : "0b0003ea801f0fb3",
+      "codigo" : "NAV 7-1-3.3_ED1",
+      "titulo" : "Montaje de aparatos de dilatación en vía hormigonada para obra nueva. (ED1).",
+      "edicion" : "ED1",
+      "fecha" : "30/01/2023",
+      "anexo" : "090003ea801f17dd",
+      "nombre" : "NAV7133_ED1.pdf"
+    } ],
+    "NAV 7-1-3.4" : [ {
+      "id" : "0b0003ea801f0fb7",
+      "codigo" : "NAV 7-1-3.4_ED1M1M2M3",
+      "titulo" : "Montaje de aparatos de vía sobre balasto. (ED1M1M2M3).",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "27/06/2023",
+      "anexo" : "090003ea801f1840",
+      "nombre" : "NAV7134_ED1M1M2M3.pdf"
+    } ],
+    "NAV 7-1-3.5" : [ {
+      "id" : "0b0003ea801f0fb8",
+      "codigo" : "NAV 7-1-3.5",
+      "titulo" : "Montaje de aparatos de dilatación sobre balasto para viaductos de hormigón.",
+      "edicion" : "1ª",
+      "fecha" : "23/01/2019",
+      "anexo" : "090003ea801f15d6",
+      "nombre" : "NAV 7-1-3.5 Montaje aparatos dilatación.pdf"
+    } ],
+    "NAV 7-1-3.6" : [ {
+      "id" : "0b0003ea801f0fba",
+      "codigo" : "NAV 7-1-3.6_ED1ER1",
+      "titulo" : "Montaje de aparatos en vía hormigonada para obra nueva. (ED1ER1).",
+      "edicion" : "ED1ER1",
+      "fecha" : "30/01/2023",
+      "anexo" : "090003ea801f1814",
+      "nombre" : "NAV7136_ED1ER1.pdf"
+    } ],
+    "NAV 7-1-3.7" : [ {
+      "id" : "0b0003ea80380e02",
+      "codigo" : "NAV 7-1-3.7_ED2",
+      "titulo" : "Montaje de vía. Consideraciones generales en actuaciones de mantenimiento, renovación y acondicionamiento. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80380dcd",
+      "nombre" : "NAV7137_ED2.pdf"
+    } ],
+    "NAV 7-1-3.9" : [ {
+      "id" : "0b0003ea80380e88",
+      "codigo" : "NAV 7-1-3.9_ED1M1M2",
+      "titulo" : "Reutilización del material ferroviario de vía procedente de desinstalaciones. 1ª Edición+M1+M2.",
+      "edicion" : "ED1M1M2",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80380dce",
+      "nombre" : "NAV7139_ED1M1M2.pdf"
+    } ],
+    "NAV 7-1-4.1" : [ {
+      "id" : "0b0003ea8034d7ff",
+      "codigo" : "NAV 7-1-4.1_ED3M1",
+      "titulo" : "Neutralización y homogeneización de tensiones del carril en la vía sin juntas. 3ª Edición+M1.",
+      "edicion" : "ED3M1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8035250d",
+      "nombre" : "NAV7141_ED3M1.pdf"
+    } ],
+    "NAV 7-1-4.2" : [ {
+      "id" : "0b0003ea8034d837",
+      "codigo" : "NAV 7-1-4.2_ED1",
+      "titulo" : "Actuaciones en superestructura de vía existente. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d772",
+      "nombre" : "NAV7142_ED1.pdf"
+    } ],
+    "NAV 7-1-6.0" : [ {
+      "id" : "0b0003ea80380f02",
+      "codigo" : "NAV 7-1-6.0_ED1M1",
+      "titulo" : "Requisitos de la maquinaria pesada de vía. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381526",
+      "nombre" : "NAV7160_ED1M1.pdf"
+    } ],
+    "NAV 7-3-7.3" : [ {
+      "id" : "0b0003ea801f1009",
+      "codigo" : "NAV 7-3-7.3",
+      "titulo" : "Calificación de la vía.- Recargue de carriles al arco eléctrico",
+      "edicion" : "1ª",
+      "fecha" : "01/06/1994",
+      "anexo" : "090003ea801f1342",
+      "nombre" : "NAV 7373.pdf"
+    } ],
+    "NAV 7-3-7.4" : [ {
+      "id" : "0b0003ea801f100a",
+      "codigo" : "NAV 7-3-7.4",
+      "titulo" : "Calificación de la vía.- Recargue de corazones al arco eléctrico",
+      "edicion" : "1ª",
+      "fecha" : "01/12/1996",
+      "anexo" : "090003ea801f1343",
+      "nombre" : "NAV 7374.pdf"
+    } ],
+    "NAV 7-3-8.2" : [ {
+      "id" : "0b0003ea801f101a",
+      "codigo" : "NAV 7-3-8.2_ED1M1",
+      "titulo" : "Inspección de aparatos de vía. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f1856",
+      "nombre" : "NAV7382_ED1M1.pdf"
+    } ],
+    "NAV 7-5-2.2" : [ {
+      "id" : "0b0003ea801f102d",
+      "codigo" : "NAV 7-5-2.2_ED2",
+      "titulo" : "Perfilado de carril. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18f3",
+      "nombre" : "NAV7522_ED2.pdf"
+    } ],
+    "PAV" : [ {
+      "id" : "0b0003ea802112d4",
+      "codigo" : "PAV 01_01.01.000_ED2M1",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VE. CARACTERÍSTICAS GENERALES Y COMPONENTES. 2ª Edición+M1.",
+      "edicion" : "ED2M1",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80211296",
+      "nombre" : "PAV 01_01.01.000_ED2M1.pdf"
+    }, {
+      "id" : "0b0003ea801f10f6",
+      "codigo" : "PAV 01_01.01.001_ED1M1M2",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VE. SUJECIÓN VE INSTALADA EN TRAVIESA AI. (ED1M1M2).",
+      "edicion" : "ED1M1M2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1867",
+      "nombre" : "PAV 01_01.01.001_ED1M1M2.pdf"
+    }, {
+      "id" : "0b0003ea801f10f9",
+      "codigo" : "PAV 01_01.01.002_ED1M1M2",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VE. SUJECIÓN VE INSTALADA EN TRAVIESA PR. (ED1M1M2).",
+      "edicion" : "ED1M1M2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1868",
+      "nombre" : "PAV 01_01.01.002_ED1M1M2.pdf"
+    }, {
+      "id" : "0b0003ea801f10fc",
+      "codigo" : "PAV 01_01.01.003_ED1M1M2",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VE. SUJECIÓN VE INSTALADA EN TRAVIESA AM. (ED1M1M2).",
+      "edicion" : "ED1M1M2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1869",
+      "nombre" : "PAV 01_01.01.003_ED1M1M2.pdf"
+    }, {
+      "id" : "0b0003ea801f1109",
+      "codigo" : "PAV 01_01.01.004_ED1M1M2",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VE. SUJECIÓN VE INSTALADA EN TRAVIESA MR. (ED1M1M2).",
+      "edicion" : "ED1M1M2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f186a",
+      "nombre" : "PAV 01_01.01.004_ED1M1M2.pdf"
+    }, {
+      "id" : "0b0003ea8034db97",
+      "codigo" : "PAV 01_01.01.005_ED1",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VE. SUJECIÓN VE INSTALADA EN TRAVIESA MM. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034daa0",
+      "nombre" : "PAV 01_01.01.005_ED1.pdf"
+    }, {
+      "id" : "0b0003ea8034db9c",
+      "codigo" : "PAV 01_01.01.006_ED1",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VE. SUJECIÓN VE INSTALADA EN TRAVIESA AE. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034daa1",
+      "nombre" : "PAV 01_01.01.006_ED1.pdf"
+    }, {
+      "id" : "0b0003ea8034dba0",
+      "codigo" : "PAV 01_01.01.007_ED1",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VE. SUJECIÓN VE INSTALADA EN TRAVIESA RP. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034daa2",
+      "nombre" : "PAV 01_01.01.007_ED1.pdf"
+    }, {
+      "id" : "0b0003ea8034dba6",
+      "codigo" : "PAV 01_01.01.008_ED1",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VE. SUJECIÓN VE INSTALADA EN TRAVIESA LM. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034dbaa",
+      "nombre" : "PAV 01_01.01.008_ED1.pdf"
+    }, {
+      "id" : "0b0003ea80211477",
+      "codigo" : "PAV 01_01.02.000_ED2",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VM. CARACTERÍSTICAS GENERALES Y COMPONENTES. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea8021137e",
+      "nombre" : "PAV 01_01.02.000_ED2.pdf"
+    }, {
+      "id" : "0b0003ea8039fa4e",
+      "codigo" : "PAV 01_01.02.001",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VM. SUJECIÓN VM INSTALADA EN TRAVIESA AI.",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039f666",
+      "nombre" : "PAV 01_01.02.001_ED1M1M2M3.pdf"
+    }, {
+      "id" : "0b0003ea801f111d",
+      "codigo" : "PAV 01_01.02.002_ED1M1M2",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VM. SUJECIÓN VM INSTALADA EN TRAVIESA PR. (ED1M1).",
+      "edicion" : "ED1M1M2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f186d",
+      "nombre" : "PAV 01_01.02.002_ED1M1M2.pdf"
+    }, {
+      "id" : "0b0003ea801f1120",
+      "codigo" : "PAV 01_01.02.003_ED1M1M2",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VM. SUJECIÓN VM INSTALADA EN TRAVIESA AM. (ED1M1M2).",
+      "edicion" : "ED1M1M2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f186e",
+      "nombre" : "PAV 01_01.02.003_ED1M1M2.pdf"
+    }, {
+      "id" : "0b0003ea8034dcf0",
+      "codigo" : "PAV 01_01.03.000_ED2",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VO. CARACTERÍSTICAS GENERALES Y COMPONENTES. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034dbb1",
+      "nombre" : "PAV 01_01.03.000_ED2.pdf"
+    }, {
+      "id" : "0b0003ea801f1131",
+      "codigo" : "PAV 01_01.03.002_ED1M1M2",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VO. SUJECIÓN VO INSTALADA EN TRAVIESA PR. (ED1M1M2).",
+      "edicion" : "ED1M1M2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1870",
+      "nombre" : "PAV 01_01.03.002_ED1M1M2.pdf"
+    }, {
+      "id" : "0b0003ea80211544",
+      "codigo" : "PAV 01_01.04.000_ED1M1M2",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VA. CARACTERÍSTICAS GENERALES Y COMPONENTES. 1ª Edición+M1+M2.",
+      "edicion" : "ED1M1M2",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea8021137f",
+      "nombre" : "PAV 01_01.04.000_ED1M1M2.pdf"
+    }, {
+      "id" : "0b0003ea801f1135",
+      "codigo" : "PAV 01_01.04.001_ED1M1",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VA. SUJECIÓN VA INSTALADA EN TRAVIESA AI. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1872",
+      "nombre" : "PAV 01_01.04.001_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea801f1137",
+      "codigo" : "PAV 01_01.04.002_ED1M1",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VA. SUJECIÓN VA INSTALADA EN TRAVIESA PR. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1873",
+      "nombre" : "PAV 01_01.04.002_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea801f1143",
+      "codigo" : "PAV 01_01.04.004_ED1M1",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN VA. SUJECIÓN VA INSTALADA EN TRAVIESA MR. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1874",
+      "nombre" : "PAV 01_01.04.004_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea80211654",
+      "codigo" : "PAV 01_01.05.000_ED2",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN S4. CARACTERÍSTICAS GENERALES Y COMPONENTES. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80211380",
+      "nombre" : "PAV 01_01.05.000_ED2.pdf"
+    }, {
+      "id" : "0b0003ea802116fe",
+      "codigo" : "PAV 01_01.06.000_ED1M1M2M3",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE HORMIGÓN. SUJECIÓN SM. CARACTERÍSTICAS GENERALES Y COMPONENTES. 1ª Edición+M1+M2+M3.",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80211381",
+      "nombre" : "PAV 01_01.06.000_ED1M1M2M3.pdf"
+    }, {
+      "id" : "0b0003ea80381529",
+      "codigo" : "PAV 01_01.07.000_ED1",
+      "titulo" : "SUJECIONES PARA TRAVIESA DE MADERA O POLIMÉRICA. SUJECIÓN V-12. CARACTERÍSTICAS GENERALES Y COMPONENTES. 1ª Edición",
+      "edicion" : "ED1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381520",
+      "nombre" : "PAV 01_01.07.000_ED1.pdf"
+    }, {
+      "id" : "0b0003ea801f1157",
+      "codigo" : "PAV 01_02.01.001_ED1M1M2",
+      "titulo" : "CLIPS. CLIP SKL-1. (ED1M1M2).",
+      "edicion" : "ED1M1M2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1829",
+      "nombre" : "PAV 01_02.01.001_ED1M1M2.pdf"
+    }, {
+      "id" : "0b0003ea801f1159",
+      "codigo" : "PAV 01_02.01.002_ED1M1",
+      "titulo" : "CLIPS. CLIP SKL-3. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1721",
+      "nombre" : "PAV 01_02.01.002.pdf"
+    }, {
+      "id" : "0b0003ea801f115b",
+      "codigo" : "PAV 01_02.01.003_ED1M1",
+      "titulo" : "CLIPS. CLIP SKL-12. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1722",
+      "nombre" : "PAV 01_02.01.003.pdf"
+    }, {
+      "id" : "0b0003ea801f115d",
+      "codigo" : "PAV 01_02.01.004_ED1M1",
+      "titulo" : "CLIPS. CLIP SKL-14. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f17e7",
+      "nombre" : "PAV 01_02.01.004_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea8038155a",
+      "codigo" : "PAV 01_02.01.005_ED1M1",
+      "titulo" : "CLIPS. CLIP SKL-15. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381521",
+      "nombre" : "PAV 01_02.01.005_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea801f1160",
+      "codigo" : "PAV 01_03.01.001_ED1M1",
+      "titulo" : "PLACA ACODADA LIGERA DE SUJECIÓN A-2. A2. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1803",
+      "nombre" : "PAV 01_03.01.001.pdf"
+    }, {
+      "id" : "0b0003ea801f116c",
+      "codigo" : "PAV 01_03.01.002_ED1M1",
+      "titulo" : "PLACA ACODADA LIGERA DE SUJECIÓN A-2. A2/I-54. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1723",
+      "nombre" : "PAV 01_03.01.002.pdf"
+    }, {
+      "id" : "0b0003ea801f116e",
+      "codigo" : "PAV 01_03.01.003_ED1M1",
+      "titulo" : "PLACA ACODADA LIGERA DE SUJECIÓN A-2. A2/E-54. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1724",
+      "nombre" : "PAV 01_03.01.003.pdf"
+    }, {
+      "id" : "0b0003ea801f1170",
+      "codigo" : "PAV 01_03.01.004_ED1M1",
+      "titulo" : "PLACA ACODADA LIGERA DE SUJECIÓN A-2. A2/I-60. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1725",
+      "nombre" : "PAV 01_03.01.004.pdf"
+    }, {
+      "id" : "0b0003ea801f1172",
+      "codigo" : "PAV 01_03.01.005_ED1M1",
+      "titulo" : "PLACA ACODADA LIGERA DE SUJECIÓN A-2. A2/E-60. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1726",
+      "nombre" : "PAV 01_03.01.005.pdf"
+    }, {
+      "id" : "0b0003ea803814c0",
+      "codigo" : "PAV 01_03.02.001_ED1",
+      "titulo" : "PLACA ACODADA LIGERA DE SUJECIÓN A-3. A3. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381366",
+      "nombre" : "PAV 01_03.02.001_ED1.pdf"
+    }, {
+      "id" : "0b0003ea803814d9",
+      "codigo" : "PAV 01_03.02.002_ED1",
+      "titulo" : "PLACA ACODADA LIGERA DE SUJECIÓN A-3. A3/I-54. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381367",
+      "nombre" : "PAV 01_03.02.002_ED1.pdf"
+    }, {
+      "id" : "0b0003ea80381511",
+      "codigo" : "PAV 01_03.02.003_ED1",
+      "titulo" : "PLACA ACODADA LIGERA DE SUJECIÓN A-3. A3/E-54. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381368",
+      "nombre" : "PAV 01_03.02.003_ED1.pdf"
+    }, {
+      "id" : "0b0003ea80381517",
+      "codigo" : "PAV 01_03.02.004_ED1",
+      "titulo" : "PLACA ACODADA LIGERA DE SUJECIÓN A-3. A3/I-60. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381369",
+      "nombre" : "PAV 01_03.02.004_ED1.pdf"
+    }, {
+      "id" : "0b0003ea8038151b",
+      "codigo" : "PAV 01_03.02.005_ED1",
+      "titulo" : "PLACA ACODADA LIGERA DE SUJECIÓN A-3. A3/E-60. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea8038151f",
+      "nombre" : "PAV 01_03.02.005_ED1.pdf"
+    }, {
+      "id" : "0b0003ea8038161e",
+      "codigo" : "PAV 01_04.01.001_ED2",
+      "titulo" : "PLACAS ELÁSTICAS DE ASIENTO. PLACA PAE-1. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381522",
+      "nombre" : "PAV 01_04.01.001_ED2.pdf"
+    }, {
+      "id" : "0b0003ea80381754",
+      "codigo" : "PAV 01_04.01.002_ED2",
+      "titulo" : "PLACAS ELÁSTICAS DE ASIENTO. PLACA PAE-2. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381527",
+      "nombre" : "PAV 01_04.01.002_ED2.pdf"
+    }, {
+      "id" : "0b0003ea801f1185",
+      "codigo" : "PAV 01_04.01.003_ED1",
+      "titulo" : "PLACAS ELÁSTICAS DE ASIENTO. PLACA PAE-Z1. (ED1).",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1864",
+      "nombre" : "PAV 01_04.01.003_ED1.pdf"
+    }, {
+      "id" : "0b0003ea801f1186",
+      "codigo" : "PAV 01_04.01.004_ED1",
+      "titulo" : "PLACAS ELÁSTICAS DE ASIENTO. PLACA PAE-Z2. (ED1).",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1865",
+      "nombre" : "PAV 01_04.01.004_ED1.pdf"
+    }, {
+      "id" : "0b0003ea801f1188",
+      "codigo" : "PAV 01_05.01.001_ED1M1",
+      "titulo" : "PLACAS DE ASIENTO NO ELÁSTICAS. PLACA PAS-1. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1877",
+      "nombre" : "PAV 01_05.01.001_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea801f1194",
+      "codigo" : "PAV 01_05.01.002_ED1M1",
+      "titulo" : "PLACAS DE ASIENTO NO ELÁSTICAS. PLACA PAS-2. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1878",
+      "nombre" : "PAV 01_05.01.002_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea801f1196",
+      "codigo" : "PAV 01_05.01.003_ED1M1",
+      "titulo" : "PLACAS DE ASIENTO NO ELÁSTICAS. PLACA PAS PARA SUJECIONES SKL-12 Y KD. (ED1M1).",
+      "edicion" : "1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f175e",
+      "nombre" : "PAV 01_05.01.003_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea8034dcf6",
+      "codigo" : "PAV 01_06.01.001_ED1M1M2M3",
+      "titulo" : "TIRAFONDOS. TIRAFONDO Nº 3. 1ª Edición+M1+M2+M3.",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034dbb2",
+      "nombre" : "PAV 01_06.01.001_ED1M1M2M3.pdf"
+    }, {
+      "id" : "0b0003ea8034dd9d",
+      "codigo" : "PAV 01_06.01.002_ED1M1M2M3",
+      "titulo" : "TIRAFONDOS. TIRAFONDO Nº 5. 1ª Edición+M1+M2+M3.",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034dbb3",
+      "nombre" : "PAV 01_06.01.002_ED1M1M2M3.pdf"
+    }, {
+      "id" : "0b0003ea8034de44",
+      "codigo" : "PAV 01_06.01.003_ED1M1M2M3",
+      "titulo" : "TIRAFONDOS. TIRAFONDO Nº 6. 1ª Edición+M1+M2+M3.",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034de49",
+      "nombre" : "PAV 01_06.01.003_ED1M1M2M3.pdf"
+    }, {
+      "id" : "0b0003ea8034de54",
+      "codigo" : "PAV 01_06.01.004_ED1M1M2M3",
+      "titulo" : "TIRAFONDOS. TIRAFONDO Nº 7. 1ª Edición+M1+M2+M3.",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034de4a",
+      "nombre" : "PAV 01_06.01.004_ED1M1M2M3.pdf"
+    }, {
+      "id" : "0b0003ea8034de5a",
+      "codigo" : "PAV 01_06.01.005_ED1M1M2M3",
+      "titulo" : "TIRAFONDOS. TIRAFONDO Nº 8. (ED1M1M2).",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034de4b",
+      "nombre" : "PAV 01_06.01.005_ED1M1M2M3.pdf"
+    }, {
+      "id" : "0b0003ea8034dfa0",
+      "codigo" : "PAV 01_06.01.006_ED1M1M2M3",
+      "titulo" : "TIRAFONDOS. TIRAFONDO Nº 9 CON ARANDELA PRISIONERA ULS 7. 1ª Edición+M1+M2+M3.",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034dfa6",
+      "nombre" : "PAV 01_06.01.006_ED1M1M2M3.pdf"
+    }, {
+      "id" : "0b0003ea8034dfb3",
+      "codigo" : "PAV 01_06.01.007_ED1M1M2",
+      "titulo" : "TIRAFONDOS. TIRAFONDO AV-1. 1ª Edición+M1+M2.",
+      "edicion" : "ED1M1M2",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034dfa7",
+      "nombre" : "PAV 01_06.01.007_ED1M1M2.pdf"
+    }, {
+      "id" : "0b0003ea801f11bf",
+      "codigo" : "PAV 01_06.01.008_ED1",
+      "titulo" : "TORNILLERÍA DE VÍA. TORNILLO DE GANCHO Hs 32 CON TUERCA. CARACTERÍSTICAS GENERALES Y COMPONENTES. (ED1).",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1824",
+      "nombre" : "PAV 01_06.01.008_ED1.pdf"
+    }, {
+      "id" : "0b0003ea801f11c0",
+      "codigo" : "PAV 01_06.01.009_ED1",
+      "titulo" : "TORNILLERÍA DE VÍA. TORNILLO PARA TRAVIESAS RS. CARACTERÍSTICAS GENERALES Y COMPONENTES. (ED1).",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1825",
+      "nombre" : "PAV 01_06.01.009_ED1.pdf"
+    }, {
+      "id" : "0b0003ea8034e0a8",
+      "codigo" : "PAV 01_06.02.001_ED1M1M2M3",
+      "titulo" : "ARANDELAS. ARANDELAS ULS 6 Y ULS 7. 1ª Edición+M1+M2+M3.",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034dfa8",
+      "nombre" : "PAV 01_06.02.001_ED1M1M2M3.pdf"
+    }, {
+      "id" : "0b0003ea801f11cf",
+      "codigo" : "PAV 01_07.01.001_ED1M1",
+      "titulo" : "TAPONES. TAPÓN DE VAINA PARA SUJECIÓN VE. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1729",
+      "nombre" : "PAV 01_07.01.001.pdf"
+    }, {
+      "id" : "0b0003ea802117df",
+      "codigo" : "PAV 02_01.01.001_ED2",
+      "titulo" : "TRAVIESAS MONOBLOQUE DE HORMIGÓN PRETENSADO. TRAVIESA AI. PLANO GENERAL. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80211382",
+      "nombre" : "PAV 02_01.01.001_ED2.pdf"
+    }, {
+      "id" : "0b0003ea80211820",
+      "codigo" : "PAV 02_01.01.002_ED2",
+      "titulo" : "TRAVIESAS MONOBLOQUE DE HORMIGÓN PRETENSADO. TRAVIESA PR. PLANO GENERAL. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80211383",
+      "nombre" : "PAV 02_01.01.002_ED2.pdf"
+    }, {
+      "id" : "0b0003ea8021187f",
+      "codigo" : "PAV 02_01.01.003_ED1M1M2M3",
+      "titulo" : "TRAVIESA MONOBLOQUE DE HORMIGÓN PRETENSADO. TRAVIESA AM. PLANO GENERAL. 1ª Edición+M1+M2+M3.",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80211384",
+      "nombre" : "PAV 02_01.01.003_ED1M1M2M3.pdf"
+    }, {
+      "id" : "0b0003ea802118cc",
+      "codigo" : "PAV 02_01.01.004_ED2",
+      "titulo" : "TRAVIESAS MONOBLOQUE DE HORMIGÓN PRETENSADO. TRAVIESA MR. PLANO GENERAL. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80211c50",
+      "nombre" : "PAV 02_01.01.004_ED2.pdf"
+    }, {
+      "id" : "0b0003ea80211926",
+      "codigo" : "PAV 02_01.01.005_ED1M1M2M3",
+      "titulo" : "TRAVIESA MONOBLOQUE DE HORMIGÓN PRETENSADO. TRAVIESA MM. PLANO GENERAL. 1ª Edición+M1+M2+M3.",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80211385",
+      "nombre" : "PAV 02_01.01.005_ED1M1M2M3.pdf"
+    }, {
+      "id" : "0b0003ea80211986",
+      "codigo" : "PAV 02_01.01.006_ED2",
+      "titulo" : "TRAVIESA MONOBLOQUE DE HORMIGÓN PRETENSADO. TRAVIESA RP. PLANO GENERAL. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea802119a5",
+      "nombre" : "PAV 02_01.01.006_ED2.pdf"
+    }, {
+      "id" : "0b0003ea8034e15a",
+      "codigo" : "PAV 02_01.01.007_ED1M1",
+      "titulo" : "TRAVIESA MONOBLOQUE DE HORMIGÓN PRETENSADO. TRAVIESA AE. PLANO GENERAL. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034dfa9",
+      "nombre" : "PAV 02_01.01.007_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea8039f680",
+      "codigo" : "PAV 02_01.01.008",
+      "titulo" : "TRAVIESAS MONOBLOQUE DE HORMIGÓN PRETENSADO. TRAVIESA TR. PLANO GENERAL.",
+      "edicion" : "ED1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039f685",
+      "nombre" : "PAV 02_01.01.008_ED1.pdf"
+    }, {
+      "id" : "0b0003ea8039f6a4",
+      "codigo" : "PAV 02_01.01.009",
+      "titulo" : "TRAVIESAS MONOBLOQUE DE HORMIGÓN PRETENSADO. TRAVIESA TM. DISEÑO CON SUELA BAJO TRAVIESA. PLANO GENERAL.",
+      "edicion" : "ED1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039f686",
+      "nombre" : "PAV 02_01.01.009_ED1.pdf"
+    }, {
+      "id" : "0b0003ea802119f2",
+      "codigo" : "PAV 02_01.01.105_ED1M1M2M3",
+      "titulo" : "TRAVIESA MONOBLOQUE DE HORMIGÓN PRETENSADO. TRAVIESA LM. PLANO GENERAL. 1ª Edición+M1+M2+M3.",
+      "edicion" : "ED1M1M2M3",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea802119a6",
+      "nombre" : "PAV 02_01.01.105_ED1M1M2M3.pdf"
+    }, {
+      "id" : "0b0003ea8039fadf",
+      "codigo" : "PAV 02_01.02.001",
+      "titulo" : "TRAVIESAS BIBLOQUE DE HORMIGÓN CON CELOSÍA. TRAVIESA BI. PLANO GENERAL.",
+      "edicion" : "ED2M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea803a097d",
+      "nombre" : "PAV 02_01.02.001_ED2M1.pdf"
+    }, {
+      "id" : "0b0003ea8039fb60",
+      "codigo" : "PAV 02_01.02.002",
+      "titulo" : "TRAVIESAS BIBLOQUE DE HORMIGÓN CON CELOSÍA. TRAVIESA BP. PLANO GENERAL.",
+      "edicion" : "ED2M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fb44",
+      "nombre" : "PAV 02_01.02.002_ED2M1.pdf"
+    }, {
+      "id" : "0b0003ea8039fb8c",
+      "codigo" : "PAV 02_01.02.003",
+      "titulo" : "TRAVIESAS BIBLOQUE DE HORMIGÓN CON CELOSÍA. TRAVIESA BM. PLANO GENERAL.",
+      "edicion" : "ED1M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fb45",
+      "nombre" : "PAV 02_01.02.003_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea8039fbba",
+      "codigo" : "PAV 02_01.02.004",
+      "titulo" : "TRAVIESAS BIBLOQUE DE HORMIGÓN CON CELOSÍA. TRAVIESA BIA. PLANO GENERAL.",
+      "edicion" : "ED1M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fb46",
+      "nombre" : "PAV 02_01.02.004_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea8039fbe9",
+      "codigo" : "PAV 02_01.02.005",
+      "titulo" : "TRAVIESAS BIBLOQUE DE HORMIGÓN CON CELOSÍA. TRAVIESA BPA. PLANO GENERAL.",
+      "edicion" : "ED1M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fb47",
+      "nombre" : "PAV 02_01.02.005_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea8039fc19",
+      "codigo" : "PAV 02_01.02.006",
+      "titulo" : "TRAVIESAS BIBLOQUE DE HORMIGÓN CON CELOSÍA. TRAVIESA BMA. PLANO GENERAL.",
+      "edicion" : "ED1M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fb48",
+      "nombre" : "PAV 02_01.02.006_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea801f121f",
+      "codigo" : "PAV 03_01.01.001_ED1M1M2",
+      "titulo" : "EQUIPO DE SEGURIDAD. JUEGO DE VALLAS DE BALIZAMIENTO. (ED1M1M2).",
+      "edicion" : "ED1M1M2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f17f3",
+      "nombre" : "PAV 03_01.01.001_ED1M1M2.pdf"
+    }, {
+      "id" : "0b0003ea801f1222",
+      "codigo" : "PAV 04_01.01.001_ED1M1",
+      "titulo" : "CARRILES. CARRIL 45E3. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1834",
+      "nombre" : "PAV 04_01.01.001_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea801f1224",
+      "codigo" : "PAV 04_01.02.001_ED1M1",
+      "titulo" : "CARRILES. CARRIL 54E1. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1835",
+      "nombre" : "PAV 04_01.02.001_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea801f1226",
+      "codigo" : "PAV 04_01.03.001_ED1M1",
+      "titulo" : "CARRILES. CARRIL 60E1. (ED1M1).",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f1836",
+      "nombre" : "PAV 04_01.03.001_ED1M1.pdf"
+    }, {
+      "id" : "0b0003ea801f1228",
+      "codigo" : "PAV 05_01.01.001_ED1",
+      "titulo" : "TOPERA FIJA CONVENCIONAL - HORMIGÓN. ANCHO 1668 y 1435. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18d3",
+      "nombre" : "PAV 05_01.01.001_ED1.pdf"
+    }, {
+      "id" : "0b0003ea801f1233",
+      "codigo" : "PAV 05_01.02.001_ED1",
+      "titulo" : "TOPERA FIJA DE ALTAS PRESTACIONES - HORMIGÓN. ANCHO 1668. CONJUNTO. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18d4",
+      "nombre" : "PAV 05_01.02.001_ED1.pdf"
+    }, {
+      "id" : "0b0003ea801f1234",
+      "codigo" : "PAV 05_01.02.002_ED1",
+      "titulo" : "TOPERA FIJA DE ALTAS PRESTACIONES - HORMIGÓN. ANCHO 1668. CUERPO DE CHOQUE. DEFINICIÓN GEOMÉTRICA. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18d5",
+      "nombre" : "PAV 05_01.02.002_ED1.pdf"
+    }, {
+      "id" : "0b0003ea801f1235",
+      "codigo" : "PAV 05_01.02.003_ED1",
+      "titulo" : "TOPERA FIJA DE ALTAS PRESTACIONES - HORMIGÓN. ANCHO 1668. CUERPO DE CHOQUE. ARMADURAS. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18d6",
+      "nombre" : "PAV 05_01.02.003_ED1.pdf"
+    }, {
+      "id" : "0b0003ea801f1236",
+      "codigo" : "PAV 05_01.02.004_ED1",
+      "titulo" : "TOPERA FIJA DE ALTAS PRESTACIONES - HORMIGÓN. ANCHO 1668. TUBOS MANGA Y PLACAS DE APOYO. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18d7",
+      "nombre" : "PAV 05_01.02.004_ED1.pdf"
+    } ],
+    "ET 03.359.100.9" : [ {
+      "id" : "0b0003ea801f070c",
+      "codigo" : "ET 03.359.100.9_4M1",
+      "titulo" : "Disyuntores Extrarrápidos para Subestaciones de Tracción de Corriente Continua. (4ª ed.+M1)",
+      "edicion" : "4ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f162c",
+      "nombre" : "ET 03.359.100.9 4ª Ed+M1 Disyuntores extrarapidos SSEE.pdf"
+    } ],
+    "ET 03.359.101.7" : [ {
+      "id" : "0b0003ea801f071b",
+      "codigo" : "ET 03.359.101.7_4M1",
+      "titulo" : "Transformadores de potencia sumergidos en aceite para subestaciones de tracción de 3.3 kV de corriente continua. (4ª ed.+M1)",
+      "edicion" : "4ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f162d",
+      "nombre" : "ET 03.359.101.7+M1 Transformadores aceite 3,3 kV CC.pdf"
+    } ],
+    "ET 03.359.104.1" : [ {
+      "id" : "0b0003ea801f0737",
+      "codigo" : "ET 03.359.104.1_3M1",
+      "titulo" : "Rectificadores de potencia para subestaciones de tracción de 3,3 kV de corriente continua. (3ª ed.+M1)",
+      "edicion" : "3ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f162e",
+      "nombre" : "ET 03.359.104.1+M1 Rectificadores 3,3 kV CC.pdf"
+    } ],
+    "ET 03.359.106.6" : [ {
+      "id" : "0b0003ea801f0744",
+      "codigo" : "ET 03.359.106.6_1M1",
+      "titulo" : "Rectificadores de Potencia para Subestaciones de Tracción de 1,5 kV de Corriente Continua. (1ª+M1 ed.)",
+      "edicion" : "1ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f162f",
+      "nombre" : "ET 03.359.106.6 Rectificadores 1,5 kV CC.pdf"
+    } ],
+    "ET 03.359.108.2" : [ {
+      "id" : "0b0003ea801f0745",
+      "codigo" : "ET 03.359.108.2",
+      "titulo" : "Analizador de Línea Aérea de Contacto",
+      "edicion" : "1ª",
+      "fecha" : "01/09/1997",
+      "anexo" : "090003ea801f1289",
+      "nombre" : "ET 03.359.108.2.pdf"
+    } ],
+    "ET 03.359.109.0_01.10" : [ {
+      "id" : "0b0003ea801f0746",
+      "codigo" : "ET 03.359.109.0_01.10",
+      "titulo" : "Sistema de control automatizado mediante PLCs. Generalidades",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1997",
+      "anexo" : "090003ea801f1352",
+      "nombre" : "ET 03.359.109.0_01.10.pdf"
+    } ],
+    "ET 03.359.109.0_02.10" : [ {
+      "id" : "0b0003ea801f0747",
+      "codigo" : "ET 03.359.109.0_02.10",
+      "titulo" : "Sistema de control automatizado mediante PLCs. Línea de acometida",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1997",
+      "anexo" : "090003ea801f1353",
+      "nombre" : "ET 03.359.109.0_02.10.pdf"
+    } ],
+    "ET 03.359.109.0_03.10" : [ {
+      "id" : "0b0003ea801f0748",
+      "codigo" : "ET 03.359.109.0_03.10",
+      "titulo" : "Sistema de control automatizado mediante PLCs. Servicios auxiliares. Medida",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1997",
+      "anexo" : "090003ea801f1354",
+      "nombre" : "ET 03.359.109.0_03.10.pdf"
+    } ],
+    "ET 03.359.109.0_04.10" : [ {
+      "id" : "0b0003ea801f0749",
+      "codigo" : "ET 03.359.109.0_04.10",
+      "titulo" : "Sistema de control automatizado mediante PLCs. Línea de señales de tráfico",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1997",
+      "anexo" : "090003ea801f1355",
+      "nombre" : "ET 03.359.109.0_04.10.pdf"
+    } ],
+    "ET 03.359.109.0_05.10" : [ {
+      "id" : "0b0003ea801f074a",
+      "codigo" : "ET 03.359.109.0_05.10",
+      "titulo" : "Sistema de control automatizado mediante PLCs. Grupo transformador-rectificador",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1997",
+      "anexo" : "090003ea801f1356",
+      "nombre" : "ET 03.359.109.0_05.10.pdf"
+    } ],
+    "ET 03.359.109.0_06.10" : [ {
+      "id" : "0b0003ea801f074b",
+      "codigo" : "ET 03.359.109.0_06.10",
+      "titulo" : "Sistema de control automatizado mediante PLCs. Salida de feeder",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1997",
+      "anexo" : "090003ea801f1357",
+      "nombre" : "ET 03.359.109.0_06.10.pdf"
+    } ],
+    "ET 03.359.109.0_07.10" : [ {
+      "id" : "0b0003ea801f074c",
+      "codigo" : "ET 03.359.109.0_07.10",
+      "titulo" : "Sistema de control automatizado mediante PLCs. Pórtico de seccionadores",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1997",
+      "anexo" : "090003ea801f1358",
+      "nombre" : "ET 03.359.109.0_07.10.pdf"
+    } ],
+    "ET 03.359.109.0_08.10" : [ {
+      "id" : "0b0003ea801f0757",
+      "codigo" : "ET 03.359.109.0_08.10",
+      "titulo" : "Sistema de control automatizado mediante PLCs. Puesto de control centralizado",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1997",
+      "anexo" : "090003ea801f1359",
+      "nombre" : "ET 03.359.109.0_08.10.pdf"
+    } ],
+    "ET 03.359.109.0_09.10" : [ {
+      "id" : "0b0003ea801f0758",
+      "codigo" : "ET 03.359.109.0_09.10",
+      "titulo" : "Sistema de control automatizado mediante PLCs. Adaptador de red",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1997",
+      "anexo" : "090003ea801f135a",
+      "nombre" : "ET 03.359.109.0_09.10.pdf"
+    } ],
+    "ET 03.359.109.0_10.10" : [ {
+      "id" : "0b0003ea801f0759",
+      "codigo" : "ET 03.359.109.0_10.10",
+      "titulo" : "Sistema de control automatizado mediante PLCs. Gestor de protecciones",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1997",
+      "anexo" : "090003ea801f128a",
+      "nombre" : "ET 03.359.109.0_10.10.pdf"
+    } ],
+    "ET 03.359.110.8" : [ {
+      "id" : "0b0003ea801f075a",
+      "codigo" : "ET 03.359.110.8",
+      "titulo" : "Gestor de protecciones 3,3 kV",
+      "edicion" : "1ª",
+      "fecha" : "01/12/1997",
+      "anexo" : "090003ea801f128b",
+      "nombre" : "ET 03.359.110.8.pdf"
+    } ],
+    "ET 03.359.115.7" : [ {
+      "id" : "0b0003ea801f075e",
+      "codigo" : "ET 03.359.115.7_2M1M2",
+      "titulo" : "Bobina de alisamiento para subestaciones de tracción de corriente continua. (2ª ed.+M1+M2)",
+      "edicion" : "2ª+M1+M2",
+      "fecha" : "03/02/2022",
+      "anexo" : "090003ea801f1709",
+      "nombre" : "ET03.359.115.7_ED2M1M2.pdf"
+    } ],
+    "ET 03.359.116.5" : [ {
+      "id" : "0b0003ea801f076e",
+      "codigo" : "ET 03.359.116.5_ED3",
+      "titulo" : "Transformadores de alimentación a servicios auxiliares para subestaciones de tracción de 3,3 kV de corriente continua. (ED3).",
+      "edicion" : "ED3",
+      "fecha" : "13/07/2022",
+      "anexo" : "090003ea801f1758",
+      "nombre" : "ET03.359.116.5_ED3.pdf"
+    } ],
+    "ET 03.359.117.3" : [ {
+      "id" : "0b0003ea801f0770",
+      "codigo" : "ET 03.359.117.3_1M1",
+      "titulo" : "Transformadores para alimentación de servicios auxiliares de 25 kV. (1ª+M1 ed.)",
+      "edicion" : "1ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1632",
+      "nombre" : "ET 03.359.117.3+M1 Transformadores SSAA 25kV.pdf"
+    } ],
+    "ET 03.359.120.7_2.9" : [ {
+      "id" : "0b0003ea801f0772",
+      "codigo" : "ET 03.359.120.7_2.9",
+      "titulo" : "Telemandos de energía (líneas convencionales). Puesto central",
+      "edicion" : "1ª",
+      "fecha" : "01/02/2007",
+      "anexo" : "090003ea801f128c",
+      "nombre" : "ET 03.359.120.7_2.9.pdf"
+    } ],
+    "ET 03.359.120.7_9.9" : [ {
+      "id" : "0b0003ea801f0773",
+      "codigo" : "ET 03.359.120.7_9.9",
+      "titulo" : "Telemando de energía. Protocolo de comunicaciones entre centro de control y remotas (líneas convencionales). Perfil de interoperabilidad Adif IEC 60870-5-101",
+      "edicion" : "1ª",
+      "fecha" : "01/02/2007",
+      "anexo" : "090003ea801f128d",
+      "nombre" : "ET 03.359.120.7_9.9.pdf"
+    } ],
+    "ET 03.359.121.5" : [ {
+      "id" : "0b0003ea801f0780",
+      "codigo" : "ET 03.359.121.5_2M1M2",
+      "titulo" : "Transformadores de potencia de tipo seco para subestaciones de tracción de 3,3 kV de cc. (2ª ed.+M1+M2)",
+      "edicion" : "2ª+M1+M2",
+      "fecha" : "03/02/2022",
+      "anexo" : "090003ea801f170a",
+      "nombre" : "ET03.359.121.5_ED2M1M2.pdf"
+    } ],
+    "ET 03.359.123.1" : [ {
+      "id" : "0b0003ea801f0784",
+      "codigo" : "ET 03.359.123.1_1M1M2E",
+      "titulo" : "Cabinas de corriente continua para subestaciones de tracción. 1ª Edición+M1+M2+Erratum.",
+      "edicion" : "1ª+M1+M2+Erratum",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f1696",
+      "nombre" : "ET 03.359.123.1_Cabinas CC_M1 M2 Erratum.pdf"
+    } ],
+    "ET 03.359.501.8" : [ {
+      "id" : "0b0003ea801f0785",
+      "codigo" : "ET 03.359.501.8",
+      "titulo" : "Protocolo de comunicaciones entre centro de control y remotas en telemandos de energía de líneas de Alta Velocidad, perfil de interoperabilidad Adif IEC 60870-5-104",
+      "edicion" : "1ª",
+      "fecha" : "01/04/2008",
+      "anexo" : "090003ea801f136c",
+      "nombre" : "ET 03.359.501.8.pdf"
+    } ],
+    "ET 03.359.502.6" : [ {
+      "id" : "0b0003ea801f0786",
+      "codigo" : "ET 03.359.502.6",
+      "titulo" : "Transformadores de potencia para subestaciones de tracción. Sistema 1x25 kV. (ED1).",
+      "edicion" : "ED1",
+      "fecha" : "13/07/2022",
+      "anexo" : "090003ea801f1785",
+      "nombre" : "ET03.359.502.6_ED1.pdf"
+    } ],
+    "ET 03.359.503.4" : [ {
+      "id" : "0b0003ea801f0787",
+      "codigo" : "ET 03.359.503.4",
+      "titulo" : "Cabinas bifásicas blindadas de 55 kV aisladas en gas SF6",
+      "edicion" : "1ª",
+      "fecha" : "01/11/2009",
+      "anexo" : "090003ea801f1389",
+      "nombre" : "ET 03.359.503.4.pdf"
+    } ],
+    "ET 03.359.504.2" : [ {
+      "id" : "0b0003ea801f0793",
+      "codigo" : "ET 03.359.504.2_2M1",
+      "titulo" : "Transformadores de potencia para subestaciones de tracción. Sistema 2 x 25 kV. (2ª ed.+M1)",
+      "edicion" : "2ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1635",
+      "nombre" : "ET 03.359.504.2+M1 Transformadores sistema 2x25 kV.pdf"
+    } ],
+    "ET 03.359.505.9" : [ {
+      "id" : "0b0003ea801f0795",
+      "codigo" : "ET 03.359.505.9_2M1",
+      "titulo" : "Autotransformadores sumergidos en aceite para centros de autotransformación. (2ª ed.+M1)",
+      "edicion" : "2ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1636",
+      "nombre" : "ET 03.359.505.9 Autotransformadores aceite 2x25 kV.pdf"
+    } ],
+    "ET 03.359.507.5" : [ {
+      "id" : "0b0003ea801f0796",
+      "codigo" : "ET 03.359.507.5",
+      "titulo" : "Cabinas con tensión asignada 27,5 kV para electrificaciones de 25 kV.",
+      "edicion" : "1ª",
+      "fecha" : "13/01/2016",
+      "anexo" : "090003ea801f14ae",
+      "nombre" : "ET 03.359.507.5 Cabinas 27 kV.pdf"
+    } ],
+    "ET 03.359.508.3" : [ {
+      "id" : "0b0003ea801f0799",
+      "codigo" : "ET 03.359.508.3_1EM1",
+      "titulo" : "Autotransformadores de aislamiento seco para centros de autotransformación. (1ª ed+Erratum+M1)",
+      "edicion" : "1ª+Erratum+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1637",
+      "nombre" : "ET 03.359.508.3 1ª Ed+Erratum+M1 Autotransformadores aislamiento seco 2x25kV.pdf"
+    } ],
+    "ET 03.359.509.1" : [ {
+      "id" : "0b0003ea801f07a7",
+      "codigo" : "ET 03.359.509.1_ED2",
+      "titulo" : "Transformadores de alimentación a servicios auxiliares para subestaciones de tracción de 1,5 kV de corriente continua. (ED2).",
+      "edicion" : "ED2",
+      "fecha" : "13/07/2022",
+      "anexo" : "090003ea801f1759",
+      "nombre" : "ET03.359.509.1_ED2.pdf"
+    } ],
+    "ET 03.359.510.9" : [ {
+      "id" : "0b0003ea801f07a9",
+      "codigo" : "ET 03.359.510.9_1M1",
+      "titulo" : "Transformadores de potencia de tipo seco para subestaciones de tracción de 1,5 kV de corriente continua. (1ª ed.+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f163a",
+      "nombre" : "ET 03.359.510.9+M1 Transformadores secos 1,5 kV CC.pdf"
+    } ],
+    "ET 03.359.511.7" : [ {
+      "id" : "0b0003ea801f07ab",
+      "codigo" : "ET 03.359.511.7_1M1",
+      "titulo" : "Transformadores de potencia sumergidos en aceite para subestaciones de tracción de 1,5 kV de corriente continua. (1ª+M1 ed.)",
+      "edicion" : "1ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1639",
+      "nombre" : "ET 03.359.511.7+M1 Transformadores aceite 1,5 kV CC.pdf"
+    } ],
+    "ET 03.364.004.6" : [ {
+      "id" : "0b0003ea801f0863",
+      "codigo" : "ET 03.364.004.6_5M1",
+      "titulo" : "Herrajes helicoidales preformados para electrificación. (5ª+M1)",
+      "edicion" : "5ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f163b",
+      "nombre" : "ET 03.364.004.6+M1 Herrajes helicoidales preformados.pdf"
+    } ],
+    "ET 03.364.008.7" : [ {
+      "id" : "0b0003ea801f0872",
+      "codigo" : "ET 03.364.008.7_1M1",
+      "titulo" : "Tensores y herrajes de anclajes y cadenas de aisladores para electrificación. (1ª ed.+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f163c",
+      "nombre" : "ET 03.364.008.7+M1 Tensores y herrajes de anclajes.pdf"
+    } ],
+    "ET 03.364.011.1" : [ {
+      "id" : "0b0003ea801f0876",
+      "codigo" : "ET 03.364.011.1_2",
+      "titulo" : "Piezas de acero y acero inoxidable para línea aérea de contacto. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f163d",
+      "nombre" : "ET 03.364.011.1 2ª Ed Piezas acero y acero inoxidable.pdf"
+    } ],
+    "ET 03.364.014.5" : [ {
+      "id" : "0b0003ea801f0878",
+      "codigo" : "ET 03.364.014.5",
+      "titulo" : "Tubos de acero y aluminio para línea de aérea de contacto.",
+      "edicion" : "1ª",
+      "fecha" : "11/07/2016",
+      "anexo" : "090003ea801f14d7",
+      "nombre" : "ET 03.364.014.5 Tubos de acero y aluminio LAC.pdf"
+    } ],
+    "ET 03.364.015.2" : [ {
+      "id" : "0b0003ea801f0885",
+      "codigo" : "ET 03.364.015.2_3",
+      "titulo" : "Grifas y manguitos de cobre electrolítico para conexión y empalme en catenaria. (3º ed.)",
+      "edicion" : "3ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f163e",
+      "nombre" : "ET 03.364.015.2 3ª Ed Grifas y manguitos de cobre.pdf"
+    } ],
+    "ET 03.364.016.0" : [ {
+      "id" : "0b0003ea801f0888",
+      "codigo" : "ET 03.364.016.0_3",
+      "titulo" : "Grifas de aleación de cobre para empalme de hilo de contacto en catenaria. (3ª ed.)",
+      "edicion" : "3ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f163f",
+      "nombre" : "ET 03.364.016.0 3ª Ed Grifas aleación de cobre.pdf"
+    } ],
+    "ET 03.364.018.6" : [ {
+      "id" : "0b0003ea801f088c",
+      "codigo" : "ET 03.364.018.6_2",
+      "titulo" : "Grifas de atirantado y de péndola para la catenaria. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "01/01/2020",
+      "anexo" : "090003ea801f1640",
+      "nombre" : "ET 03.364.018.6 2ª Ed Grifas de atirantado y de péndola.pdf"
+    } ],
+    "ET 03.364.019.4" : [ {
+      "id" : "0b0003ea801f0897",
+      "codigo" : "ET 03.364.019.4",
+      "titulo" : "Piezas, tornillería y tubos de acero galvanizados en caliente",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1994",
+      "anexo" : "090003ea801f12a1",
+      "nombre" : "ET 03.364.019.4.pdf"
+    } ],
+    "ET 03.364.020.2" : [ {
+      "id" : "0b0003ea801f0898",
+      "codigo" : "ET 03.364.020.2",
+      "titulo" : "Manguitos de empalme y grapas de aluminio para sujeción o derivación de cables de aluminio en la Línea Aérea de Contacto",
+      "edicion" : "1ª",
+      "fecha" : "01/05/1995",
+      "anexo" : "090003ea801f12a2",
+      "nombre" : "ET 03.364.020.2.pdf"
+    } ],
+    "ET 03.364.021.0" : [ {
+      "id" : "0b0003ea801f089b",
+      "codigo" : "ET 03.364.021.0_3",
+      "titulo" : "Grapas de suspensión, fijación y terminales para la línea de tierra de la L.A.C en c.c. (3ª ed.)",
+      "edicion" : "3ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1641",
+      "nombre" : "ET 03.364.021.0 3ª Ed Grapas y terminales línea de tierra.pdf"
+    } ],
+    "ET 03.364.022.8" : [ {
+      "id" : "0b0003ea801f089c",
+      "codigo" : "ET 03.364.022.8",
+      "titulo" : "Ejes y estribos de acero y acero inoxidable para línea aérea de contacto.",
+      "edicion" : "1ª",
+      "fecha" : "13/01/2016",
+      "anexo" : "090003ea801f14b0",
+      "nombre" : "ET 03.364.022.8 Ejes y estribos de acero y acero inoxidable para LAC.pdf"
+    } ],
+    "ET 03.364.101.0" : [ {
+      "id" : "0b0003ea801f08ab",
+      "codigo" : "ET 03.364.101.0_2M1",
+      "titulo" : "Estructuras metálicas para soporte de línea aérea de contacto. 2ª Edición+M1.",
+      "edicion" : "2ª+M1",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f1697",
+      "nombre" : "ET 03.364.101.0_2Ed+M1_EstructurasMetalicasLAC.pdf"
+    } ],
+    "ET 03.364.102.8" : [ {
+      "id" : "0b0003ea801f08ad",
+      "codigo" : "ET 03.364.102.8_2",
+      "titulo" : "Brazos de atirantado para electrificación. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1643",
+      "nombre" : "ET 03.364.102.8 2ª Ed Brazos de atirantado.pdf"
+    } ],
+    "ET 03.364.103.6" : [ {
+      "id" : "0b0003ea801f08af",
+      "codigo" : "ET 03.364.103.6_1M1",
+      "titulo" : "Conjuntos de poleas para electrificación. (1ª ed.+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1644",
+      "nombre" : "ET 03.364.103.6+M1  Conjunto de poleas.pdf"
+    } ],
+    "ET 03.364.104.4" : [ {
+      "id" : "0b0003ea801f08b1",
+      "codigo" : "ET 03.364.104.4_1M1",
+      "titulo" : "Conjuntos de giro de ménsulas. (1ª ed.+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1645",
+      "nombre" : "ET 03.364.104.4+M1 Conjuntos de giro.pdf"
+    } ],
+    "ET 03.364.150.7" : [ {
+      "id" : "0b0003ea801f08c0",
+      "codigo" : "ET 03.364.150.7_ED3M1",
+      "titulo" : "Seccionadores unipolares para instalación en exterior de 3 kV C.C. y de 25 kV C.A. para catenaria. (ED3M1)",
+      "edicion" : "ED3M1",
+      "fecha" : "13/07/2022",
+      "anexo" : "090003ea801f1757",
+      "nombre" : "ET03.364.150.7_ED3M1.pdf"
+    } ],
+    "ET 03.364.151.5" : [ {
+      "id" : "0b0003ea801f08c2",
+      "codigo" : "ET 03.364.151.5_3",
+      "titulo" : "Accionamientos eléctricos para seccionadores. (3ª ed.)",
+      "edicion" : "3ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1657",
+      "nombre" : "ET 03.364.151.5 3ª Ed Accionamientos eléctricos seccionadores.pdf"
+    } ],
+    "ET 03.364.153.1" : [ {
+      "id" : "0b0003ea801f08c6",
+      "codigo" : "ET 03.364.153.1_3",
+      "titulo" : "Aisladores de sección de material compuesto para L.A.C. de 3 KV C.C.Y 25 KV C.A.. 3ª Edición.",
+      "edicion" : "3ª",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f1698",
+      "nombre" : "ET 03.364.153.1_Aisladores de Seccion_rFC.pdf"
+    } ],
+    "ET 03.364.154.9" : [ {
+      "id" : "0b0003ea801f08d3",
+      "codigo" : "ET 03.364.154.9_3",
+      "titulo" : "Aisladores de porcelana para tensiones de 3.300 V C.C. para la suspensión y atirantado de catenaria (tipos A-11 y RT-51). (3ª ed.)",
+      "edicion" : "3ª",
+      "fecha" : "03/02/2022",
+      "anexo" : "090003ea801f170b",
+      "nombre" : "ET 03.364.154.9_ED3.pdf"
+    } ],
+    "ET 03.364.155.6" : [ {
+      "id" : "0b0003ea801f08d5",
+      "codigo" : "ET 03.364.155.6_2",
+      "titulo" : "Accionamientos hidráulicos para seccionadores de catenaria. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f166f",
+      "nombre" : "ET 03.364.155.6_2Ed_Accionamientos hidraulicos.pdf"
+    } ],
+    "ET 03.364.156.4" : [ {
+      "id" : "0b0003ea801f08d7",
+      "codigo" : "ET 03.364.156.4_1M1",
+      "titulo" : "Pararrayos de óxido metálico para electrificación en corriente continua. (1ªed+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1656",
+      "nombre" : "ET 03.364.156.4+M1 Pararrayos oxido metalico.pdf"
+    } ],
+    "ET 03.364.158.0" : [ {
+      "id" : "0b0003ea801f08db",
+      "codigo" : "ET 03.364.158.0_3",
+      "titulo" : "Conductores de cobre desnudos para electrificación. (3ª ed.)",
+      "edicion" : "3ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1647",
+      "nombre" : "ET 03.364.158.0 3ª Ed Conductores de cobre desnudos.pdf"
+    } ],
+    "ET 03.364.159.8" : [ {
+      "id" : "0b0003ea801f08e7",
+      "codigo" : "ET 03.364.159.8_2",
+      "titulo" : "Cables de cobre débilmente aleados para electrificación. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1648",
+      "nombre" : "ET 03.364.159.8 2ª Ed Conductores cobre debilmente aleado.pdf"
+    } ],
+    "ET 03.364.160.6" : [ {
+      "id" : "0b0003ea801f08e8",
+      "codigo" : "ET 03.364.160.6",
+      "titulo" : "Pértigas aislantes",
+      "edicion" : "1ª",
+      "fecha" : "01/04/1998",
+      "anexo" : "090003ea801f12a8",
+      "nombre" : "ET 03.364.160.6.pdf"
+    } ],
+    "ET 03.364.161.4" : [ {
+      "id" : "0b0003ea801f08ea",
+      "codigo" : "ET 03.364.161.4_2",
+      "titulo" : "Cables desnudos de aluminio y de aluminio con alma de acero para líneas eléctricas aéreas. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1649",
+      "nombre" : "ET 03.364.161.4 2ª Ed Cables desnudos Al y AiAc.pdf"
+    } ],
+    "ET 03.364.162.2" : [ {
+      "id" : "0b0003ea801f08ec",
+      "codigo" : "ET 03.364.162.2_2",
+      "titulo" : "Aisladores de material cerámico para L.A.C. de 3 kV c.c. y de 25 kV c.a. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f164e",
+      "nombre" : "ET 03.364.162.2  2ª Ed Aisladores cerámicos para LAC 3KV CC y 25KV CA.pdf"
+    } ],
+    "ET 03.364.163.0" : [ {
+      "id" : "0b0003ea801f08ee",
+      "codigo" : "ET 03.364.163.0_2",
+      "titulo" : "Aisladores de material cerámico para conjuntos de suspensión de L.A.C. de 3 kV c.c. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f164f",
+      "nombre" : "ET 03.364.163.0 2ª Ed Aisladores de material cerámico conj de susp.pdf"
+    } ],
+    "ET 03.364.164.8" : [ {
+      "id" : "0b0003ea801f08f0",
+      "codigo" : "ET 03.364.164.8_2",
+      "titulo" : "Aisladores de vidrio tipos A11 y RT51 para L.A.C. de 3 kV c.c. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1650",
+      "nombre" : "ET 03.364.164.8 2ª Ed Aisladores de vidrio tipos A11 y RT 51 LAC 3KV.pdf"
+    } ],
+    "ET 03.364.165.5" : [ {
+      "id" : "0b0003ea801f08fc",
+      "codigo" : "ET 03.364.165.5_2",
+      "titulo" : "Aisladores de vidrio para L.A.C. de 3 kV c.c. y de 25 kV c.a. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1651",
+      "nombre" : "ET 03.364.165.5 2ª Ed Aisladores de vidrio para LAC 3KV y 25 KV.pdf"
+    } ],
+    "ET 03.364.170.5" : [ {
+      "id" : "0b0003ea801f08fe",
+      "codigo" : "ET 03.364.170.5_1M1",
+      "titulo" : "Cables de energía unipolares para alta tensión con aislamiento extruido. (1ª Edición+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f165c",
+      "nombre" : "ET03.364.170.5M1_CABLES_AISLADOS.pdf"
+    } ],
+    "ET 03.364.197.8" : [ {
+      "id" : "0b0003ea801f08ff",
+      "codigo" : "ET 03.364.197.8",
+      "titulo" : "Útiles de operación para pértigas",
+      "edicion" : "1ª",
+      "fecha" : "01/04/1998",
+      "anexo" : "090003ea801f12a9",
+      "nombre" : "ET 03.364.197.8.pdf"
+    } ],
+    "ET 03.364.200.0" : [ {
+      "id" : "0b0003ea801f0901",
+      "codigo" : "ET 03.364.200.0_2",
+      "titulo" : "Grapas de anclaje tipo cono. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1652",
+      "nombre" : "ET 03.364.200.0 2ª Ed Grapas de anclaje tipo cono.pdf"
+    } ],
+    "ET 03.364.202.6" : [ {
+      "id" : "0b0003ea801f0910",
+      "codigo" : "ET 03.364.202.6_2M1E",
+      "titulo" : "Aisladores compuestos para línea aérea de contacto. 2ª Edición+M1+Erratum.",
+      "edicion" : "2ª+M1+Erratum",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f1699",
+      "nombre" : "ET 03.364.202.6_2 Ed+M1+Erratum_Aisladores Compuestos LAC_2 Ed+M1+Erratum.pdf"
+    } ],
+    "ET 03.364.203.4" : [ {
+      "id" : "0b0003ea801f0912",
+      "codigo" : "ET 03.364.203.4_2",
+      "titulo" : "Verificadores de tensión de 3 kV C.C. con indicación adicional de C.A. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f1670",
+      "nombre" : "ET 03.364.203.4_2Ed_VerificadoresTension.pdf"
+    } ],
+    "ET 03.364.204.2" : [ {
+      "id" : "0b0003ea801f0914",
+      "codigo" : "ET 03.364.204.2_1M1",
+      "titulo" : "Dispositivos limitadores de tensión para electrificaciones en corriente continua. (1ª ed.+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1654",
+      "nombre" : "ET 03.364.204.2+M1_Disp. limitadores de tensión.pdf"
+    } ],
+    "ET 03.364.291.9_4" : [ {
+      "id" : "0b0003ea801f0918",
+      "codigo" : "ET 03.364.291.9_4M1",
+      "titulo" : "Hilo ranurado para la línea aérea de contacto. (4ª ed.+M1)",
+      "edicion" : "4ª+M1",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1655",
+      "nombre" : "ET03.364.291.9 4ª Ed+M1 Hilo ranurado.pdf"
+    } ],
+    "ET 03.364.503.7" : [ {
+      "id" : "0b0003ea801f0927",
+      "codigo" : "ET 03.364.503.7_2M1",
+      "titulo" : "Herrajes de fundición de aluminio para Electrificación ferroviaria de Alta Velocidad. (2ª ed.+M1)",
+      "edicion" : "2ª+M1",
+      "fecha" : "03/02/2022",
+      "anexo" : "090003ea801f170c",
+      "nombre" : "ET 03.364.503.7_ED2M1.pdf"
+    } ],
+    "ET 03.364.506.0" : [ {
+      "id" : "0b0003ea8039f8de",
+      "codigo" : "ET 03.364.506.0",
+      "titulo" : "Transformadores aéreos.",
+      "edicion" : "ED1M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039f663",
+      "nombre" : "ET03.364.506.0_ED1M1.pdf"
+    } ],
+    "NAE 101" : [ {
+      "id" : "0b0003ea801f0bba",
+      "codigo" : "NAE 101",
+      "titulo" : "Grifas de conexión y empalme para la catenaria. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "01/10/2008",
+      "anexo" : "090003ea801f1371",
+      "nombre" : "NAE 101.pdf"
+    } ],
+    "NAE 102" : [ {
+      "id" : "0b0003ea801f0bbb",
+      "codigo" : "NAE 102",
+      "titulo" : "Montaje de herrajes helicoidales preformados para electrificación. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "01/04/2008",
+      "anexo" : "090003ea801f136d",
+      "nombre" : "NAE 102.pdf"
+    } ],
+    "NAE 103" : [ {
+      "id" : "0b0003ea801f0bbc",
+      "codigo" : "NAE 103",
+      "titulo" : "Anclajes de seguridad para electrificación",
+      "edicion" : "2ª",
+      "fecha" : "01/10/2008",
+      "anexo" : "090003ea801f137d",
+      "nombre" : "NAE 103.pdf"
+    } ],
+    "NAE 106" : [ {
+      "id" : "0b0003ea801f0bc0",
+      "codigo" : "NAE 106_2",
+      "titulo" : "Ejecución de macizos de cimentación para postes y anclajes de línea aérea de contacto.",
+      "edicion" : "2ª",
+      "fecha" : "30/06/2017",
+      "anexo" : "090003ea801f14fc",
+      "nombre" : "NAE 106_Ejecución cimentaciones.pdf"
+    } ],
+    "NAE 107" : [ {
+      "id" : "0b0003ea8039f6c3",
+      "codigo" : "NAE 107",
+      "titulo" : "Definición y medida de parámetros de la línea aérea de contacto (Catenaria).",
+      "edicion" : "ED2M1M2",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039f687",
+      "nombre" : "NAE107_ED2M1M2.pdf"
+    } ],
+    "NAE 108" : [ {
+      "id" : "0b0003ea803813b6",
+      "codigo" : "NAE 108_ED2",
+      "titulo" : "Montaje de sustentador e hilo de contacto de la línea aérea de contacto. 2ª Edición.",
+      "edicion" : "2ª",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381443",
+      "nombre" : "NAE108_ED2.pdf"
+    } ],
+    "NAE 110" : [ {
+      "id" : "0b0003ea8039f741",
+      "codigo" : "NAE 110",
+      "titulo" : "Montaje del feeder (desnudo y aéreo) de la línea aérea de contacto.",
+      "edicion" : "ED2",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039f662",
+      "nombre" : "NAE110_ED2.pdf"
+    } ],
+    "NAE 111" : [ {
+      "id" : "0b0003ea801f0bd1",
+      "codigo" : "NAE 111_ED2",
+      "titulo" : "Montaje del cable de tierra/retorno de la línea aérea de contacto. (ED2).",
+      "edicion" : "ED2",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f1857",
+      "nombre" : "NAE111_ED2.pdf"
+    } ],
+    "NAE 112" : [ {
+      "id" : "0b0003ea801f0bdf",
+      "codigo" : "NAE 112_ED3M1",
+      "titulo" : "Esquemas eléctricos de línea aérea de contacto en corriente continua. 3ª Edición+M1.",
+      "edicion" : "ED3M1",
+      "fecha" : "30/01/2023",
+      "anexo" : "090003ea801f17cf",
+      "nombre" : "NAE112_ED3M1.pdf"
+    } ],
+    "NAE 113" : [ {
+      "id" : "0b0003ea801f0be0",
+      "codigo" : "NAE 113",
+      "titulo" : "Ejecución, montaje y tipos de anclaje necesarios para la instalación de diverso tipo de postes",
+      "edicion" : "1ª",
+      "fecha" : "01/05/1999",
+      "anexo" : "090003ea801f12c6",
+      "nombre" : "NAE 113.pdf"
+    } ],
+    "NAE 114" : [ {
+      "id" : "0b0003ea801f0be1",
+      "codigo" : "NAE 114",
+      "titulo" : "Montaje de cables aislados para feeders en corriente continua",
+      "edicion" : "2ª",
+      "fecha" : "01/04/2008",
+      "anexo" : "090003ea801f136a",
+      "nombre" : "NAE 114.pdf"
+    } ],
+    "NAE 115" : [ {
+      "id" : "0b0003ea8039f84d",
+      "codigo" : "NAE 115",
+      "titulo" : "Montaje de agujas aéreas en línea aérea de contacto.",
+      "edicion" : "ED2",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039f664",
+      "nombre" : "NAE115_ED2.pdf"
+    } ],
+    "NAE 116" : [ {
+      "id" : "0b0003ea801f0be4",
+      "codigo" : "NAE 116_1M1",
+      "titulo" : "Cálculo y montaje del pendolado para líneas aéreas de contacto de CC (Líneas Convencionales).",
+      "edicion" : "1ª+M1",
+      "fecha" : "23/01/2019",
+      "anexo" : "090003ea801f15db",
+      "nombre" : "NAE 116+M1 Pendolado.pdf"
+    } ],
+    "NAE 117" : [ {
+      "id" : "0b0003ea80210400",
+      "codigo" : "NAE 117_ED3",
+      "titulo" : "Línea aérea de contacto para vías con tres carriles electrificadas en corriente continua. 3ª Edición.",
+      "edicion" : "ED3",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210832",
+      "nombre" : "NAE117_ED3.pdf"
+    } ],
+    "NAE 118" : [ {
+      "id" : "0b0003ea8039fa34",
+      "codigo" : "NAE 118",
+      "titulo" : "Replanteo y montaje de dispositivos limitadores de tensión tipo VLD-F.",
+      "edicion" : "ED1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039f665",
+      "nombre" : "NAE118_ED1.pdf"
+    } ],
+    "NAE 119" : [ {
+      "id" : "0b0003ea8034db1c",
+      "codigo" : "NAE 119_ED1",
+      "titulo" : "Esquemas eléctricos de la línea aérea de contacto en 25 kV C.A. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034da9b",
+      "nombre" : "NAE119_ED1.pdf"
+    } ],
+    "NAE 121" : [ {
+      "id" : "0b0003ea8038144f",
+      "codigo" : "NAE 121_ED2",
+      "titulo" : "Medidas para la protección de la avifauna en la línea aérea de contacto. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381444",
+      "nombre" : "NAE121_ED2.pdf"
+    } ],
+    "NAE 122" : [ {
+      "id" : "0b0003ea8039fa89",
+      "codigo" : "NAE 122",
+      "titulo" : "Requisitos técnicos para el proyecto y construcción del subsistema de energía en líneas de ancho métrico.",
+      "edicion" : "ED1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039f667",
+      "nombre" : "NAE122_ED1.pdf"
+    } ],
+    "NAE 201" : [ {
+      "id" : "0b0003ea801f0bf3",
+      "codigo" : "NAE 201",
+      "titulo" : "Instrucción Técnica para el montaje de grapas de anclaje tipo \"CUÑA\"",
+      "edicion" : "1ª",
+      "fecha" : "01/10/2002",
+      "anexo" : "090003ea801f12c9",
+      "nombre" : "NAE 201.pdf"
+    } ],
+    "NAE 300" : [ {
+      "id" : "0b0003ea8039fab2",
+      "codigo" : "NAE 300",
+      "titulo" : "Diseño funcional de la línea aérea de contacto tipo CA-160/3kV.",
+      "edicion" : "ED2M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039f668",
+      "nombre" : "NAE300_ED2M1_PARTE 1.pdf"
+    } ],
+    "NAE 301" : [ {
+      "id" : "0b0003ea801f0bfa",
+      "codigo" : "NAE 301_ED2",
+      "titulo" : "Diseño funcional de la línea aérea de contacto tipo CA-220/3kV. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18da",
+      "nombre" : "NAE301_PARTE 1_ED2.pdf"
+    } ],
+    "NAE 302" : [ {
+      "id" : "0b0003ea802108b2",
+      "codigo" : "NAE 302_ED2",
+      "titulo" : "Diseño funcional de la línea aérea de contacto tipo CA-160H y CA-200H. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210833",
+      "nombre" : "NAE302_ED2_PARTE1.pdf"
+    } ],
+    "NAE 400" : [ {
+      "id" : "0b0003ea801f0bfc",
+      "codigo" : "NAE 400_ED1",
+      "titulo" : "Montaje de centros de transformación aéreos para alimentación eléctrica de instalaciones asociadas. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801ed165",
+      "nombre" : "NAE400_ED1.pdf"
+    } ],
+    "03.432.800 (NAS 800)" : [ {
+      "id" : "0b0003ea801f05b6",
+      "codigo" : "03.432.800",
+      "titulo" : "Norma sobre explotación y seguridad de enclavamientos eléctricos",
+      "edicion" : "1ª",
+      "fecha" : "01/02/1976",
+      "anexo" : "090003ea801f1420",
+      "nombre" : "NAS 800.pdf"
+    } ],
+    "03.432.810 (NAS 810)" : [ {
+      "id" : "0b0003ea801f05b9",
+      "codigo" : "03.432.810",
+      "titulo" : "Explotación y seguridad en los sistemas de bloqueo eléctrico manual de vía única",
+      "edicion" : "1ª",
+      "fecha" : "01/04/1975",
+      "anexo" : "090003ea801f1421",
+      "nombre" : "NAS 810.pdf"
+    } ],
+    "ET 03.354.006.3" : [ {
+      "id" : "0b0003ea801f06cd",
+      "codigo" : "ET 03.354.006.3_6",
+      "titulo" : "Cables de 3 kV para el sistema de alimentación eléctrico a las instalaciones de señalización. (6ª ed.)",
+      "edicion" : "6ª",
+      "fecha" : "16/07/2021",
+      "anexo" : "090003ea801f16c1",
+      "nombre" : "ET 03.354.006.3 CABLES 3KV.pdf"
+    } ],
+    "ET 03.354.019.6" : [ {
+      "id" : "0b0003ea801f06f3",
+      "codigo" : "ET 03.354.019.6_2",
+      "titulo" : "Cables de baja tensión para suministro de energía (hasta 1 kV). (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "16/07/2021",
+      "anexo" : "090003ea801f16c2",
+      "nombre" : "ET 03.354.019.6_CABLES BAJA TENSION.pdf"
+    } ],
+    "ET 03.363.001.3" : [ {
+      "id" : "0b0003ea801f085d",
+      "codigo" : "ET 03.363.001.3",
+      "titulo" : "Cerrojos de uña",
+      "edicion" : "2ª",
+      "fecha" : "01/06/1998",
+      "anexo" : "090003ea801f1297",
+      "nombre" : "ET 03.363.001.3.pdf"
+    } ],
+    "ET 03.365.003.7" : [ {
+      "id" : "0b0003ea801f093b",
+      "codigo" : "ET 03.365.003.7_2M1E",
+      "titulo" : "ASFA digital vía. (2ª ed.+M1+Erratum)",
+      "edicion" : "2ª+M1+Erratum",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f164b",
+      "nombre" : "ET 03.365.003.7 2ªEd+M1 ASFA DIGITAL_Erratum.pdf"
+    } ],
+    "ET 03.365.006.0" : [ {
+      "id" : "0b0003ea801f093f",
+      "codigo" : "ET 03.365.006.0_3",
+      "titulo" : "Suministro de señales alfanuméricas. (3ª ed.)",
+      "edicion" : "3ª",
+      "fecha" : "01/03/2005",
+      "anexo" : "090003ea801f13b2",
+      "nombre" : "ET 03.365.006.0.pdf"
+    } ],
+    "ET 03.365.008.6" : [ {
+      "id" : "0b0003ea801f094e",
+      "codigo" : "ET 03.365.008.6_1M1M2E",
+      "titulo" : "ASFA Digital Embarcado. (1ª ed.+M1+M2+Erratum)",
+      "edicion" : "1ª+M1+M2+Erratum",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f164c",
+      "nombre" : "ET 03.365.008.6+M1+M2 ASFA DIGITAL Embarcado Erratum.pdf"
+    } ],
+    "ET 03.365.009.4" : [ {
+      "id" : "0b0003ea801f0951",
+      "codigo" : "ET 03.365.009.4_ED2M1",
+      "titulo" : "Conjunto soporte protector polivalente baliza ASFA a carril. 2ª Edición+M1.",
+      "edicion" : "ED2M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18e6",
+      "nombre" : "ET03.365.009.4_ED2M1.pdf"
+    } ],
+    "ET 03.365.010.2" : [ {
+      "id" : "0b0003ea801f0954",
+      "codigo" : "ET 03.365.010.2_2M1",
+      "titulo" : "Adaptador de foco led para señal alta y señal piloto. 2ª Edición+M1.",
+      "edicion" : "2ª+M1",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f169e",
+      "nombre" : "ET 03.365.010.2_Adaptador Foco LED_2ED_M1.pdf"
+    } ],
+    "ET 03.365.011.0" : [ {
+      "id" : "0b0003ea8039f122",
+      "codigo" : "ET 03.365.011.0",
+      "titulo" : "Señales luminosas modulares para focos led.",
+      "edicion" : "ED2M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fd7a",
+      "nombre" : "ET 03.365.011.0_ED2M1.pdf"
+    } ],
+    "ET 03.365.052.4" : [ {
+      "id" : "0b0003ea802108f9",
+      "codigo" : "ET 03.365.052.4_ED3",
+      "titulo" : "Cables para las instalaciones de señalización. 3ª Edición.",
+      "edicion" : "ED3",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210835",
+      "nombre" : "ET 03.365.052.4_ED3.pdf"
+    } ],
+    "ET 03.365.055.7" : [ {
+      "id" : "0b0003ea803a0523",
+      "codigo" : "ET 03.365.055.7",
+      "titulo" : "Cajas polivalentes para instalaciones de señalización.",
+      "edicion" : "ED2E1M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fd7b",
+      "nombre" : "ET03.365.055.7_ED2EM1.pdf"
+    } ],
+    "ET 03.365.056.5" : [ {
+      "id" : "0b0003ea8034dce1",
+      "codigo" : "ET 03.365.056.5_ED1",
+      "titulo" : "Sistemas de sellado y retención para tránsitos de cables y conductos. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034dbaf",
+      "nombre" : "ET 03.365.056.5_ED1.pdf"
+    } ],
+    "ET 03.365.064.9" : [ {
+      "id" : "0b0003ea8034d989",
+      "codigo" : "ET 03.365.064.9_ED1",
+      "titulo" : "Canaleta de plástico reciclado para la instalación de cables. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d8a0",
+      "nombre" : "ET 03.365.064.9_ED1.pdf"
+    } ],
+    "ET 03.365.200.9" : [ {
+      "id" : "0b0003ea801f097a",
+      "codigo" : "ET 03.365.200.9_2",
+      "titulo" : "Suministro de armarios de señalización. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "01/09/1987",
+      "anexo" : "090003ea801f13b7",
+      "nombre" : "ET 03.365.200.9.pdf"
+    } ],
+    "ET 03.365.305.6" : [ {
+      "id" : "0b0003ea8039ff2e",
+      "codigo" : "ET 03.365.305.6",
+      "titulo" : "Sistemas de conexión eléctrica a carril.",
+      "edicion" : "ED3",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fd7d",
+      "nombre" : "ET 03.365.305.6_ED3.pdf"
+    } ],
+    "ET 03.365.310.6" : [ {
+      "id" : "0b0003ea801f0989",
+      "codigo" : "ET 03.365.310.6_ED3M1",
+      "titulo" : "Sistemas electrónicos de detección de tren basados en contadores de ejes. (ED3M1).",
+      "edicion" : "ED3M1",
+      "fecha" : "30/01/2023",
+      "anexo" : "090003ea801f17d1",
+      "nombre" : "ET03.365.310.6_ED3M1.pdf"
+    } ],
+    "ET 03.365.311.4" : [ {
+      "id" : "0b0003ea801f098a",
+      "codigo" : "ET 03.365.311.4",
+      "titulo" : "Sistemas de detección de tren basados en circuitos de vía de audiofrecuencia",
+      "edicion" : "1ª",
+      "fecha" : "18/01/2017",
+      "anexo" : "090003ea801f14f0",
+      "nombre" : "ET 03.365.311.4_2017_Circuitos de vía.pdf"
+    } ],
+    "ET 03.365.401.3" : [ {
+      "id" : "0b0003ea80381891",
+      "codigo" : "ET 03.365.401.3_ED4",
+      "titulo" : "Accionamientos eléctricos de aparatos de vía. 4ª Edición.",
+      "edicion" : "ED4",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381528",
+      "nombre" : "ET03.365.401.3_ED4.pdf"
+    } ],
+    "ET 03.365.402.1" : [ {
+      "id" : "0b0003ea801f098d",
+      "codigo" : "ET 03.365.402.1",
+      "titulo" : "Suministro de comprobadores eléctricos de posición de espadines",
+      "edicion" : "1ª",
+      "fecha" : "01/12/1976",
+      "anexo" : "090003ea801f13b9",
+      "nombre" : "ET 03.365.402.1.pdf"
+    } ],
+    "ET 03.365.404.7" : [ {
+      "id" : "0b0003ea801f098e",
+      "codigo" : "ET 03.365.404.7",
+      "titulo" : "Cerraduras eléctricas para llaves Boure",
+      "edicion" : "1ª",
+      "fecha" : "01/02/1976",
+      "anexo" : "090003ea801f13ba",
+      "nombre" : "ET 03.365.404.7.pdf"
+    } ],
+    "ET 03.365.405.4" : [ {
+      "id" : "0b0003ea8034d7d7",
+      "codigo" : "ET 03.365.405.4_ED3",
+      "titulo" : "Detector de caída de objetos. 3ª Edición.",
+      "edicion" : "ED3",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d76e",
+      "nombre" : "ET03.365.405.4_ED3.pdf"
+    } ],
+    "ET 03.365.500.2" : [ {
+      "id" : "0b0003ea801f099c",
+      "codigo" : "ET 03.365.500.2",
+      "titulo" : "Relés electromecánicos de línea para Instalaciones de Seguridad ferroviaria",
+      "edicion" : "2ª",
+      "fecha" : "01/07/1996",
+      "anexo" : "090003ea801f13bb",
+      "nombre" : "ET 03.365.500.2.pdf"
+    } ],
+    "ET 03.365.501.0" : [ {
+      "id" : "0b0003ea801f099d",
+      "codigo" : "ET 03.365.501.0",
+      "titulo" : "Focos Led para señales luminosas modulares.",
+      "edicion" : "1ª",
+      "fecha" : "30/06/2017",
+      "anexo" : "090003ea801f14ff",
+      "nombre" : "ET 03.365.501.0_Focos led.pdf"
+    } ],
+    "ET 03.365.502.8" : [ {
+      "id" : "0b0003ea801f09a0",
+      "codigo" : "ET 03.365.502.8_ED2M1",
+      "titulo" : "Lámpara led para señales luminosas existentes no modulares. (ED2M1).",
+      "edicion" : "ED2M1",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f1862",
+      "nombre" : "ET03.365.502.8_ED2M1.pdf"
+    } ],
+    "ET 03.365.511.9" : [ {
+      "id" : "0b0003ea801f09b3",
+      "codigo" : "ET 03.365.511.9_1",
+      "titulo" : "Transformadores para suministro de energía a Instalaciones de Señalización. (1ª ed.)",
+      "edicion" : "1ª",
+      "fecha" : "01/07/2003",
+      "anexo" : "090003ea801f13be",
+      "nombre" : "ET 03.365.511.9.pdf"
+    } ],
+    "ET 03.365.514.3" : [ {
+      "id" : "0b0003ea801f09c6",
+      "codigo" : "ET 03.365.514.3",
+      "titulo" : "Centros de transformación tipo \"AT\" y armarios de seccionamiento tipo \"AS\" de media tensión para el suministro de energía a las instalaciones de seguridad",
+      "edicion" : "1ª",
+      "fecha" : "01/03/1997",
+      "anexo" : "090003ea801f12b2",
+      "nombre" : "ET 03.365.514.3.pdf"
+    } ],
+    "ET 03.365.530.9" : [ {
+      "id" : "0b0003ea801f09ee",
+      "codigo" : "ET 03.365.530.9",
+      "titulo" : "Teléfonos de intemperie",
+      "edicion" : "1ª",
+      "fecha" : "01/12/1976",
+      "anexo" : "090003ea801f13cd",
+      "nombre" : "ET 03.365.530.9.pdf"
+    } ],
+    "ET 03.365.535.8" : [ {
+      "id" : "0b0003ea801f09f0",
+      "codigo" : "ET 03.365.535.8",
+      "titulo" : "Centros de transformación tipo \"CA\" para el suministro de energía a instalaciones de señalización",
+      "edicion" : "1ª",
+      "fecha" : "01/10/2003",
+      "anexo" : "090003ea801f13ce",
+      "nombre" : "ET 03.365.535.8.pdf"
+    } ],
+    "ET 03.365.537.4" : [ {
+      "id" : "0b0003ea801f09f1",
+      "codigo" : "ET 03.365.537.4",
+      "titulo" : "Centros de transformación tipo \"CST\" y de seccionamiento tipo \"CS\", para el suministro de energía a instalaciones de señalización",
+      "edicion" : "1ª",
+      "fecha" : "01/10/2003",
+      "anexo" : "090003ea801f13cf",
+      "nombre" : "ET 03.365.537.4.pdf"
+    } ],
+    "ET 03.365.552.3" : [ {
+      "id" : "0b0003ea801f0a04",
+      "codigo" : "ET 03.365.552.3_ED1",
+      "titulo" : "Registrador Jurídico para Enclavamientos. (ED1).",
+      "edicion" : "ED1",
+      "fecha" : "27/06/2023",
+      "anexo" : "090003ea801f1820",
+      "nombre" : "ET03.365.552.3_ED1.pdf"
+    } ],
+    "ET 03.365.940.0" : [ {
+      "id" : "0b0003ea801f0a13",
+      "codigo" : "ET 03.365.940.0",
+      "titulo" : "Sistema de alimentación ininterrumpida (SAI) para Instalaciones de Seguridad",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1996",
+      "anexo" : "090003ea801f12b6",
+      "nombre" : "ET 03.365.940.0.pdf"
+    } ],
+    "ET 03.365.941.8" : [ {
+      "id" : "0b0003ea8021096f",
+      "codigo" : "ET 03.365.941.8_ED1E",
+      "titulo" : "Sistemas de alimentación ininterrumpida modulares de potencia ≥ 5 KVA. 1ª Edición+Erratum.",
+      "edicion" : "ED1E",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210836",
+      "nombre" : "ET 03.365.941.8_ED1E.pdf"
+    } ],
+    "IT 17 (NAS 117)" : [ {
+      "id" : "0b0003ea801f0b1d",
+      "codigo" : "IT 17",
+      "titulo" : "Mantenimiento de los equipos \"A.S.F.A.\" instalados en vía",
+      "edicion" : "2ª",
+      "fecha" : "01/12/1989",
+      "anexo" : "090003ea801f16e6",
+      "nombre" : "NAS 117.pdf"
+    } ],
+    "IT 26 (NAS 126)" : [ {
+      "id" : "0b0003ea801f0b1f",
+      "codigo" : "IT 26",
+      "titulo" : "Instrucción técnica para la fijación solidaria del accionamiento eléctrico de aguja",
+      "edicion" : "1ª",
+      "fecha" : "01/04/1990",
+      "anexo" : "090003ea801f1406",
+      "nombre" : "NAS 126.PDF"
+    } ],
+    "IT 28 (NAS 128)" : [ {
+      "id" : "0b0003ea801f0b2b",
+      "codigo" : "IT 28",
+      "titulo" : "Instrucción técnica para los tirantes utilizados en Instalaciones de Seguridad",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1990",
+      "anexo" : "090003ea801f1408",
+      "nombre" : "NAS 128.PDF"
+    } ],
+    "ITS 35 (NAS 135)" : [ {
+      "id" : "0b0003ea801f0b31",
+      "codigo" : "ITS 35",
+      "titulo" : "Instrucción técnica para la regulación y comprobación de los elementos de Instalaciones de Seguridad en los desvíos tipo C de radio 500 m; tipo V de radio 1.500 m y tipo AV.",
+      "edicion" : "3ª",
+      "fecha" : "01/04/1998",
+      "anexo" : "090003ea801f12cb",
+      "nombre" : "NAS 135.pdf"
+    } ],
+    "ITS 5 (NAS 105)" : [ {
+      "id" : "0b0003ea801f0b33",
+      "codigo" : "ITS 5",
+      "titulo" : "Montaje de cerrojo de uña en desvíos sencillos tipo A; B; C; V; A.V.",
+      "edicion" : "5ª",
+      "fecha" : "01/06/1998",
+      "anexo" : "090003ea801f12ca",
+      "nombre" : "NAS 105.pdf"
+    } ],
+    "NAG 0-3-1.0" : [ {
+      "id" : "0b0003ea8039fd11",
+      "codigo" : "NAG 0-3-1.0",
+      "titulo" : "Sistemas de tendido de cables.",
+      "edicion" : "ED2",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fd75",
+      "nombre" : "NAG0310_ED2.pdf"
+    } ],
+    "NAG 0-8-5.0" : [ {
+      "id" : "0b0003ea80381820",
+      "codigo" : "NAG 0-8-5.0_ED1M1M2",
+      "titulo" : "Distancias de frenado y señales. 1ª Edición+M1+M2.",
+      "edicion" : "ED1M1M2",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381447",
+      "nombre" : "NAG0850_ED1M1M2.pdf"
+    } ],
+    "NAG 5-0-1.1" : [ {
+      "id" : "0b0003ea8038187b",
+      "codigo" : "NAG 5-0-1.1_ED3",
+      "titulo" : "Señalización fija relativa a infraestructura, vía y electrificación. 3ª Edición.",
+      "edicion" : "ED3",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381448",
+      "nombre" : "NAG5011_ED3.pdf"
+    } ],
+    "NAI 1-0-1.0" : [ {
+      "id" : "0b0003ea801f0d00",
+      "codigo" : "NAI 1-0-1.0",
+      "titulo" : "SISTEMA DAVINCI. Mensajería CTC-DaVinci",
+      "edicion" : "1ª",
+      "fecha" : "25/10/2011",
+      "anexo" : "090003ea801f144d",
+      "nombre" : "NAI 1010.pdf"
+    } ],
+    "NAI 1-0-2.0" : [ {
+      "id" : "0b0003ea801f0d0b",
+      "codigo" : "NAI 1-0-2.0",
+      "titulo" : "SISTEMA DAVINCI. Mensajería TE-DaVinci",
+      "edicion" : "1ª",
+      "fecha" : "25/10/2011",
+      "anexo" : "090003ea801f144e",
+      "nombre" : "NAI 1020.pdf"
+    } ],
+    "NAI 1-0-3.0" : [ {
+      "id" : "0b0003ea801f0d0c",
+      "codigo" : "NAI 1-0-3.0",
+      "titulo" : "SISTEMA DAVINCI. Mensajería PCE-DaVinci",
+      "edicion" : "1ª",
+      "fecha" : "25/10/2011",
+      "anexo" : "090003ea801f144f",
+      "nombre" : "NAI 1030.pdf"
+    } ],
+    "NAI 1-0-4.0" : [ {
+      "id" : "0b0003ea801f0d0d",
+      "codigo" : "NAI 1-0-4.0",
+      "titulo" : "SISTEMA DAVINCI. Mensajería TD-DaVinci",
+      "edicion" : "1ª",
+      "fecha" : "25/10/2011",
+      "anexo" : "090003ea801f1450",
+      "nombre" : "NAI 1040.pdf"
+    } ],
+    "NAI 1-0-5.0" : [ {
+      "id" : "0b0003ea801f0d0e",
+      "codigo" : "NAI 1-0-5.0",
+      "titulo" : "SISTEMA DAVINCI. Mensajería InterCRC-CTC",
+      "edicion" : "1ª",
+      "fecha" : "25/10/2011",
+      "anexo" : "090003ea801f1451",
+      "nombre" : "NAI 1050.pdf"
+    } ],
+    "NAI 2-0-1.0" : [ {
+      "id" : "0b0003ea801f0d0f",
+      "codigo" : "NAI 2-0-1.0",
+      "titulo" : "SISTEMA DAVINCI. Parámetros y Constantes Comunes de Mensajería de Integración",
+      "edicion" : "1ª",
+      "fecha" : "25/10/2011",
+      "anexo" : "090003ea801f1452",
+      "nombre" : "NAI 2010.pdf"
+    } ],
+    "NAI 2-0-2.0" : [ {
+      "id" : "0b0003ea801f0d10",
+      "codigo" : "NAI 2-0-2.0",
+      "titulo" : "SISTEMA DAVINCI. Funcionalidades Comunes de Integración",
+      "edicion" : "1ª",
+      "fecha" : "25/10/2011",
+      "anexo" : "090003ea801f1453",
+      "nombre" : "NAI 2020.pdf"
+    } ],
+    "NAS 108 (IT 8)" : [ {
+      "id" : "0b0003ea801f0def",
+      "codigo" : "NAS 108",
+      "titulo" : "Mantenimiento de las transmisiones bifilares",
+      "edicion" : "1ª",
+      "fecha" : "01/08/1985",
+      "anexo" : "090003ea801f13f5",
+      "nombre" : "NAS 108.PDF"
+    } ],
+    "NAS 110 (IT 10)" : [ {
+      "id" : "0b0003ea801f0df0",
+      "codigo" : "NAS 110",
+      "titulo" : "Distancia de empalmes en las transmisiones y realización de pruebas de rotura de hilo",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1985",
+      "anexo" : "090003ea801f13f7",
+      "nombre" : "NAS 110.PDF"
+    } ],
+    "NAS 115 (IT 15)" : [ {
+      "id" : "0b0003ea801f0dfb",
+      "codigo" : "NAS 115",
+      "titulo" : "Mantenimiento de compensadores, arquetas cambio dirección y piquetes de desvío en curva",
+      "edicion" : "1ª",
+      "fecha" : "01/09/1985",
+      "anexo" : "090003ea801f13fc",
+      "nombre" : "NAS 115.PDF"
+    } ],
+    "NAS 118 (IT 18)" : [ {
+      "id" : "0b0003ea801f0dfc",
+      "codigo" : "NAS 118",
+      "titulo" : "Mantenimiento accionamientos aguja mecánicos",
+      "edicion" : "1ª",
+      "fecha" : "01/05/1986",
+      "anexo" : "090003ea801f13fe",
+      "nombre" : "NAS 118.PDF"
+    } ],
+    "NAS 119 (ITS 19)" : [ {
+      "id" : "0b0003ea801f0dfd",
+      "codigo" : "NAS 119",
+      "titulo" : "Mantenimiento cerrojo de comprobación acoplamiento de aguja",
+      "edicion" : "1ª",
+      "fecha" : "01/05/1986",
+      "anexo" : "090003ea801f13ff",
+      "nombre" : "NAS 119.PDF"
+    } ],
+    "NAS 125 (IT 25)" : [ {
+      "id" : "0b0003ea801f0dfe",
+      "codigo" : "NAS 125",
+      "titulo" : "Instrucción técnica para el montaje de los elementos del cerrojo de uña en T.U.D. De 45 kg BRUNELL y 54 kg",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1989",
+      "anexo" : "090003ea801f1405",
+      "nombre" : "NAS 125.PDF"
+    } ],
+    "NAS 129 (IT 29)" : [ {
+      "id" : "0b0003ea801f0dff",
+      "codigo" : "NAS 129",
+      "titulo" : "Instrucción técnica para el montaje de transmisión rígida en desvíos tipo B con dos cerrojos de uña",
+      "edicion" : "1ª",
+      "fecha" : "01/10/1990",
+      "anexo" : "090003ea801f1409",
+      "nombre" : "NAS 129.PDF"
+    } ],
+    "NAS 141 (ITS 41)" : [ {
+      "id" : "0b0003ea801f0e03",
+      "codigo" : "NAS 141",
+      "titulo" : "Instrucción técnica sobre regulación y comprobación de elementos de Instalaciones de Seguridad en desvíos tipo C y V con accionamientos múltiples",
+      "edicion" : "1ª",
+      "fecha" : "01/02/1998",
+      "anexo" : "090003ea801f12cf",
+      "nombre" : "NAS 141.pdf"
+    } ],
+    "NAS 146 (ITS 46)" : [ {
+      "id" : "0b0003ea801f0e04",
+      "codigo" : "NAS 146",
+      "titulo" : "Instrucción técnica para la regulación y comprobación de los elementos de Instalaciones de Seguridad en desvíos tipo P",
+      "edicion" : "1ª",
+      "fecha" : "01/09/2001",
+      "anexo" : "090003ea801f12d1",
+      "nombre" : "NAS 146.pdf"
+    } ],
+    "NAS 148 (ITS 48)" : [ {
+      "id" : "0b0003ea801f0e0f",
+      "codigo" : "NAS 148",
+      "titulo" : "Instrucción técnica para el montaje de elementos de Instalaciones de Seguridad en travesías de unión doble tipo B1",
+      "edicion" : "1ª",
+      "fecha" : "01/03/2000",
+      "anexo" : "090003ea801f12d3",
+      "nombre" : "NAS 148.pdf"
+    } ],
+    "NAS 154" : [ {
+      "id" : "0b0003ea8034d79a",
+      "codigo" : "NAS 154_ED2M1M2",
+      "titulo" : "ASFA Digital Vía. Reglas para la ubicación de balizas. 2ª Edición+M1+M2.",
+      "edicion" : "ED2M1M2",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d76d",
+      "nombre" : "NAS154_ED2M1M2.pdf"
+    } ],
+    "NAS 690" : [ {
+      "id" : "0b0003ea801f0e14",
+      "codigo" : "NAS 690",
+      "titulo" : "Empalmes y terminales de tornillos autofusibles para cables de energía.",
+      "edicion" : "1ª",
+      "fecha" : "13/01/2016",
+      "anexo" : "090003ea801f14b2",
+      "nombre" : "NAS 690 Empalmes y terminales de tornillos autofusibles para cables de energía.pdf"
+    } ],
+    "NAS 811" : [ {
+      "id" : "0b0003ea803814dd",
+      "codigo" : "NAS 811_ED3",
+      "titulo" : "Diseño de instalaciones de control, mando y señalización. 3ª Edición.",
+      "edicion" : "ED3",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381445",
+      "nombre" : "NAS811_ED3.pdf"
+    } ],
+    "NAS 812" : [ {
+      "id" : "0b0003ea801f0e17",
+      "codigo" : "NAS 812",
+      "titulo" : "Enclavamientos electrónicos. Funcionalidad para tercer carril",
+      "edicion" : "1ª",
+      "fecha" : "18/01/2017",
+      "anexo" : "090003ea801f14f2",
+      "nombre" : "NAS 812_2017_Enclav tercer carril.pdf"
+    } ],
+    "NAS 813" : [ {
+      "id" : "0b0003ea801f0e18",
+      "codigo" : "NAS 813",
+      "titulo" : "Enclavamientos electrónicos. Proximidades y diferímetros de disolución de rutas.",
+      "edicion" : "1ª",
+      "fecha" : "30/06/2017",
+      "anexo" : "090003ea801f1500",
+      "nombre" : "NAS 813_Proximidades y diferímetros.pdf"
+    } ],
+    "NAS 814" : [ {
+      "id" : "0b0003ea801f0e23",
+      "codigo" : "NAS 814",
+      "titulo" : "Enclavamientos electrónicos. Secuencias de aspectos de señales.",
+      "edicion" : "1ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1623",
+      "nombre" : "NAS 814_Secuencia de aspectos de señales.pdf"
+    } ],
+    "NAS 816" : [ {
+      "id" : "0b0003ea8038152d",
+      "codigo" : "NAS 816_ED1M1",
+      "titulo" : "Sistemas videográficos para enclavamientos y telemandos. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381446",
+      "nombre" : "NAS816_ED1M1.pdf"
+    } ],
+    "NAS 818" : [ {
+      "id" : "0b0003ea801f0e26",
+      "codigo" : "NAS 818",
+      "titulo" : "Enclavamientos electrónicos. Bloqueos automáticos, de liberación automática, de señalización lateral y de control automático. 1ª Edición.",
+      "edicion" : "1ª",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f169b",
+      "nombre" : "NAS 818_Bloqueos automáticos.pdf"
+    } ],
+    "NAS 819" : [ {
+      "id" : "0b0003ea801f0e27",
+      "codigo" : "NAS 819",
+      "titulo" : "Enclavamientos electrónicos. Arquitectura física. 1ª Edición.",
+      "edicion" : "1ª",
+      "fecha" : "03/02/2022",
+      "anexo" : "090003ea801f1712",
+      "nombre" : "NAS819_ED1.pdf"
+    } ],
+    "NAS 830" : [ {
+      "id" : "0b0003ea801f0e2a",
+      "codigo" : "NAS 830_ED1M1",
+      "titulo" : "Protocolo estándar de Adif para las comunicaciones entre CTC y enclavamiento SCI-CC-A. Versión 1.1. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18e7",
+      "nombre" : "NAS830_ED1M1.pdf"
+    } ],
+    "NAS 831" : [ {
+      "id" : "0b0003ea801f0e2c",
+      "codigo" : "NAS 831_ED2",
+      "titulo" : "Catálogo estándar de indicaciones para las comunicaciones entre CTC y enclavamiento de Adif mediante uso de protocolos TCP/IP. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18f4",
+      "nombre" : "NAS831_ED2.pdf"
+    } ],
+    "NAS 840" : [ {
+      "id" : "0b0003ea8034d792",
+      "codigo" : "NAS 840_ED2",
+      "titulo" : "Requisitos funcionales y Reglas de Ingeniería ERTMS Nivel 1 y Nivel 2. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d76c",
+      "nombre" : "NAS840_ED2.pdf"
+    } ],
+    "NAS 841" : [ {
+      "id" : "0b0003ea801f0e3c",
+      "codigo" : "NAS 841",
+      "titulo" : "Requisitos de interfaz de gestión de claves ERTMS Nivel 2. 1ª Edición.",
+      "edicion" : "1ª",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f169d",
+      "nombre" : "NAS 841_REQ CLAVES ERTMS N2_1Ed.pdf"
+    } ],
+    "NAS 908" : [ {
+      "id" : "0b0003ea801f0e3d",
+      "codigo" : "NAS 908_ED1",
+      "titulo" : "Simbología utilizada en esquemas de señalización y programas de explotación de Adif. (ED1).",
+      "edicion" : "ED1",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f184c",
+      "nombre" : "NAS908_ED1.pdf"
+    } ],
+    "NRS 01 (NAS 201)" : [ {
+      "id" : "0b0003ea801f106f",
+      "codigo" : "NRS 01",
+      "titulo" : "Norma funcional y técnica para sistemas de control de tráfico centralizado (C.T.C.)",
+      "edicion" : "1ª",
+      "fecha" : "01/10/1999",
+      "anexo" : "090003ea801f12d7",
+      "nombre" : "NAS 201.pdf"
+    } ],
+    "NRS 02 (NAS 202)" : [ {
+      "id" : "0b0003ea801f1070",
+      "codigo" : "NRS 02",
+      "titulo" : "Norma funcional del interface de usuario para operadores y supervisores de control de tráfico centralizado",
+      "edicion" : "1ª",
+      "fecha" : "01/10/1999",
+      "anexo" : "090003ea801f12d8",
+      "nombre" : "NAS 202.pdf"
+    } ],
+    "NRS 08 (NAS 208)" : [ {
+      "id" : "0b0003ea801f1095",
+      "codigo" : "NRS 08",
+      "titulo" : "Norma sobre señal indicadora de la salida con doble aspecto.",
+      "edicion" : "1ª",
+      "fecha" : "01/12/2004",
+      "anexo" : "090003ea801f1416",
+      "nombre" : "NAS 208.pdf"
+    } ],
+    "NRS 7-3-0.0 (NAS 730)" : [ {
+      "id" : "0b0003ea801f1096",
+      "codigo" : "NRS 7-3-0.0.",
+      "titulo" : "Recepción de cables de señalización instalados",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1983",
+      "anexo" : "090003ea801f141f",
+      "nombre" : "NAS 730.pdf"
+    } ],
+    "ET 03.365.513.5" : [ {
+      "id" : "0b0003ea801f09c5",
+      "codigo" : "ET 03.365.513.5_2E",
+      "titulo" : "Armarios de alimentación eléctrica para pasos a nivel.",
+      "edicion" : "2ª+Erratum",
+      "fecha" : "23/01/2019",
+      "anexo" : "090003ea801f15de",
+      "nombre" : "ET 03.365.513.5 Armarios de alimentación eléctrica_Erratum.pdf"
+    } ],
+    "ET 03.365.521.8" : [ {
+      "id" : "0b0003ea801f09d7",
+      "codigo" : "ET 03.365.521.8_3",
+      "titulo" : "Señales luminosas acústicas a la carretera y peatones para pasos a nivel. (3ª ed.).",
+      "edicion" : "3ª",
+      "fecha" : "03/02/2022",
+      "anexo" : "090003ea801f1711",
+      "nombre" : "ET033655218_ED3.pdf"
+    } ],
+    "ET 03.365.522.6" : [ {
+      "id" : "0b0003ea801f09d9",
+      "codigo" : "ET 03.365.522.6_2",
+      "titulo" : "Señales especiales al ferrocarril para pasos a nivel tipo led. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "20/07/2018",
+      "anexo" : "090003ea801f15d1",
+      "nombre" : "Senales Especiales FC Led.pdf"
+    } ],
+    "ET 03.365.523.4" : [ {
+      "id" : "0b0003ea801f09da",
+      "codigo" : "ET 03.365.523.4",
+      "titulo" : "Destelladores para Instalaciones de Seguridad en Pasos a Nivel",
+      "edicion" : "2ª",
+      "fecha" : "01/02/1995",
+      "anexo" : "090003ea801f13c6",
+      "nombre" : "ET 03.365.523.4.pdf"
+    } ],
+    "ET 03.365.525.9" : [ {
+      "id" : "0b0003ea801f09dc",
+      "codigo" : "ET 03.365.525.9",
+      "titulo" : "Convertidores para Instalaciones de Seguridad en Pasos a Nivel",
+      "edicion" : "1ª",
+      "fecha" : "01/02/1995",
+      "anexo" : "090003ea801f13c8",
+      "nombre" : "ET 03.365.525.9.pdf"
+    } ],
+    "ET 03.365.526.7" : [ {
+      "id" : "0b0003ea801f09dd",
+      "codigo" : "ET 03.365.526.7",
+      "titulo" : "Temporizadores electrónicos para Instalaciones de Seguridad en Pasos a Nivel",
+      "edicion" : "1ª",
+      "fecha" : "01/02/1995",
+      "anexo" : "090003ea801f13c9",
+      "nombre" : "ET 03.365.526.7.pdf"
+    } ],
+    "ET 03.365.527.5" : [ {
+      "id" : "0b0003ea801f09de",
+      "codigo" : "ET 03.365.527.5",
+      "titulo" : "Circuitos de vía cortos para Instalaciones de Seguridad en Pasos a Nivel",
+      "edicion" : "1ª",
+      "fecha" : "01/02/1995",
+      "anexo" : "090003ea801f13ca",
+      "nombre" : "ET 03.365.527.5.pdf"
+    } ],
+    "ET 03.365.528.3" : [ {
+      "id" : "0b0003ea801f09e0",
+      "codigo" : "ET 03.365.528.3_2",
+      "titulo" : "Armarios de mando local para instalaciones de seguridad para pasos a nivel. (2ª ed.)",
+      "edicion" : "2ª",
+      "fecha" : "30/06/2017",
+      "anexo" : "090003ea801f150f",
+      "nombre" : "ET 03.365.528.3_Armarios de mando local_2ªed.pdf"
+    } ],
+    "ET 03.365.529.1" : [ {
+      "id" : "0b0003ea801f09ed",
+      "codigo" : "ET 03.365.529.1_2E",
+      "titulo" : "Accionamiento eléctrico de barrera para pasos a nivel.",
+      "edicion" : "2ª+Erratum",
+      "fecha" : "23/01/2019",
+      "anexo" : "090003ea801f15df",
+      "nombre" : "ET 03.365.529.1 Accionamiento de barrera.pdf"
+    } ],
+    "ET 03.365.540.8" : [ {
+      "id" : "0b0003ea801f09f2",
+      "codigo" : "ET 03.365.540.8",
+      "titulo" : "Módulo de mando electrónico para Pasos a Nivel.",
+      "edicion" : "1ª",
+      "fecha" : "01/01/2000",
+      "anexo" : "090003ea801f12b4",
+      "nombre" : "ET 03.365.540.8.pdf"
+    } ],
+    "ET 03.365.541.6" : [ {
+      "id" : "0b0003ea801f09f4",
+      "codigo" : "ET 03.365.541.6_2",
+      "titulo" : "Sistema detector de obstáculos para pasos a nivel. (2ª Edición).",
+      "edicion" : "2ª",
+      "fecha" : "01/07/2011",
+      "anexo" : "090003ea801f144c",
+      "nombre" : "ET 03.365.541.6.pdf"
+    } ],
+    "ET 03.365.542.4" : [ {
+      "id" : "0b0003ea801f09ff",
+      "codigo" : "ET 03.365.542.4",
+      "titulo" : "Sistema Detector de obstáculos para pasos a nivel por cámaras de visión artificial”. 1ª Edición.",
+      "edicion" : "1ª",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f1675",
+      "nombre" : "ET 03.365.542.4 Sistema detector obstáculos cámaras visión.pdf"
+    } ],
+    "ET 03.365.543.2" : [ {
+      "id" : "0b0003ea801f0a00",
+      "codigo" : "ET 03.365.543.2",
+      "titulo" : "Señalización luminosa en plumas de barreras de Pasos a Nivel",
+      "edicion" : "1ª",
+      "fecha" : "01/11/2004",
+      "anexo" : "090003ea801f1361",
+      "nombre" : "ET 03.365.543.2.pdf"
+    } ],
+    "ET 03.365.545.7" : [ {
+      "id" : "0b0003ea801f0a01",
+      "codigo" : "ET 03.365.545.7",
+      "titulo" : "Adaptadores de nivel de tensión con el modulo de mando de pasos a nivel.",
+      "edicion" : "1ª",
+      "fecha" : "01/12/2004",
+      "anexo" : "090003ea801f1362",
+      "nombre" : "ET 03.365.545.7.pdf"
+    } ],
+    "ET 03.365.551.5" : [ {
+      "id" : "0b0003ea801f0a03",
+      "codigo" : "ET 03.365.551.5",
+      "titulo" : "Registradores de eventos para Pasos a Nivel",
+      "edicion" : "1ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1624",
+      "nombre" : "ET 03.365.551.5 Registrador eventos.pdf"
+    } ],
+    "ET 03.365.555.6" : [ {
+      "id" : "0b0003ea801f0a05",
+      "codigo" : "ET 03.365.555.6",
+      "titulo" : "Sistemas de detectores de tren por pedales electrónicos para Instalaciones de Seguridad en Pasos a Nivel",
+      "edicion" : "1ª",
+      "fecha" : "01/04/1999",
+      "anexo" : "090003ea801f12b5",
+      "nombre" : "ET 03.365.555.6.pdf"
+    } ],
+    "ET 03.365.556.4" : [ {
+      "id" : "0b0003ea801f0a07",
+      "codigo" : "ET 03.365.556.4_1M1",
+      "titulo" : "Pavimentos de caucho para superficie de rodadura de pasos a nivel.",
+      "edicion" : "1ª+M1",
+      "fecha" : "23/01/2019",
+      "anexo" : "090003ea801f15e0",
+      "nombre" : "ET 03.365.556.4+M1 Pavimentos de caucho.pdf"
+    } ],
+    "ET 03.365.560.6" : [ {
+      "id" : "0b0003ea801f0a08",
+      "codigo" : "ET 03.365.560.6",
+      "titulo" : "Sistema de protección de paso a nivel tipo Adif.",
+      "edicion" : "ED1",
+      "fecha" : "13/07/2022",
+      "anexo" : "090003ea801f175a",
+      "nombre" : "ET03.365.560.6_ED1.pdf"
+    } ],
+    "NAPN 6-0-0.0" : [ {
+      "id" : "0b0003ea801f0ddb",
+      "codigo" : "NAPN 6-0-0.0",
+      "titulo" : "Equivalencia de clases de protección de pasos a nivel. (1ª Edición).",
+      "edicion" : "1ª",
+      "fecha" : "16/07/2021",
+      "anexo" : "090003ea801f16c8",
+      "nombre" : "NAPN 6-0-0.0_Equivalencia clases PN.pdf"
+    } ],
+    "NAPN 6-0-1.0" : [ {
+      "id" : "0b0003ea801f0de9",
+      "codigo" : "NAPN 6-0-1.0_3M1E",
+      "titulo" : "Superficie de rodadura entre carriles de vía. (3ª ed.+M1+Erratum)",
+      "edicion" : "3ª+M1+Erratum",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f1676",
+      "nombre" : "NAPN 6010 3Ed+M1+Erratum Superficie de rodadura entre carriles de vía.pdf"
+    } ],
+    "NAPN 6-0-2.0" : [ {
+      "id" : "0b0003ea801f0dea",
+      "codigo" : "NAPN 6-0-2.0_ED1",
+      "titulo" : "Sistemas de protección de pasos a nivel. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18e3",
+      "nombre" : "NAPN6020_ED1.pdf"
+    } ],
+    "NS 03.432.325.3 (NAS 325)" : [ {
+      "id" : "0b0003ea801f10a6",
+      "codigo" : "NS 03.432.325.3",
+      "titulo" : "Sistemas para reducción de tiempos de cierre en protecciones de pasos a nivel enclavados (S.B.E.)",
+      "edicion" : "1ª",
+      "fecha" : "01/01/2003",
+      "anexo" : "090003ea801f12da",
+      "nombre" : "NAS 325.pdf"
+    } ],
+    "ET 03.366.100.0" : [ {
+      "id" : "0b0003ea801f0a19",
+      "codigo" : "ET 03.366.100.0_1M1M2",
+      "titulo" : "Detectores de caja de grasa caliente y de rueda caliente. (1ª ed.+M1+M2)",
+      "edicion" : "1ª+M1+M2",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1627",
+      "nombre" : "ET 03.366.100.0+M1+M2 Detectores caja grasa caliente.pdf"
+    } ],
+    "ET 03.366.101.8" : [ {
+      "id" : "0b0003ea8039fd5b",
+      "codigo" : "ET 03.366.101.8",
+      "titulo" : "Casetas prefabricadas para equipos de telecomunicaciones.",
+      "edicion" : "ED2",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fd74",
+      "nombre" : "ET03.366.101.8_ED2.pdf"
+    } ],
+    "ET 03.366.102.6" : [ {
+      "id" : "0b0003ea801f0a28",
+      "codigo" : "ET 03.366.102.6",
+      "titulo" : "Equipos audio grabadores para telecomunicaciones.",
+      "edicion" : "1ª",
+      "fecha" : "11/07/2016",
+      "anexo" : "090003ea801f14dc",
+      "nombre" : "ET Audiograbadores Comité Normativa.pdf"
+    } ],
+    "ET 03.366.103.4" : [ {
+      "id" : "0b0003ea801f0a29",
+      "codigo" : "ET 03.366.103.4",
+      "titulo" : "Modelo de información OPC-UA para los sistemas de detección de caja de grasa caliente y de rueda caliente.",
+      "edicion" : "1ª",
+      "fecha" : "11/07/2016",
+      "anexo" : "090003ea801f14dd",
+      "nombre" : "ET Protocolo OPC-UA Comité de Normativa.pdf"
+    } ],
+    "ET 03.366.304.8" : [ {
+      "id" : "0b0003ea801f0a30",
+      "codigo" : "ET 03.366.304.8",
+      "titulo" : "Repartidores telefónicos",
+      "edicion" : "1ª",
+      "fecha" : "01/11/1976",
+      "anexo" : "090003ea801f13d6",
+      "nombre" : "ET 03.366.304.8.pdf"
+    } ],
+    "ET 03.366.305.5" : [ {
+      "id" : "0b0003ea801f0a3b",
+      "codigo" : "ET 03.366.305.5",
+      "titulo" : "Repartidores generales",
+      "edicion" : "1ª",
+      "fecha" : "01/11/1976",
+      "anexo" : "090003ea801f13d7",
+      "nombre" : "ET 03.366.305.5.pdf"
+    } ],
+    "ET 03.366.306.3" : [ {
+      "id" : "0b0003ea801f0a3c",
+      "codigo" : "ET 03.366.306.3",
+      "titulo" : "Armarios repartidores de fibra óptica con organización de circuito individual",
+      "edicion" : "1ª",
+      "fecha" : "20/07/2018",
+      "anexo" : "090003ea801f15ca",
+      "nombre" : "20180720 ET Repartidores Fibra Óptica TIPO A Public.pdf"
+    } ],
+    "ET 03.366.400.4" : [ {
+      "id" : "0b0003ea801f0a3d",
+      "codigo" : "ET 03.366.400.4",
+      "titulo" : "Sistemas de telefonía selectiva centralizada por cable",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13d8",
+      "nombre" : "ET 03.366.400.4.pdf"
+    } ],
+    "ET 03.366.401.2" : [ {
+      "id" : "0b0003ea801f0a3e",
+      "codigo" : "ET 03.366.401.2",
+      "titulo" : "Equipos de telefonía selectiva por cable (selectivo centralizado)",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13d9",
+      "nombre" : "ET 03.366.401.2.pdf"
+    } ],
+    "ET 03.366.403.8" : [ {
+      "id" : "0b0003ea801f0a3f",
+      "codigo" : "ET 03.366.403.8",
+      "titulo" : "Equipos escalonado, señales, vía, etc. (comunicaciones a 2 h)",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13da",
+      "nombre" : "ET 03.366.403.8.pdf"
+    } ],
+    "ET 03.366.404.6" : [ {
+      "id" : "0b0003ea801f0a40",
+      "codigo" : "ET 03.366.404.6",
+      "titulo" : "Pupitre de operador para puestos secundarios",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13db",
+      "nombre" : "ET 03.366.404.6.pdf"
+    } ],
+    "ET 03.366.405.3" : [ {
+      "id" : "0b0003ea801f0a41",
+      "codigo" : "ET 03.366.405.3",
+      "titulo" : "Armarios de equipos para telefonía selectiva",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13dc",
+      "nombre" : "ET 03.366.405.3.pdf"
+    } ],
+    "ET 03.366.406.1" : [ {
+      "id" : "0b0003ea801f0a42",
+      "codigo" : "ET 03.366.406.1",
+      "titulo" : "Repartidores de cables para telefonía selectiva",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13dd",
+      "nombre" : "ET 03.366.406.1.pdf"
+    } ],
+    "ET 03.366.407.9" : [ {
+      "id" : "0b0003ea801f0a43",
+      "codigo" : "ET 03.366.407.9",
+      "titulo" : "Puesto de mando",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13de",
+      "nombre" : "ET 03.366.407.9.pdf"
+    } ],
+    "ET 03.366.408.7" : [ {
+      "id" : "0b0003ea801f0a44",
+      "codigo" : "ET 03.366.408.7",
+      "titulo" : "Teléfonos de intemperie de vía",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13df",
+      "nombre" : "ET 03.366.408.7.pdf"
+    } ],
+    "ET 03.366.409.5" : [ {
+      "id" : "0b0003ea801f0a4f",
+      "codigo" : "ET 03.366.409.5",
+      "titulo" : "Conectores de vía seccionable",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13e0",
+      "nombre" : "ET 03.366.409.5.pdf"
+    } ],
+    "ET 03.366.411.1" : [ {
+      "id" : "0b0003ea801f0a51",
+      "codigo" : "ET 03.366.411.1",
+      "titulo" : "Bobinas de carga",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13e2",
+      "nombre" : "ET 03.366.411.1.pdf"
+    } ],
+    "ET 03.366.412.9" : [ {
+      "id" : "0b0003ea801f0a52",
+      "codigo" : "ET 03.366.412.9",
+      "titulo" : "Transformadores de línea (bobinas traslatoras)",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13e3",
+      "nombre" : "ET 03.366.412.9.pdf"
+    } ],
+    "ET 03.366.413.7" : [ {
+      "id" : "0b0003ea801f0a53",
+      "codigo" : "ET 03.366.413.7",
+      "titulo" : "Teléfonos portátiles",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13e4",
+      "nombre" : "ET 03.366.413.7.pdf"
+    } ],
+    "ET 03.366.415.2" : [ {
+      "id" : "0b0003ea801f0a55",
+      "codigo" : "ET 03.366.415.2",
+      "titulo" : "Descargadores",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13e5",
+      "nombre" : "ET 03.366.415.2.pdf"
+    } ],
+    "ET 03.366.416.0" : [ {
+      "id" : "0b0003ea801f0a56",
+      "codigo" : "ET 03.366.416.0",
+      "titulo" : "Regletas de corte y prueba, y distribución",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13e6",
+      "nombre" : "ET 03.366.416.0.pdf"
+    } ],
+    "ET 03.366.423.6" : [ {
+      "id" : "0b0003ea801f0a65",
+      "codigo" : "ET 03.366.423.6",
+      "titulo" : "Sistemas de telefonía selectiva, escalonado, de señales y de vía",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f13e9",
+      "nombre" : "ET 03.366.423.6.pdf"
+    } ],
+    "ET 03.366.510.0" : [ {
+      "id" : "0b0003ea801f0a66",
+      "codigo" : "ET 03.366.510.0",
+      "titulo" : "Torres y Mástiles de Telecomunicaciones. 1ª Edición.",
+      "edicion" : "1ª",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f16a2",
+      "nombre" : "ET 03.366.510.0_TORRES Y MASTILES.pdf"
+    } ],
+    "ET 03.366.740.3" : [ {
+      "id" : "0b0003ea801f0a8c",
+      "codigo" : "ET 03.366.740.3",
+      "titulo" : "Conductos de PVC para la instalación de cables de comunicaciones",
+      "edicion" : "1ª",
+      "fecha" : "01/11/1976",
+      "anexo" : "090003ea801f13ef",
+      "nombre" : "ET 03.366.740.3.pdf"
+    } ],
+    "ET 03.366.751.0" : [ {
+      "id" : "0b0003ea801f0a91",
+      "codigo" : "ET 03.366.751.0_ED5M1M2M3",
+      "titulo" : "Tubos de polietileno para tendido de cables de fibra óptica. 5ª Edición+M1+M2+M3.",
+      "edicion" : "ED5M1M2M3",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f18c4",
+      "nombre" : "ET03.366.751.0_ED5M1M2M3.pdf"
+    } ],
+    "ET 03.366.752.8" : [ {
+      "id" : "0b0003ea801f0a93",
+      "codigo" : "ET 03.366.752.8_ED1M1",
+      "titulo" : "Conjuntos de conexión óptica. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18e4",
+      "nombre" : "ET03.366.752.8_ED1M1.pdf"
+    } ],
+    "ET 03.366.755.1" : [ {
+      "id" : "0b0003ea801f0a94",
+      "codigo" : "ET 03.366.755.1",
+      "titulo" : "Conjuntos de conexión óptica con conectores FC",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1997",
+      "anexo" : "090003ea801f12bd",
+      "nombre" : "ET 03.366.755.1.pdf"
+    } ],
+    "ET 03.366.756.9" : [ {
+      "id" : "0b0003ea8034e721",
+      "codigo" : "ET 03.366.756.9_ED3",
+      "titulo" : "Conjuntos de empalmes para cables de fibra óptica. 3ª Edición.",
+      "edicion" : "ED3",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034e727",
+      "nombre" : "ET 03.366.756.9_ED3.pdf"
+    } ],
+    "ET 03.366.780.9" : [ {
+      "id" : "0b0003ea801f0aa7",
+      "codigo" : "ET 03.366.780.9_7M1",
+      "titulo" : "Cables de fibra óptica monomodo multifibra. 7ª Edición+M1.",
+      "edicion" : "7ª+M1",
+      "fecha" : "03/02/2022",
+      "anexo" : "090003ea801f1713",
+      "nombre" : "ET03.366.780.9_ED7M1.pdf"
+    } ],
+    "ET 03.366.781.7" : [ {
+      "id" : "0b0003ea801f0aa8",
+      "codigo" : "ET 03.366.781.7_ED1",
+      "titulo" : "Cables de cuadretes para instalaciones de telecomunicaciones. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18e2",
+      "nombre" : "ET03.366.781.7_ED1.pdf"
+    } ],
+    "ET 03.366.950.8" : [ {
+      "id" : "0b0003ea801f0ab4",
+      "codigo" : "ET 03.366.950.8",
+      "titulo" : "Equipo de transmisión digital síncrono STM-16/64.",
+      "edicion" : "1ª",
+      "fecha" : "08/07/2015",
+      "anexo" : "090003ea801f1479",
+      "nombre" : "ET 03.366.950.8_2014.pdf"
+    } ],
+    "ET 03.366.951.6" : [ {
+      "id" : "0b0003ea801f0ab5",
+      "codigo" : "ET 03.366.951.6",
+      "titulo" : "Bifurcador digital de 2 Mb/s",
+      "edicion" : "1ª",
+      "fecha" : "19/11/2014",
+      "anexo" : "090003ea801f1465",
+      "nombre" : "ET 03.366.951.6-140512_ET PDH 2 Mbps_Difusión.pdf"
+    } ],
+    "ET 03.366.952.4" : [ {
+      "id" : "0b0003ea801f0ab6",
+      "codigo" : "ET 03.366.952.4",
+      "titulo" : "Equipo de transmisión digital síncrono STM-1 y STM-4",
+      "edicion" : "1ª",
+      "fecha" : "19/11/2014",
+      "anexo" : "090003ea801f1466",
+      "nombre" : "ET 03.366.952.4-140415_ET STM 1 4 Telecomunicaciones_Difusión.pdf"
+    } ],
+    "ET 03.366.953.2" : [ {
+      "id" : "0b0003ea801f0ab7",
+      "codigo" : "ET 03.366.953.2",
+      "titulo" : "Rectificadores de 48 Vcc para telecomunicaciones.",
+      "edicion" : "1ª",
+      "fecha" : "08/07/2015",
+      "anexo" : "090003ea801f1478",
+      "nombre" : "ET 03.366.953.2_2015.pdf"
+    } ],
+    "NAT 105" : [ {
+      "id" : "0b0003ea8039fcb1",
+      "codigo" : "NAT 105",
+      "titulo" : "Montaje de casetas prefabricadas para equipos de telecomunicaciones.",
+      "edicion" : "ED1M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fb4a",
+      "nombre" : "NAT105_ED1M1.pdf"
+    } ],
+    "NAT 206" : [ {
+      "id" : "0b0003ea801f0e53",
+      "codigo" : "NAT 206",
+      "titulo" : "Conservación de sistemas de toma de tierra",
+      "edicion" : "1ª",
+      "fecha" : "01/08/1976",
+      "anexo" : "090003ea801f1429",
+      "nombre" : "NAT 206.pdf"
+    } ],
+    "NAT 300" : [ {
+      "id" : "0b0003ea801f0e54",
+      "codigo" : "NAT 300",
+      "titulo" : "Sistemas de puesta a tierra de las instalaciones de seguridad y comunicaciones",
+      "edicion" : "1ª",
+      "fecha" : "01/11/1982",
+      "anexo" : "090003ea801f142a",
+      "nombre" : "NAT 300.pdf"
+    } ],
+    "NAT 307" : [ {
+      "id" : "0b0003ea801f0e60",
+      "codigo" : "NAT 307",
+      "titulo" : "Instalación de repartidores telefónicos",
+      "edicion" : "1ª",
+      "fecha" : "01/11/1976",
+      "anexo" : "090003ea801f142c",
+      "nombre" : "NAT 307.pdf"
+    } ],
+    "NAT 309" : [ {
+      "id" : "0b0003ea801f0e61",
+      "codigo" : "NAT 309",
+      "titulo" : "Instalación de repartidores generales",
+      "edicion" : "1ª",
+      "fecha" : "01/11/1976",
+      "anexo" : "090003ea801f142d",
+      "nombre" : "NAT 309.pdf"
+    } ],
+    "NAT 401" : [ {
+      "id" : "0b0003ea801f0e62",
+      "codigo" : "NAT 401",
+      "titulo" : "Instalación de sistemas de telefonía selectiva",
+      "edicion" : "1ª",
+      "fecha" : "01/01/1977",
+      "anexo" : "090003ea801f142e",
+      "nombre" : "NAT 401.pdf"
+    } ],
+    "NAT 405" : [ {
+      "id" : "0b0003ea801f0e67",
+      "codigo" : "NAT 405_2",
+      "titulo" : "Requisitos funcionales para el sistema de telefonía de explotación. 2ª Edición.",
+      "edicion" : "2ª",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f16a0",
+      "nombre" : "NAT 405_Telefonía_Explotación_Adif_rFC.pdf"
+    } ],
+    "NAT 406" : [ {
+      "id" : "0b0003ea801f0e68",
+      "codigo" : "NAT 406",
+      "titulo" : "Requisitos funcionales para equipos audio-grabadores para comunicaciones de explotación. 1ª Edición.",
+      "edicion" : "1ª",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f16a1",
+      "nombre" : "NAT 406_Audiograbadores.pdf"
+    } ],
+    "NAT 701" : [ {
+      "id" : "0b0003ea801f0e73",
+      "codigo" : "NAT 701",
+      "titulo" : "Recepción de cables de larga distancia, instalados",
+      "edicion" : "1ª",
+      "fecha" : "01/07/1982",
+      "anexo" : "090003ea801f1432",
+      "nombre" : "NAT 701.pdf"
+    } ],
+    "NAT 707" : [ {
+      "id" : "0b0003ea801f0e76",
+      "codigo" : "NAT 707",
+      "titulo" : "Conexión conductores cables. Tubitos SCL",
+      "edicion" : "1ª",
+      "fecha" : "01/03/1982",
+      "anexo" : "090003ea801f1436",
+      "nombre" : "NAT 707.pdf"
+    } ],
+    "NAT 712" : [ {
+      "id" : "0b0003ea801f0e79",
+      "codigo" : "NAT 712",
+      "titulo" : "Tendido de cables autosoportados - figura [ 8 ]",
+      "edicion" : "1ª",
+      "fecha" : "01/11/1976",
+      "anexo" : "090003ea801f1439",
+      "nombre" : "NAT 712.pdf"
+    } ],
+    "NAT 714" : [ {
+      "id" : "0b0003ea801f0e7b",
+      "codigo" : "NAT 714",
+      "titulo" : "Instalación del conector de vía",
+      "edicion" : "1ª",
+      "fecha" : "01/11/1976",
+      "anexo" : "090003ea801f143b",
+      "nombre" : "NAT 714.pdf"
+    } ],
+    "NAT 716" : [ {
+      "id" : "0b0003ea801f0e87",
+      "codigo" : "NAT 716",
+      "titulo" : "Instalación de líneas aéreas de comunicaciones",
+      "edicion" : "1ª",
+      "fecha" : "01/11/1976",
+      "anexo" : "090003ea801f143d",
+      "nombre" : "NAT 716.pdf"
+    } ],
+    "NAT 730" : [ {
+      "id" : "0b0003ea801f0e8a",
+      "codigo" : "NAT 730_3",
+      "titulo" : "Documentación a entregar y medidas a realizar en instalación y actuaciones sobre cables de fibras ópticas. (3ª ed.)",
+      "edicion" : "3ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f1629",
+      "nombre" : "NAT 730 3ª Ed Documentacion y medidas en instalacion cables FO.pdf"
+    } ],
+    "NAT 734" : [ {
+      "id" : "0b0003ea801f0e8b",
+      "codigo" : "NAT 734",
+      "titulo" : "Recomendaciones para la numeración y colocación de cordones de conexión de fibra óptica entre repartidores de RENFE y equipos de operadores de telecomunicaciones - 2ª prueba",
+      "edicion" : "2ª",
+      "fecha" : "01/01/1999",
+      "anexo" : "090003ea801f12dc",
+      "nombre" : "NAT 734.pdf"
+    } ],
+    "NAT 760" : [ {
+      "id" : "0b0003ea801f0e8e",
+      "codigo" : "NAT 760",
+      "titulo" : "Comunicación de medida embarcada de energía.",
+      "edicion" : "1ª",
+      "fecha" : "29/01/2020",
+      "anexo" : "090003ea801f162a",
+      "nombre" : "NAT 760 Medidas embarcadas energía.pdf"
+    } ],
+    "ET 03.399.001.1" : [ {
+      "id" : "0b0003ea801f0abb",
+      "codigo" : "ET 03.399.001.1_2",
+      "titulo" : "Equipamientos de inspección y escaneo para seguridad.",
+      "edicion" : "2ª",
+      "fecha" : "23/01/2019",
+      "anexo" : "090003ea801f15e4",
+      "nombre" : "ET 03.399.001.1_Ed2 - EQUIPAMIENTOS DE INSPECCIÓN Y ESCANEO PARA SEGURIDAD.pdf"
+    } ],
+    "ET 03.399.003.7" : [ {
+      "id" : "0b0003ea801f0abc",
+      "codigo" : "ET 03.399.003.7",
+      "titulo" : "Sistemas de control de accesos",
+      "edicion" : "1ª",
+      "fecha" : "18/01/2017",
+      "anexo" : "090003ea801f14f5",
+      "nombre" : "ET 03.399.003.7_Sistemas de control de accesos.pdf"
+    } ],
+    "ET 03.399.006.0" : [ {
+      "id" : "0b0003ea8034e7fe",
+      "codigo" : "ET 03.399.006.0_ED2",
+      "titulo" : "Señalización de elementos de autoprotección en túneles. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034e728",
+      "nombre" : "ET 03.399.006.0_ED2.pdf"
+    } ],
+    "ET 03.399.007.8" : [ {
+      "id" : "0b0003ea8034da70",
+      "codigo" : "ET 03.399.007.8_ED2",
+      "titulo" : "Puertas de emergencia en túneles. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d8a3",
+      "nombre" : "ET 03.399.007.8_ED2.pdf"
+    } ],
+    "ET 03.399.008.6" : [ {
+      "id" : "0b0003ea8038181c",
+      "codigo" : "ET 03.399.008.6_ED2",
+      "titulo" : "Puertas de salida al exterior en templete y compuertas de emergencia en túneles. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381523",
+      "nombre" : "ET03.399.008.6_ED2.pdf"
+    } ],
+    "NAPS 001" : [ {
+      "id" : "0b0003ea8034d884",
+      "codigo" : "NAPS 001_ED2",
+      "titulo" : "Instalaciones de protección y seguridad. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d774",
+      "nombre" : "NAPS001_ED2.pdf"
+    } ],
+    "NAG 1-0-1.0" : [ {
+      "id" : "0b0003ea8039fd97",
+      "codigo" : "NAG 1-0-1.0",
+      "titulo" : "Presentación de proyectos.",
+      "edicion" : "ED3",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fd76",
+      "nombre" : "NAG1010_ED3.pdf"
+    } ],
+    "NAG 1-1-0.0" : [ {
+      "id" : "0b0003ea801f0c0f",
+      "codigo" : "NAG 1-1-0.0",
+      "titulo" : "Control y seguimiento de los edificios y dependencias dedicados al mantenimiento de la red. 1ª Edición.",
+      "edicion" : "1ª",
+      "fecha" : "22/01/2021",
+      "anexo" : "090003ea801f16a4",
+      "nombre" : "NAG 1-1-0.0_Control y seguimiento edificios mantenimiento(VF).pdf"
+    } ],
+    "NAG 1-1-1.0" : [ {
+      "id" : "0b0003ea802109e0",
+      "codigo" : "NAG 1-1-1.0_ED1M1",
+      "titulo" : "Instalaciones para la gestión del tráfico ferroviario. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210837",
+      "nombre" : "NAG1110_ED1M1.pdf"
+    } ],
+    "NAG 1-2-0.0" : [ {
+      "id" : "0b0003ea801f0c1e",
+      "codigo" : "NAG 1-2-0.0_ED2",
+      "titulo" : "Expropiaciones. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "27/06/2023",
+      "anexo" : "090003ea801f1843",
+      "nombre" : "NAG1200_ED2.pdf"
+    } ],
+    "NAG 1-2-1.1" : [ {
+      "id" : "0b0003ea8034db55",
+      "codigo" : "NAG 1-2-1.1_ED4M1",
+      "titulo" : "Reposición de servidumbres y servicios afectados. 4ª Edición+M1.",
+      "edicion" : "ED4M1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034da9e",
+      "nombre" : "NAG1211_ED4M1.pdf"
+    } ],
+    "NAG 2-0-1.0" : [ {
+      "id" : "0b0003ea801f0c23",
+      "codigo" : "NAG 2-0-1.0_1E",
+      "titulo" : "Designación de vías y componentes de la superestructura en la red. (1ª ed.+Erratum)",
+      "edicion" : "1ª+Erratum",
+      "fecha" : "18/01/2017",
+      "anexo" : "090003ea801f14eb",
+      "nombre" : "NAG 2-0-1 0 Designación de vías_Erratum.pdf"
+    } ],
+    "NAG 2-4-0.0" : [ {
+      "id" : "0b0003ea801f0c2f",
+      "codigo" : "NAG 2-4-0.0_ED1",
+      "titulo" : "Inventario. Condiciones generales. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "27/06/2023",
+      "anexo" : "090003ea801f183b",
+      "nombre" : "NAG2400_ED1.pdf"
+    } ],
+    "NAG 2-4-1.1" : [ {
+      "id" : "0b0003ea801f0c30",
+      "codigo" : "NAG 2-4-1.1_ED1",
+      "titulo" : "Inventario de obras de tierra de ferrocarril. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "27/06/2023",
+      "anexo" : "090003ea801f183c",
+      "nombre" : "NAG2411_ED1.pdf"
+    } ],
+    "NAG 2-4-1.2" : [ {
+      "id" : "0b0003ea8039fdc8",
+      "codigo" : "NAG 2-4-1.2",
+      "titulo" : "Inventario de obras de paso ferroviario.",
+      "edicion" : "ED1M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fd77",
+      "nombre" : "NAG2412_ED1M1.pdf"
+    } ],
+    "NAG 2-4-1.3" : [ {
+      "id" : "0b0003ea8039fe14",
+      "codigo" : "NAG 2-4-1.3",
+      "titulo" : "Inventario de pasos superiores sobre ferrocarril.",
+      "edicion" : "ED1M1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fd78",
+      "nombre" : "NAG2413_ED1M1.pdf"
+    } ],
+    "NAG 2-4-1.4" : [ {
+      "id" : "0b0003ea801f0c33",
+      "codigo" : "NAG 2-4-1.4_ED1",
+      "titulo" : "Inventario de túneles ferroviarios. Obra civil. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f1850",
+      "nombre" : "NAG2414_ED1.pdf"
+    } ],
+    "NAG 2-4-1.6" : [ {
+      "id" : "0b0003ea80381856",
+      "codigo" : "NAG 2-4-1.6_ED1",
+      "titulo" : "Inventario de andenes. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381524",
+      "nombre" : "NAG2416_ED1.pdf"
+    } ],
+    "NAG 2-4-1.7" : [ {
+      "id" : "0b0003ea80381865",
+      "codigo" : "NAG 2-4-1.7_ED1",
+      "titulo" : "Inventario de cruces entre andenes y para uso exclusivo de la actividad ferroviaria o de los servicios de emergencia. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea80381525",
+      "nombre" : "NAG2417_ED1.pdf"
+    } ],
+    "NAG 2-4-2.0" : [ {
+      "id" : "0b0003ea802109f9",
+      "codigo" : "NAG 2-4-2.0_ED1",
+      "titulo" : "Inventario de superestructura de vía. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210838",
+      "nombre" : "NAG2420_ED1.pdf"
+    } ],
+    "NAG 2-4-3.1" : [ {
+      "id" : "0b0003ea802109fd",
+      "codigo" : "NAG 2-4-3.1_ED1",
+      "titulo" : "Inventario de Línea Aérea de Contacto. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210a01",
+      "nombre" : "NAG2431_ED1.pdf"
+    } ],
+    "NAG 2-4-3.2" : [ {
+      "id" : "0b0003ea8034d8e4",
+      "codigo" : "NAG 2-4-3.2_ED1",
+      "titulo" : "Inventario de telemandos de energía. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d89c",
+      "nombre" : "NAG2432_ED1.pdf"
+    } ],
+    "NAG 2-4-3.3" : [ {
+      "id" : "0b0003ea801f0c34",
+      "codigo" : "NAG 2-4-3.3_ED1",
+      "titulo" : "Inventario de líneas de alta tensión. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f184d",
+      "nombre" : "NAG2433_ED1.pdf"
+    } ],
+    "NAG 2-4-4.4" : [ {
+      "id" : "0b0003ea8034db3d",
+      "codigo" : "NAG 2-4-4.4_ED2",
+      "titulo" : "Inventario de pasos a nivel y otras intersecciones. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034e820",
+      "nombre" : "NAG2444_ED2.pdf"
+    } ],
+    "NAG 2-4-5.1" : [ {
+      "id" : "0b0003ea80210a0b",
+      "codigo" : "NAG 2-4-5.1_ED1",
+      "titulo" : "Inventario de instalaciones de telecomunicaciones. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210a02",
+      "nombre" : "NAG2451_ED1.pdf"
+    } ],
+    "NAG 2-4-5.3" : [ {
+      "id" : "0b0003ea801f0c36",
+      "codigo" : "NAG 2-4-5.3_ED1",
+      "titulo" : "Inventario de instalaciones de protección y seguridad. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18e5",
+      "nombre" : "NAG2453_ED1.pdf"
+    } ],
+    "NAG 2-4-6.0" : [ {
+      "id" : "0b0003ea8034db50",
+      "codigo" : "NAG 2-4-6.0_ED1",
+      "titulo" : "Inventario de edificios de mantenimiento. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034da9d",
+      "nombre" : "NAG2460_ED1.pdf"
+    } ],
+    "NAG 3-0-0.0" : [ {
+      "id" : "0b0003ea801f0c47",
+      "codigo" : "NAG 3-0-0.0_ED2M1",
+      "titulo" : "Índice y contenido tipo de proyectos. 2ª Edición+M1.",
+      "edicion" : "ED2M1",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f1861",
+      "nombre" : "NAG3000_ED2M1.pdf"
+    } ],
+    "NAG 3-0-0.1" : [ {
+      "id" : "0b0003ea801f0c49",
+      "codigo" : "NAG 3-0-0.1_1M1",
+      "titulo" : "Índice y contenido tipo de los proyectos simplificados.(1ª ed.+M1)",
+      "edicion" : "1ª+M1",
+      "fecha" : "22/07/2020",
+      "anexo" : "090003ea801f167d",
+      "nombre" : "NAG 3-0-0.1+M1 Índice y contenido tipo proyectos simplificados.pdf"
+    } ],
+    "NAG 3-0-1.0" : [ {
+      "id" : "0b0003ea801f0c4a",
+      "codigo" : "NAG 3-0-1.0",
+      "titulo" : "Índice tipo y contenido del anejo de integración ambiental de proyectos.",
+      "edicion" : "1ª",
+      "fecha" : "17/01/2018",
+      "anexo" : "090003ea801f15b2",
+      "nombre" : "NAG 3010_Medio Ambiente_Aprobación.pdf"
+    } ],
+    "NAG 3-0-2.0" : [ {
+      "id" : "0b0003ea801f0c5a",
+      "codigo" : "NAG 3-0-2.0_ED2M1",
+      "titulo" : "Índice y contenido tipo de los proyectos de edificación. 2ª Edición+M1.",
+      "edicion" : "ED2M1",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f1854",
+      "nombre" : "NAG3020_ED2M1.pdf"
+    } ],
+    "NAG 4-0-0.0" : [ {
+      "id" : "0b0003ea801f0c5d",
+      "codigo" : "NAG 4-0-0.0_ED2",
+      "titulo" : "Metodología para el análisis de la vulnerabilidad, riesgo y adaptación a los efectos del cambio climático. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "24/01/2024",
+      "anexo" : "090003ea801f184a",
+      "nombre" : "NAG4000_ED2.pdf"
+    } ],
+    "NAG 4-0-0.1" : [ {
+      "id" : "0b0003ea801f0c5e",
+      "codigo" : "NAG 4-0-0.1_ED1",
+      "titulo" : "Metodología para estudios acústicos. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "30/01/2023",
+      "anexo" : "090003ea801f17d7",
+      "nombre" : "NAG4001_ED1.pdf"
+    } ],
+    "NAG 4-0-0.2" : [ {
+      "id" : "0b0003ea8039fe82",
+      "codigo" : "NAG 4-0-0.2",
+      "titulo" : "Metodología para estudios vibratorios.",
+      "edicion" : "ED1",
+      "fecha" : "16/06/2026",
+      "anexo" : "090003ea8039fd79",
+      "nombre" : "NAG4002_ED1.pdf"
+    } ],
+    "NAG 4-0-1.0" : [ {
+      "id" : "0b0003ea8034db78",
+      "codigo" : "NAG 4-0-1.0_ED1",
+      "titulo" : "Estudios de afección a los espacios de la Red Natura 2000 y otros espacios protegidos. 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034da9f",
+      "nombre" : "NAG4010_ED1.pdf"
+    } ],
+    "NAG 4-0-3.0" : [ {
+      "id" : "0b0003ea80210a12",
+      "codigo" : "NAG 4-0-3.0_ED1",
+      "titulo" : "Estudio de gestión de residuos de construcción y demolición (RCD). 1ª Edición.",
+      "edicion" : "ED1",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210a03",
+      "nombre" : "NAG4030_ED1.pdf"
+    } ],
+    "NAG 5-0-1.0" : [ {
+      "id" : "0b0003ea8034d8e9",
+      "codigo" : "NAG 5-0-1.0_ED2",
+      "titulo" : "Requerimientos para la protección y seguridad en el diseño de estaciones subterráneas. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034d89d",
+      "nombre" : "NAG5010_ED2.pdf"
+    } ],
+    "NAG 5-0-2.0" : [ {
+      "id" : "0b0003ea8034da93",
+      "codigo" : "NAG 5-0-2.0_ED2",
+      "titulo" : "Requerimientos para la protección y seguridad en el diseño de andenes al aire libre en estaciones de viajeros. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "18/06/2025",
+      "anexo" : "090003ea8034da99",
+      "nombre" : "NAG5020_ED2.pdf"
+    } ],
+    "NAG 5-1-0.0" : [ {
+      "id" : "0b0003ea80210a22",
+      "codigo" : "NAG 5-1-0.0_ED2",
+      "titulo" : "Gálibos autopista ferroviaria. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210a04",
+      "nombre" : "NAG5100_ED2.pdf"
+    } ],
+    "NAG 5-2-0.0" : [ {
+      "id" : "0b0003ea801f0c74",
+      "codigo" : "NAG 5-2-0.0_ED1M1",
+      "titulo" : "Instalación de toperas de altas prestaciones en zonas límite de parada de viajeros. 1ª Edición+M1.",
+      "edicion" : "ED1M1",
+      "fecha" : "26/06/2024",
+      "anexo" : "090003ea801f18df",
+      "nombre" : "NAG5200_ED1M1.pdf"
+    } ],
+    "NAG 6-1-0.0" : [ {
+      "id" : "0b0003ea80210a4d",
+      "codigo" : "NAG 6-1-0.0_ED1EM1",
+      "titulo" : "Elementos de identificación de vías en instalaciones de servicio. 1ª Edición+Erratum+M1.",
+      "edicion" : "ED1EM1",
+      "fecha" : "12/12/2024",
+      "anexo" : "090003ea80210a05",
+      "nombre" : "NAG6100_ED1EM1.pdf"
+    } ],
+    "NAG 7-0-0.0" : [ {
+      "id" : "0b0003ea801f0c85",
+      "codigo" : "NAG 7-0-0.0_ED2",
+      "titulo" : "Redacción de estudios de seguridad y salud. 2ª Edición.",
+      "edicion" : "ED2",
+      "fecha" : "27/06/2023",
+      "anexo" : "090003ea801f1821",
+      "nombre" : "NAG7000_ED2.pdf"
+    } ],
+    "NAG 9-0-0.0" : [ {
+      "id" : "0b0003ea803818ba",
+      "codigo" : "NAG 9-0-0.0_ED3M1",
+      "titulo" : "Criterios generales de uso de la base de precios de Adif. 3ª Edición+M1.",
+      "edicion" : "ED3M1",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea803818d0",
+      "nombre" : "NAG9000_ED3M1.pdf"
+    } ],
+    "NAG 9-0-0.1" : [ {
+      "id" : "0b0003ea8038d30a",
+      "codigo" : "NAG 9-0-0.1_ED2026",
+      "titulo" : "Guía de cambios en las unidades de la Base de Precios de ADIF. Edición 2026.",
+      "edicion" : "ED2026",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea8038d2d8",
+      "nombre" : "NAG9001_ED2026.pdf"
+    } ],
+    "PPT 9-0-1.0" : [ {
+      "id" : "0b0003ea8038d38e",
+      "codigo" : "PPT 9-0-1.0_ED2026",
+      "titulo" : "Pliego de Prescripciones Técnicas Particulares Tipo. Módulo de Obra Civil. Edición 2026.",
+      "edicion" : "ED2026",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea8038d2d9",
+      "nombre" : "PPT9010_PARTE1_ED2026.pdf"
+    } ],
+    "PPT 9-0-3.0" : [ {
+      "id" : "0b0003ea8038d3db",
+      "codigo" : "PPT 9-0-3.0_ED2026",
+      "titulo" : "Pliego de Prescripciones Técnicas Particulares Tipo. Módulo de Energía. Edición 2026.",
+      "edicion" : "ED2026",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea8038d395",
+      "nombre" : "PPT9030_PARTE1_ED2026.pdf"
+    } ],
+    "PPT 9-0-4.0" : [ {
+      "id" : "0b0003ea8038d428",
+      "codigo" : "PPT 9-0-4.0_ED2026",
+      "titulo" : "Pliego de Prescripciones Técnicas Particulares Tipo. Módulo de Control, Mando y Señalización. Edición 2026.",
+      "edicion" : "ED2026",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea8038d3ed",
+      "nombre" : "PPT9040_PARTE1_ED2026.pdf"
+    } ],
+    "PPT 9-0-5.0" : [ {
+      "id" : "0b0003ea8038d472",
+      "codigo" : "PPT 9-0-5.0_ED2026",
+      "titulo" : "Pliego de Prescripciones Técnicas Particulares Tipo. Módulo de Telecomunicaciones. Edición 2026.",
+      "edicion" : "ED2026",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea8038d430",
+      "nombre" : "PPT9050_PARTE1_ED2026.pdf"
+    } ],
+    "PPT 9-0-7.0" : [ {
+      "id" : "0b0003ea8038d4b5",
+      "codigo" : "PPT 9-0-7.0_ED2026",
+      "titulo" : "Pliego de Prescripciones Técnicas Particulares Tipo. Módulo de Arquitectura. Edición 2026.",
+      "edicion" : "ED2026",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea8038d434",
+      "nombre" : "PPT9070_PARTE1_ED2026.pdf"
+    } ],
+    "PPT 9-1-0.0" : [ {
+      "id" : "0b0003ea8038d56d",
+      "codigo" : "PPT 9-1-0.0_ED2026",
+      "titulo" : "Pliego de Prescripciones Técnicas Particulares Tipo. Módulo de Control y Pruebas. Edición 2026.",
+      "edicion" : "ED2026",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea8038d4e0",
+      "nombre" : "PPT9100_PARTE1_ED2026.pdf"
+    } ],
+    "PPT 9-1-0.1" : [ {
+      "id" : "0b0003ea8038d527",
+      "codigo" : "PPT 9-1-0.1_ED2026",
+      "titulo" : "Pliego de Prescripciones Técnicas Particulares Tipo. Módulo de Gestión Ambiental. Edición 2026.",
+      "edicion" : "ED2026",
+      "fecha" : "16/12/2025",
+      "anexo" : "090003ea8038d4de",
+      "nombre" : "PPT9101_PARTE1_ED2026.pdf"
+    } ]
+  }
+}

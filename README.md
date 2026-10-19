@@ -117,7 +117,7 @@ y el identificador de su PDF. Sirve para "Abrir norma" en redes donde la aplicac
 consultar esa web.
 
 - Lo genera `java -jar normas-adif.jar mapear` (consulta la web de ADIF norma a norma, con pausas;
-  tarda unos 40 minutos). Si fallan más del 10 % de las consultas, no guarda nada.
+  tarda unos 10 minutos). Si fallan más del 10 % de las consultas, no guarda nada.
 - **GitHub lo regenera cada lunes** (`.github/workflows/mapa-normas.yml`) y solo hace commit si
   ha cambiado alguna norma. También se puede lanzar a mano desde la pestaña *Actions* del repositorio.
 - Va incluido en el jar. Además, al arrancar, la aplicación baja de GitHub la última versión y la
