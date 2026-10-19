@@ -6,10 +6,11 @@ Aplicación local para explorar y buscar rápidamente en el
 > Herramienta personal **no oficial**, sin relación con ADIF. Los datos salen del catálogo público
 > que ADIF publica en su web; para cualquier uso formal, consulta siempre la fuente oficial.
 
-- **Backend:** Java 21 con [Javalin](https://javalin.io) (servidor web), [PDFBox](https://pdfbox.apache.org) (lectura del PDF) y [Lucene](https://lucene.apache.org) (búsqueda).
+- **Backend:** Java 25 con [Javalin](https://javalin.io) (servidor web), [PDFBox](https://pdfbox.apache.org) (lectura del PDF) y [Lucene](https://lucene.apache.org) (búsqueda).
 - **Interfaz:** React (Vite, JavaScript), compilada dentro del `.jar`.
 
-Para usarla solo hace falta **Java 21** (Windows o Linux); Node no es necesario.
+Para usarla solo hace falta **Java 25** o superior (Windows o Linux); Node no es necesario.
+El jar está compilado para Java 25, así que con una versión anterior no arranca.
 
 ## Uso
 
@@ -86,6 +87,8 @@ pulsa "Ver documento", llamando a su API interna (sin Selenium ni navegador):
   buscador seguiría funcionando porque solo depende del catálogo.
 
 ## Desarrollo
+
+Para compilar hace falta un **JDK 25** y Maven 3.9 (si el JDK es anterior, Maven lo avisa).
 
 ```bash
 mvn package                       # compila React + Java, pasa los tests y genera target/normas-adif.jar

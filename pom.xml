@@ -11,7 +11,7 @@
   <name>Buscador de normas ADIF</name>
 
   <properties>
-    <maven.compiler.release>21</maven.compiler.release>
+    <maven.compiler.release>25</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <javalin.version>6.7.0</javalin.version>
     <lucene.version>10.3.2</lucene.version>
@@ -62,6 +62,27 @@
   <build>
     <finalName>normas-adif</finalName>
     <plugins>
+      <!-- Falla pronto y con un mensaje claro si se compila con un JDK anterior a 25. -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>3.6.1</version>
+        <executions>
+          <execution>
+            <id>exigir-java-25</id>
+            <goals><goal>enforce</goal></goals>
+            <configuration>
+              <rules>
+                <requireJavaVersion>
+                  <version>[25,)</version>
+                  <message>Este proyecto necesita Java 25 o superior (tienes ${java.version}).</message>
+                </requireJavaVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
       <!-- Compila la interfaz React (frontend/) dentro de target/classes/public.
            Se puede saltar con -Dskip.npm -Dskip.installnodenpm al trabajar solo en Java. -->
       <plugin>
@@ -112,7 +133,8 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.6.0</version>
+        <!-- 3.6.1 trae ASM 9.8, que entiende las clases de Java 25. -->
+        <version>3.6.1</version>
         <executions>
           <execution>
             <phase>package</phase>
