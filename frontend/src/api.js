@@ -38,6 +38,15 @@ export function buscar(filtros, signal) {
 /** → { total, especialidades: [{ valor, cantidad }], tipos: [{ valor, cantidad }] } */
 export const obtenerFacetas = () => fetch("/api/facetas").then(json);
 
+/**
+ * → { disponible, motivo, buscador }. Si disponible es false, Java no llega a la web de ADIF
+ * desde esta red y "Abrir norma" lo hace el navegador (copiar código + abrir el buscador oficial).
+ */
+export const obtenerAccesoAdif = () => fetch("/api/adif").then(json);
+
+/** "IT 17 (NAS 117)" → "IT 17": el buscador de ADIF no conoce el código alternativo. */
+export const codigoParaBuscar = (codigo) => codigo.replace(/\s*\(.*\)/, "").trim();
+
 /** → { pdf, url, normas, cargado, error } */
 export const obtenerInfo = () => fetch("/api/info").then(json);
 

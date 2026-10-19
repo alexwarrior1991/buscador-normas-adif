@@ -48,6 +48,13 @@ public final class App {
     static final String URL_CATALOGO =
             "https://www.adif.es/documents/20124/3371563/CatalogoNormativaTecnica.pdf/";
 
+    /**
+     * Si Java puede usar la web de ADIF desde esta red. Si no, "Abrir norma" lo hace el navegador:
+     * copia el código y abre el buscador oficial.
+     */
+    public record AccesoAdif(boolean disponible, String motivo, String buscador) {
+    }
+
     /** Estado visible en la interfaz: de dónde salen los datos y cuándo se cargaron. */
     public record Info(String pdf, String url, int normas, String cargado, String error) {
     }
@@ -60,6 +67,8 @@ public final class App {
 
     private final AtomicReference<Indice> indice = new AtomicReference<>(new Indice(List.of()));
     private final NormativaAdif adif = new NormativaAdif();
+    private volatile AccesoAdif acceso;
+    private volatile long accesoComprobado;
     private volatile Info info;
 
     App(Path pdf, String url) {
@@ -137,6 +146,7 @@ public final class App {
                     .header("Content-Disposition", "inline; filename=\"ficha-" + n + ".pdf\"")
                     .result(ficha(n));
         });
+        web.get("/api/adif", ctx -> ctx.json(accesoAdif()));
         web.get("/norma", this::abrirNorma);
         web.get("/norma/doc/{id}", this::servirNorma);
         // El navegador envía el PDF del catálogo que el usuario ha descargado (cuando Java no puede).
@@ -183,45 +193,97 @@ public final class App {
                 ctx.html(paginaDocumentos(codigo, documentos));
             }
         } catch (IOException e) {
-            ctx.status(HttpStatus.BAD_GATEWAY).html(pagina("No se ha podido consultar la web de ADIF",
-                    "<p>" + escapar(motivo(e)) + "</p><p>Comprueba la conexión a internet.</p>"));
+            ctx.status(HttpStatus.BAD_GATEWAY).html(paginaSinAcceso(codigo, motivo(e)));
         }
+    }
+
+    /** Se comprueba como mucho cada 5 minutos: la red no cambia a cada búsqueda. */
+    AccesoAdif accesoAdif() {
+        if (acceso == null || System.currentTimeMillis() - accesoComprobado > 5 * 60_000) {
+            try {
+                adif.comprobarAcceso();
+                acceso = new AccesoAdif(true, "", NormativaAdif.BUSCADOR);
+            } catch (IOException e) {
+                acceso = new AccesoAdif(false, motivo(e), NormativaAdif.BUSCADOR);
+            }
+            accesoComprobado = System.currentTimeMillis();
+        }
+        return acceso;
     }
 
     /** El PDF de una versión: desde datos/normas/ si ya se abrió antes; si no, se descarga de ADIF. */
     private void servirNorma(Context ctx) throws IOException {
         String id = ctx.pathParam("id");
         if (!ID_ADIF.matcher(id).matches()) throw new BadRequestResponse("Identificador no válido");
-        Path norma;
-        try {
-            norma = normaEnDisco(id);
-        } catch (IOException e) {
-            ctx.status(HttpStatus.BAD_GATEWAY).html(pagina("No se ha podido descargar la norma",
-                    "<p>" + escapar(motivo(e)) + "</p>"));
+        Path carpeta = CARPETA_NORMAS.resolve(id);
+        Path guardada = normaGuardada(carpeta);
+        if (guardada != null) {
+            enviarPdf(ctx, guardada);
             return;
         }
-        if (norma == null) {
+        NormativaAdif.Anexo anexo;
+        try {
+            anexo = adif.pdfDe(id);
+        } catch (IOException e) {
+            ctx.status(HttpStatus.BAD_GATEWAY).html(paginaSinAcceso(null, motivo(e)));
+            return;
+        }
+        if (anexo == null) {
             ctx.status(HttpStatus.NOT_FOUND).html(pagina("Sin PDF", "<p>Esta norma no tiene PDF en la web de ADIF.</p>"));
             return;
         }
-        ctx.contentType("application/pdf")
-                .header("Content-Disposition", "inline; filename=\"" + norma.getFileName() + "\"")
-                .result(Files.newInputStream(norma));
+        Path destino = carpeta.resolve(nombreSeguro(anexo.nombre()));
+        try {
+            adif.descargar(anexo.id(), destino);
+        } catch (IOException e) {
+            // Java no puede descargarla, pero el enlace de ADIF funciona sin sesión: que la descargue el navegador.
+            ctx.redirect(NormativaAdif.urlDescarga(anexo.id()));
+            return;
+        }
+        enviarPdf(ctx, destino);
     }
 
-    private Path normaEnDisco(String id) throws IOException {
-        Path carpeta = CARPETA_NORMAS.resolve(id);
-        if (Files.isDirectory(carpeta)) {
-            try (Stream<Path> ficheros = Files.list(carpeta)) {
-                Path guardado = ficheros.filter(f -> f.toString().endsWith(".pdf")).findFirst().orElse(null);
-                if (guardado != null) return guardado;
-            }
+    private static Path normaGuardada(Path carpeta) throws IOException {
+        if (!Files.isDirectory(carpeta)) return null;
+        try (Stream<Path> ficheros = Files.list(carpeta)) {
+            return ficheros.filter(f -> f.toString().endsWith(".pdf")).findFirst().orElse(null);
         }
-        NormativaAdif.Anexo anexo = adif.pdfDe(id);
-        if (anexo == null) return null;
-        Path destino = carpeta.resolve(nombreSeguro(anexo.nombre()));
-        adif.descargar(anexo.id(), destino);
-        return destino;
+    }
+
+    private static void enviarPdf(Context ctx, Path pdf) throws IOException {
+        ctx.contentType("application/pdf")
+                .header("Content-Disposition", "inline; filename=\"" + pdf.getFileName() + "\"")
+                .result(Files.newInputStream(pdf));
+    }
+
+    /**
+     * Java no llega a la web de ADIF desde esta red, pero el navegador sí: se ofrece copiar el
+     * código y abrir el buscador oficial para pegarlo allí.
+     */
+    private static String paginaSinAcceso(String codigo, String motivo) {
+        String cuerpo = "<p>Esta aplicación no puede consultar la web de ADIF desde tu red (" + escapar(motivo)
+                + "), pero tu navegador sí.</p>";
+        if (codigo == null) {
+            return pagina("Abrir en la web de ADIF", cuerpo + "<p><a href=\"" + NormativaAdif.BUSCADOR
+                    + "\">Abrir el buscador de ADIF</a></p>");
+        }
+        String base = codigoParaBuscar(codigo);
+        return pagina("Abrir en la web de ADIF", cuerpo
+                + "<p class=\"codigo\">" + escapar(base) + "</p>"
+                + "<p><button id=\"ir\">Copiar el código y abrir el buscador de ADIF</button></p>"
+                + "<p>Allí, pega el código en el campo «Código» y pulsa Buscar.</p>"
+                + "<script>document.getElementById('ir').onclick = function () {"
+                + " if (navigator.clipboard) navigator.clipboard.writeText(" + cadenaJs(base) + ");"
+                + " location.href = " + cadenaJs(NormativaAdif.BUSCADOR) + "; };</script>");
+    }
+
+    /** "IT 17 (NAS 117)" → "IT 17": el buscador de ADIF no conoce el código alternativo. */
+    static String codigoParaBuscar(String codigo) {
+        return codigo.replaceAll("\\s*\\(.*\\)", "").strip();
+    }
+
+    private static String cadenaJs(String s) {
+        return "\"" + s.replace("\\", "\\\\").replace("\"", "\\\"").replace("<", "\\u003c") + "\"";
     }
 
     /** El nombre viene de la web de ADIF: solo caracteres inocuos, para usarlo como fichero y en cabeceras. */
@@ -255,6 +317,8 @@ public final class App {
                 + ":root{color-scheme:light dark;font-family:system-ui,sans-serif}"
                 + "body{max-width:900px;margin:24px auto;padding:0 16px;line-height:1.5}"
                 + "li{margin:4px 0}small{opacity:.7}a{color:#0b6e4f}"
+                + ".codigo{font:600 1.4rem ui-monospace,Consolas,monospace}"
+                + "button{font:inherit;padding:8px 14px;border-radius:8px;cursor:pointer}"
                 + "@media(prefers-color-scheme:dark){a{color:#4cc38a}}"
                 + "</style></head><body><h1>" + escapar(titulo) + "</h1>" + cuerpo + "</body></html>";
     }

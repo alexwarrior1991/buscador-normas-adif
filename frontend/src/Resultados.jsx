@@ -1,10 +1,43 @@
 import { useState } from "react";
-import { urlFicha, urlNorma } from "./api";
+import { codigoParaBuscar, urlFicha, urlNorma } from "./api";
 import { extracto, resaltar } from "./resaltar";
 
 const LARGO_EXTRACTO = 240;
 
-function Fila({ norma, consulta }) {
+/**
+ * "Abrir norma": normalmente lo resuelve el backend. Si Java no llega a la web de ADIF desde esta
+ * red, se copia el código y se abre el buscador oficial en el navegador para pegarlo allí.
+ */
+function AbrirNorma({ codigo, accesoAdif }) {
+  const [aviso, setAviso] = useState("");
+
+  if (accesoAdif?.disponible !== false) {
+    return (
+      <a href={urlNorma(codigo)} target="_blank" rel="noreferrer" title="PDF de la norma en la web de ADIF">
+        Abrir norma
+      </a>
+    );
+  }
+
+  const abrir = () => {
+    const base = codigoParaBuscar(codigo);
+    navigator.clipboard?.writeText(base);
+    window.open(accesoAdif.buscador, "_blank", "noopener");
+    setAviso(`«${base}» copiado: pégalo en «Código»`);
+    setTimeout(() => setAviso(""), 6000);
+  };
+
+  return (
+    <>
+      <button className="enlace fuerte" onClick={abrir} title="Copia el código y abre el buscador de ADIF">
+        Abrir norma
+      </button>
+      {aviso && <span className="copiado">{aviso}</span>}
+    </>
+  );
+}
+
+function Fila({ norma, consulta, accesoAdif }) {
   const [copiado, setCopiado] = useState(false);
   const [abierto, setAbierto] = useState(false);
 
@@ -45,9 +78,7 @@ function Fila({ norma, consulta }) {
         )}
       </div>
       <div className="acciones">
-        <a href={urlNorma(norma.codigo)} target="_blank" rel="noreferrer" title="PDF de la norma en la web de ADIF">
-          Abrir norma
-        </a>
+        <AbrirNorma codigo={norma.codigo} accesoAdif={accesoAdif} />
         <a className="secundaria" href={urlFicha(norma.pagina)} target="_blank" rel="noreferrer" title={`Página ${norma.pagina} del catálogo`}>
           Ver ficha
         </a>
@@ -56,11 +87,11 @@ function Fila({ norma, consulta }) {
   );
 }
 
-export function Resultados({ normas, consulta }) {
+export function Resultados({ normas, consulta, accesoAdif }) {
   return (
     <ul className="resultados">
       {normas.map((n) => (
-        <Fila key={n.pagina} norma={n} consulta={consulta} />
+        <Fila key={n.pagina} norma={n} consulta={consulta} accesoAdif={accesoAdif} />
       ))}
     </ul>
   );

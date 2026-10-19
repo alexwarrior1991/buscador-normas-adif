@@ -98,4 +98,16 @@ class NormativaAdifTest {
         assertEquals("_.._etc_passwd.pdf", App.nombreSeguro("../../etc/passwd"), "sin barras: no sale de su carpeta");
         assertEquals("norma.pdf", App.nombreSeguro(""));
     }
+
+    @Test
+    void codigoParaElBuscadorOficial() {
+        assertEquals("IT 17", App.codigoParaBuscar("IT 17 (NAS 117)"));
+        assertEquals("ET 03.305.001.4", App.codigoParaBuscar("ET 03.305.001.4"));
+    }
+
+    @Test
+    void urlDeDescargaDirecta() {
+        assertEquals(NormativaAdif.WEB + "/action/DocumentacionController/descargarDocumentoAnexo?idDoc=090003ea801f1853",
+                NormativaAdif.urlDescarga("090003ea801f1853"));
+    }
 }

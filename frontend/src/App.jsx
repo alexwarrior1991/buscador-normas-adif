@@ -3,6 +3,7 @@ import {
   actualizarCatalogo,
   BUSCADOR_OFICIAL,
   cargarCatalogo,
+  obtenerAccesoAdif,
   buscar,
   LIMITE,
   obtenerFacetas,
@@ -29,6 +30,7 @@ export function App() {
   const [actualizando, setActualizando] = useState(false);
   const [version, setVersion] = useState(0); // fuerza recargar tras actualizar el catálogo
   const [subiendo, setSubiendo] = useState(false);
+  const [accesoAdif, setAccesoAdif] = useState(null);
   const entrada = useRef(null);
   const selectorPdf = useRef(null);
 
@@ -38,6 +40,11 @@ export function App() {
     obtenerFacetas().then(setFacetas).catch((e) => setError(e.message));
     obtenerInfo().then(setInfo).catch((e) => setError(e.message));
   }, [version]);
+
+  // Una vez al abrir: si Java no llega a la web de ADIF, "Abrir norma" lo hará el navegador.
+  useEffect(() => {
+    obtenerAccesoAdif().then(setAccesoAdif).catch(() => setAccesoAdif(null));
+  }, []);
 
   // Búsqueda mientras se escribe: espera breve y cancela la petición anterior.
   useEffect(() => {
@@ -183,7 +190,7 @@ export function App() {
         </p>
       )}
 
-      {resultado && <Resultados normas={resultado.resultados} consulta={filtros.q} />}
+      {resultado && <Resultados normas={resultado.resultados} consulta={filtros.q} accesoAdif={accesoAdif} />}
 
       <footer>
         {info && !info.error && (

@@ -45,6 +45,8 @@ public final class NormativaAdif {
     }
 
     public static final String WEB = "https://normativatecnica.adif.es/ntw";
+    /** Buscador de la web oficial, para cuando hay que buscar desde el navegador del usuario. */
+    public static final String BUSCADOR = WEB + "/views/busqueda/body-busqueda.jsp";
     private static final Pattern TOKEN = Pattern.compile("tokenCsrf = \"([^\"]+)\"");
     private static final Pattern ALTERNATIVO = Pattern.compile("\\s*\\(.*\\)");
     private static final ObjectMapper JSON = new ObjectMapper();
@@ -96,6 +98,20 @@ public final class NormativaAdif {
         return vigentes.stream().filter(d -> Indice.claveCodigo(d.codigo()).startsWith(clave)).toList();
     }
 
+    /**
+     * Comprueba que Java puede usar la web (en algunas redes la rechaza con HTTP 403 aunque el
+     * navegador sí pueda). Lanza la excepción con el motivo si no.
+     */
+    public void comprobarAcceso() throws IOException {
+        token();
+    }
+
+    /** Descarga directa de un PDF: funciona sin sesión, así que el navegador puede abrirla tal cual. */
+    public static String urlDescarga(String idAnexo) {
+        return WEB + "/action/DocumentacionController/descargarDocumentoAnexo?idDoc="
+                + URLEncoder.encode(idAnexo, StandardCharsets.UTF_8);
+    }
+
     /** El PDF de una versión, o null si no tiene. */
     public Anexo pdfDe(String idDocumento) throws IOException {
         String json = get(WEB + "/action/DocumentacionController/getDocumentosAnexos?idDocPadre="
@@ -108,8 +124,7 @@ public final class NormativaAdif {
         Files.createDirectories(destino.toAbsolutePath().getParent());
         Path temporal = Files.createTempFile(destino.toAbsolutePath().getParent(), "norma", ".part");
         try {
-            HttpResponse<Path> r = enviar(ClienteHttp.peticion(WEB + "/action/DocumentacionController/descargarDocumentoAnexo?idDoc="
-                    + URLEncoder.encode(idAnexo, StandardCharsets.UTF_8)).build(),
+            HttpResponse<Path> r = enviar(ClienteHttp.peticion(urlDescarga(idAnexo)).build(),
                     HttpResponse.BodyHandlers.ofFile(temporal));
             if (r.statusCode() != 200) throw new IOException("HTTP " + r.statusCode() + " al descargar la norma");
             try (InputStream in = Files.newInputStream(temporal)) {
@@ -140,7 +155,7 @@ public final class NormativaAdif {
 
     private synchronized String token() throws IOException {
         if (token == null) {
-            Matcher m = TOKEN.matcher(get(WEB + "/views/busqueda/body-busqueda.jsp"));
+            Matcher m = TOKEN.matcher(get(BUSCADOR));
             if (!m.find()) throw new IOException("No se ha podido iniciar sesión en la web de ADIF");
             token = m.group(1);
         }

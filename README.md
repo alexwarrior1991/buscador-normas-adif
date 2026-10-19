@@ -105,6 +105,11 @@ pulsa "Ver documento", llamando a su API interna (sin Selenium ni navegador):
 - Solo se consulta lo que se abre: no hay descargas masivas.
 - Necesita internet. Si ADIF cambia su web, este botón podría dejar de funcionar, pero el
   buscador seguiría funcionando porque solo depende del catálogo.
+- **Si tu red no deja a Java usar esa web** (HTTP 403, aunque el navegador sí pueda), la aplicación
+  lo detecta al abrirse y "Abrir norma" pasa a copiar el código al portapapeles y abrir el
+  [buscador oficial](https://normativatecnica.adif.es/ntw/views/busqueda/body-busqueda.jsp) en el
+  navegador: pégalo en «Código» y pulsa Buscar. Si lo que falla es solo la descarga, te lleva
+  directamente al PDF en la web de ADIF.
 
 ## Desarrollo
 
